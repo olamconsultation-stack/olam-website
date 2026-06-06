@@ -1,0 +1,28 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Spacing Scale" subtitle="4px base; 48/80px drive section rhythm." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-body); background: var(--surface-card); color: var(--text-body); }
+  .wrap { padding: 24px 32px; display: flex; gap: 18px; align-items: flex-end; flex-wrap: wrap; }
+  .col { display: flex; flex-direction: column; gap: 8px; align-items: center; }
+  .bar { background: var(--green-500); border-radius: 3px; width: 100%; }
+  .box { width: 44px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .lab { font-size: 10px; color: var(--text-body); font-weight: 600; }
+  .px { font-size: 10px; color: var(--text-subtle); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box"><div class="bar" style="height:8px"></div><span class="lab">2</span><span class="px">8</span></div>
+    <div class="box"><div class="bar" style="height:16px"></div><span class="lab">4</span><span class="px">16</span></div>
+    <div class="box"><div class="bar" style="height:24px"></div><span class="lab">5</span><span class="px">24</span></div>
+    <div class="box"><div class="bar" style="height:32px"></div><span class="lab">6</span><span class="px">32</span></div>
+    <div class="box"><div class="bar" style="height:48px"></div><span class="lab">8</span><span class="px">48</span></div>
+    <div class="box"><div class="bar" style="height:64px"></div><span class="lab">9</span><span class="px">64</span></div>
+    <div class="box"><div class="bar" style="height:80px"></div><span class="lab">10</span><span class="px">80</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Primary — Green" subtitle="Lime-olive brand green from the logo. Primary actions & marks." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-body); background: var(--surface-card); color: var(--text-body); }
+  .row { display: flex; gap: 12px; padding: 20px; }
+  .sw { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+  .chip { height: 64px; border-radius: var(--radius-md); border: 1px solid var(--border-hairline); }
+  .name { font-size: 11px; font-weight: 600; color: var(--text-body); }
+  .hex { font-size: 11px; color: var(--text-subtle); font-variant-numeric: tabular-nums; }
+  .star { color: #fff; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="sw"><div class="chip" style="background:var(--green-100)"></div><span class="name">green-100</span><span class="hex">#EEF4DF</span></div>
+    <div class="sw"><div class="chip" style="background:var(--green-200)"></div><span class="name">green-200</span><span class="hex">#D3E4A8</span></div>
+    <div class="sw"><div class="chip" style="background:var(--green-400)"></div><span class="name">green-400</span><span class="hex">#9CC64A</span></div>
+    <div class="sw"><div class="chip" style="background:var(--green-500);border-color:transparent"></div><span class="name">green-500 · PRIMARY</span><span class="hex">#7AB520</span></div>
+    <div class="sw"><div class="chip" style="background:var(--green-600);border-color:transparent"></div><span class="name">green-600 · hover</span><span class="hex">#5E8C19</span></div>
+    <div class="sw"><div class="chip" style="background:var(--green-700);border-color:transparent"></div><span class="name">green-700 · ink</span><span class="hex">#4A6700</span></div>
+  </div>
+</body>
+</html>

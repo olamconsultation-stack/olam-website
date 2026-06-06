@@ -1,0 +1,27 @@
+<!-- @dsCard group="Spacing" viewport="700x190" name="Radii" subtitle="8px inputs → 40px hero; pill buttons." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-body); background: var(--surface-card); color: var(--text-body); }
+  .wrap { padding: 24px 32px; display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+  .col { display: flex; flex-direction: column; gap: 8px; align-items: center; }
+  .demo { width: 88px; height: 64px; background: var(--surface-warm); border: 1px solid var(--border-soft);
+    border-top: 3px solid var(--green-500); }
+  .lab { font-size: 11px; color: var(--text-body); font-weight: 600; }
+  .px { font-size: 10px; color: var(--text-subtle); }
+  .pill { width: 88px; height: 36px; border-radius: var(--radius-pill); background: var(--green-500); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="col"><div class="demo" style="border-radius:var(--radius-sm)"></div><span class="lab">sm</span><span class="px">8px · inputs</span></div>
+    <div class="col"><div class="demo" style="border-radius:var(--radius-brand)"></div><span class="lab">brand</span><span class="px">20px · cards</span></div>
+    <div class="col"><div class="demo" style="border-radius:var(--radius-brand-lg)"></div><span class="lab">brand-lg</span><span class="px">28px · media</span></div>
+    <div class="col"><div class="demo" style="border-radius:var(--radius-xl)"></div><span class="lab">xl</span><span class="px">40px · hero</span></div>
+    <div class="col"><div class="pill"></div><span class="lab">pill</span><span class="px">buttons/tags</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+/* ============================================================
+   OLAM Med Spa — Webfonts
+   Sora (display) + Inter (body), loaded from Google Fonts.
+   NOTE: loaded via CDN, not self-hosted. If you have licensed
+   font binaries, drop them in /assets/fonts and replace these
+   @import lines with local @font-face rules.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Inter:wght@400;500;600;700&display=swap');

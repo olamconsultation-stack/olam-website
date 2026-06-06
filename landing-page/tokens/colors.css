@@ -1,0 +1,83 @@
+/* ============================================================
+   OLAM Med Spa — Color Tokens
+   Brand: warm, editorial medical aesthetics. Avoids cold
+   clinical blue palettes. Green (logo) leads; steel blue is
+   the emotional accent used on italicized emphasis words.
+   ============================================================ */
+
+:root {
+  /* ---- Brand primitives: Green (lime-olive, from logo) ---- */
+  --green-100: #EEF4DF;   /* tint wash / hover backgrounds */
+  --green-200: #D3E4A8;
+  --green-400: #9CC64A;
+  --green-500: #7AB520;   /* PRIMARY — buttons, brand marks */
+  --green-600: #5E8C19;   /* primary hover/pressed */
+  --green-700: #4A6700;   /* deep green, text-on-light, accents */
+
+  /* ---- Brand primitives: Steel Blue (accent / emphasis) ---- */
+  --blue-100: #E5F0F5;    /* tint wash */
+  --blue-300: #8FC3D8;
+  --blue-400: #5B98BF;    /* mid blue (live-site CTA tone) */
+  --blue-500: #4BA8C8;    /* ACCENT — italic emphasis, eyebrows */
+  --blue-600: #2E86A8;    /* accent hover */
+  --blue-700: #1F6489;    /* deep blue, text-on-light, hover ink */
+
+  /* ---- Neutrals / ink ---- */
+  --ink-900: #1A1A1A;     /* DARK — near-black sections, display ink */
+  --ink-800: #1B1C1C;
+  --ink-700: #2A2A2A;     /* default body text */
+  --ink-500: #6B6B6B;     /* MUTED — secondary text */
+  --ink-400: #71787E;     /* tertiary / captions */
+  --ink-300: #C0C7CF;     /* hairline borders, disabled */
+  --ink-200: #E4E2DD;     /* dividers on warm bg */
+
+  /* ---- Surfaces (warm off-white system) ---- */
+  --surface-0: #FFFFFF;   /* cards, inputs */
+  --surface-1: #F9F7F4;   /* BACKGROUND — page base, warm off-white */
+  --surface-2: #F8F8F6;   /* secondary panels */
+  --surface-3: #F2F4F5;   /* cool panel (FAQ band) */
+  --surface-warm: #FCF9F8;/* hero gradient base, on-brand warm */
+
+  /* ---- Semantic feedback ---- */
+  --danger-500: #C0392B;  /* "NOT for you" / disqualifiers */
+  --danger-100: #FBEAE8;
+  --amber-500: #E0A100;   /* star ratings */
+
+  /* ========================================================
+     SEMANTIC ALIASES — reference these in components
+     ======================================================== */
+
+  /* Text */
+  --text-strong: var(--ink-900);
+  --text-body: var(--ink-700);
+  --text-muted: var(--ink-500);
+  --text-subtle: var(--ink-400);
+  --text-on-dark: #FFFFFF;
+  --text-on-dark-muted: rgba(255, 255, 255, 0.72);
+  --text-accent: var(--blue-700);   /* emphasis on light bg */
+  --text-brand: var(--green-700);
+
+  /* Surfaces */
+  --surface-page: var(--surface-1);
+  --surface-card: var(--surface-0);
+  --surface-card-muted: var(--surface-warm);
+  --surface-panel: var(--surface-3);
+  --surface-inverse: var(--ink-900);
+
+  /* Brand actions */
+  --action-primary: var(--green-500);
+  --action-primary-hover: var(--green-600);
+  --action-accent: var(--blue-500);
+  --action-accent-hover: var(--blue-600);
+  --action-ink: var(--ink-900);
+  --action-ink-hover: #000000;
+
+  /* Lines & borders */
+  --border-hairline: rgba(0, 0, 0, 0.06);
+  --border-soft: rgba(0, 0, 0, 0.10);
+  --border-strong: var(--ink-300);
+  --border-on-dark: rgba(255, 255, 255, 0.10);
+
+  /* Focus ring */
+  --focus-ring: var(--blue-500);
+}

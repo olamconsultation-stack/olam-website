@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html data-lang="en" lang="en" style="">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>OLAM Med Spa — Non-Surgical Skin Tightening &amp; Lifting | Pembroke Pines</title>
+  <meta
+    content="Board Certified Medical Director supervision. 15,000+ aesthetic procedures. Firmer, lifted skin in 60–90 days — with a personalized plan written before you decide."
+    name="description">
+  <link rel="shortcut icon" href="images/cropped-favicon-a-1.png?v=4" type="image/x-icon">
+  <link rel="icon" href="images/cropped-favicon-a-1.png?v=4" type="image/png">
+  <style type="text/css" id="embeddedIframes">
+    <br>.ep-iFrameContainer {
+      width: 100%
+    }
+
+    <br>.ep-header,
+    .ep-iFrameContainer,
+    .ep-overlay {
+      display: none
+    }
+
+    <br>.ep-iFrame {
+      border: none
+    }
+
+    <br>.ep-iFrameLarge {
+      height: 500px;
+      overflow: auto
+    }
+
+    <br>.ep-overflow {
+      overflow: unset
+    }
+
+    <br>.ep-overlay {
+      <br>z-index: 10000;
+      <br>position: fixed;
+      <br>top: 0;
+      <br>bottom: 0;
+      <br>left: 0;
+      <br>right: 0;
+      <br>background: rgba(0, 0, 0, .5);
+      <br>transition: opacity .2s;
+      <br>width: 100%;
+      <br>min-width: 100%;
+      <br>justify-content: center;
+      <br>align-items: center<br>
+    }
+
+    <br>.ep-wrapper {
+      width: 100%
+    }
+
+    <br>.ep-header {
+      <br>justify-content: flex-end;
+      <br>position: fixed;
+      <br>border-radius: 5px;
+      <br>z-index: 1<br>
+    }
+
+    <br>.ep-close-icon,
+    .ep-minimize-icon {
+      <br>background: #e8e8e8;
+      <br>width: 23px;
+      <br>height: 23px;
+      <br>margin: 3px 6px 0 0;
+      <br>z-index: 999;
+      <br>color: #4a4a4a;
+      <br>transition: background .25s;
+      <br>text-align: center;
+      <br>cursor: pointer<br>
+    }
+
+    <br>.ep-minimize-icon {
+      <br>border-radius: 50%;
+      <br>line-height: .3ch;
+      <br>font-size: 22px;
+      <br>border: 1px solid #ccc;
+      <br>font-family: sans-serif<br>
+    }
+
+    <br>.ep-close-icon {
+      <br>border-radius: 50%;
+      <br>line-height: 1.5ch;
+      <br>font-size: 20px;
+      <br>border: 1px solid #ccc;
+      <br>font-family: Montserrat<br>
+    }
+
+    <br>.ep-minimize-text-container {
+      height: fit-content;
+      text-align: center
+    }
+
+    <br>.ep-minimize-tc-sticky {
+      writing-mode: vertical-lr;
+      justify-content: center
+    }
+
+    <br>.ep-minimize-tc-sticky-left {}
+
+    <br>.ep-minimize-tc-sticky-right {
+      transform: rotate(180deg);
+      float: right
+    }
+
+    <br>.ep-minimize-tc-polite {
+      align-items: end;
+      width: 100%
+    }
+
+    <br>.ep-minimize-tc-polite-left {
+      justify-content: start
+    }
+
+    <br>.ep-minimize-tc-polite-right {
+      justify-content: end
+    }
+
+    <br>.ep-minimize-text {
+      <br>background-color: #000;
+      <br>cursor: pointer;
+      <br>color: #fff;
+      <br>white-space: nowrap;
+      <br>overflow: hidden;
+      <br>max-width: 380px;
+      <br>text-overflow: ellipsis<br>
+    }
+
+    <br>.ep-minimize-text-polite {
+      margin-bottom: 8px
+    }
+
+    <br>.ep-minimize-text-polite-left {
+      margin-left: 25px;
+      margin-right: 8px
+    }
+
+    <br>.ep-minimize-text-polite-right {
+      margin-left: 8px;
+      margin-right: 25px
+    }
+
+    <br>.ep-sticky-sidebar {
+      <br>top: 50%;
+      <br>z-index: 9999;
+      <br>position: fixed;
+      <br>height: fit-content;
+      <br>transform: translateY(-50%);
+      <br>max-height: 100vh;
+      <br>
+    }
+
+    <br>.ep-height,
+    .ep-sticky-sidebar .ep-wrapper {
+      height: 100%
+    }
+
+    <br>.ep-polite-slide-in {
+      z-index: 9999;
+      position: fixed
+    }
+
+    <br>.ep-inline,
+    .ep-popup {
+      position: relative;
+      margin: auto
+    }
+
+    <br>.ep-polite-slide-in .ep-wrapper {
+      position: relative
+    }
+
+    <br>.ep-popup {
+      z-index: 9999
+    }
+
+    <br>.ep-inline {
+      overflow: unset;
+      boxshadow: none
+    }
+
+    <br>.ep-right {
+      right: 15px
+    }
+
+    <br>.ep-left {
+      left: 15px
+    }
+
+    <br>.ep-bottom {
+      bottom: 15px
+    }
+
+    <br>@media only screen and (max-width: 550px) {
+
+      <br>.ep-iFrame,
+      .ep-iFrameContainer {
+        width: 100%
+      }
+
+      <br>.ep-popup {
+        width: 100% !important
+      }
+
+      <br>.ep-right {
+        right: 0
+      }
+
+      <br>.ep-left {
+        left: 0
+      }
+
+      <br>.ep-bottom {
+        bottom: 0
+      }
+
+      <br>
+    }
+
+    <br>
+  </style>
+  <!-- BEGIN: Fonts & Tailwind -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:ital,wght@0,300;0,400;0,500;0,600;1,300&amp;family=Inter:wght@400;500;600&amp;display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- END: Fonts & Tailwind -->
+  <script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1F6489',
+            secondary: '#4A6700',
+            tertiary: '#845413',
+            brandBlue: '#5B98BF',
+            brandBlueDark: '#1F6489',
+            brandGreen: '#84A839',
+            brandGreenDark: '#4A6700',
+            brandBg: '#FCF9F8',
+            brandBgSecondary: '#F8F8F6',
+            brandBgTertiary: '#F2F4F5',
+            brandDark: '#1B1C1C',
+            brandText: '#2A2A2A',
+            brandMuted: '#71787E',
+            outlineVariant: '#C0C7CF'
+          },
+          fontFamily: {
+            sora: ['Sora', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+          },
+          borderRadius: {
+            'brand': '20px',
+            'brand-lg': '28px',
+          }
+        }
+      }
+    }
+  </script>
+  <style data-purpose="custom-utilities">
+    /* ── Language Visibility ── */
+    html[data-lang="en"] .only-es {
+      display: none !important;
+    }
+
+    html[data-lang="es"] .only-en {
+      display: none !important;
+    }
+
+    /* ── Premium Scrollbars ── */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #FCF9F8;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #C0C7CF;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #71787E;
+    }
+
+    /* ── Editorial Typography ── */
+    .display-hero {
+      letter-spacing: -0.05em;
+      line-height: 1.05;
+    }
+
+    .display-xl {
+      font-size: clamp(3rem, 7vw, 5.25rem);
+      font-weight: 500;
+      letter-spacing: -0.07em;
+      line-height: 0.92em;
+    }
+
+    .headline-italic {
+      font-family: 'Sora', sans-serif;
+      font-weight: 300;
+      font-style: italic;
+    }
+
+    /* ── Button & Card Transitions ── */
+    .btn-transition {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .hover-card-cushion {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .hover-card-cushion:hover {
+      transform: translateY(-8px) scale(1.01);
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.05);
+      border-color: rgba(31, 100, 137, 0.15);
+    }
+
+    /* ── Accordion Height Transition ── */
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details[open] .summary-plus {
+      transform: rotate(45deg);
+    }
+
+    details {
+      transition: all 0.3s ease-out;
+    }
+
+    /* ── Background Glows & Parallax ── */
+    .glow-blob {
+      filter: blur(120px);
+      mix-blend-mode: multiply;
+      pointer-events: none;
+      transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    /* ── Logo Carousel Animation ── */
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(calc(-250px * 6));
+      }
+    }
+
+    .logo-track {
+      display: flex;
+      width: calc(250px * 12);
+      animation: scroll 40s linear infinite;
+    }
+
+    .logo-slide {
+      width: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ── Smooth Scrolling by Lenis ── */
+    html.lenis {
+      height: auto;
+    }
+
+    .lenis-smooth {
+      scroll-behavior: auto !important;
+    }
+
+    .lenis-smooth [data-lenis-prevent] {
+      overscroll-behavior: contain;
+    }
+
+    .lenis-stopped {
+      overflow: hidden;
+    }
+
+    /* ── Interactive Image Before/After Slider ── */
+    .ba-slider {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.04);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      user-select: none;
+    }
+
+    .ba-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    .ba-before {
+      z-index: 1;
+    }
+
+    .ba-after {
+      z-index: 2;
+      clip-path: inset(0 0 0 var(--position, 50%));
+    }
+
+    .ba-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: var(--position, 50%);
+      width: 6px;
+      background: rgba(255, 255, 255, 0.8);
+      z-index: 3;
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+
+    .ba-handle-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+      width: 48px;
+      height: 48px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #374151;
+      border: none;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .ba-slider.dragging .ba-handle-button {
+      transform: translate(-50%, -50%) scale(1.1);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    .ba-slider-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: col-resize;
+      z-index: 4;
+      margin: 0;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .ba-slider-input::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 100%;
+      cursor: col-resize;
+    }
+
+    .ba-slider-input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 48px;
+      height: 100%;
+      cursor: col-resize;
+    }
+
+    .ba-slider-input::-moz-range-track {
+      width: 100%;
+      height: 100%;
+      cursor: col-resize;
+    }
+
+    .ba-slider-input::-moz-range-thumb {
+      width: 48px;
+      height: 100%;
+      cursor: col-resize;
+      border: none;
+      background: transparent;
+    }
+
+    .ba-label {
+      position: absolute;
+      bottom: 12px;
+      background: rgba(252, 249, 248, 0.85);
+      backdrop-filter: blur(4px);
+      color: #2A2A2A;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      z-index: 3;
+      pointer-events: none;
+      text-transform: uppercase;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .ba-label-before {
+      left: 12px;
+    }
+
+    .ba-label-after {
+      right: 12px;
+    }
+
+    /* ── Interactive Technology Tabs ── */
+    .tab-btn.active {
+      background-color: #1F6489;
+      color: white;
+      border-color: #1F6489;
+    }
+
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.5s ease-in-out forwards;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <!-- Premium Motion Libraries (Lenis Smooth Scroll + GSAP Animation) -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="font-inter text-brandText bg-white antialiased">
+
+  <!-- BEGIN: SiteHeader -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-black/5">
+    <div class="max-w-6xl mx-auto px-4 md:px-8 py-3 flex items-center justify-between">
+      <a class="flex items-center" href="#top">
+        <img alt="OLAM Med Spa" class="h-8 md:h-10 w-auto object-contain"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNPyMm_V-gQZV8-X4mszcbDodukGOJ4nCl0pl3U1b04T504eE2-tbA3Hq5-ptEiTsek601sbd8XwlLgZm2f8fPmA1mus3gjGLUVhWJFllJgbi4kbaAsET2EbV0sQGJjBuiFXgJI2QNLDVwKTplg12T8WcwhUbNEEz6OP9MbMwLtvOUkVXm7aHTwjqFh1eFQJVk1fJE0n7ggTmrTSqs9VvSfGlcQ0-K1E0Yk5iUz3LUK-IK7kQCfZl3j_B5QiFQIpMo-Ng8_9MF1W4">
+      </a>
+      <div class="flex items-center gap-4">
+        <!-- Language Toggle -->
+        <div class="bg-gray-100 p-1 rounded-full flex gap-1" role="group">
+          <button aria-pressed="true"
+            class="lang-btn px-3 py-1 rounded-full text-[10px] font-bold tracking-widest transition-all btn-transition bg-brandDark text-white"
+            data-setlang="en" id="btn-en" type="button">EN</button>
+          <button aria-pressed="false"
+            class="lang-btn px-3 py-1 rounded-full text-[10px] font-bold tracking-widest transition-all btn-transition hover:bg-gray-200 text-gray-500"
+            data-setlang="es" id="btn-es" type="button">ES</button>
+        </div>
+        <!-- Phone Link -->
+        <a class="hidden md:flex items-center gap-2 border border-black/20 px-5 py-2 rounded-full font-medium text-sm hover:bg-brandText hover:text-white transition-colors btn-transition"
+          href="tel:+19542370930">
+          <span class="only-en">Call 954.237.0930</span>
+          <span class="only-es">Llama 954.237.0930</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- END: SiteHeader -->
+  <main id="landing">
+    <!-- 1. HeroSection -->
+    <section class="relative overflow-hidden pt-12 pb-20 md:pt-24 md:pb-32 bg-gradient-to-b from-white to-brandBg"
+      id="top">
+      <div
+        class="absolute top-0 right-0 w-1/2 h-1/2 bg-brandBlue/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/4">
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-brandGreen/5 blur-[100px] rounded-full translate-y-1/4 -translate-x-1/4">
+      </div>
+      <div class="max-w-6xl mx-auto px-4 md:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="relative z-10">
+          <div class="reveal d-1">
+            <span class="text-brandBlue font-bold text-[10px] uppercase tracking-[0.2em] mb-4 block">
+              <span class="only-en">Non-Surgical Skin Tightening &amp; Lifting</span>
+              <span class="only-es">Firmeza y Lifting de Piel Sin Cirugía</span>
+            </span>
+            <h1 class="font-sora text-4xl md:text-6xl font-medium display-hero mb-6">
+              <span class="only-en">Pembroke Pines women 40+: tighten and lift your skin <i
+                  class="font-light text-brandBlue">without surgery.</i></span>
+              <span class="only-es">Mujeres de Pembroke Pines 40+: tensa y levanta tu piel <i
+                  class="font-light text-brandBlue">sin cirugía.</i></span>
+            </h1>
+            <p class="text-gray-600 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
+              <span class="only-en">Firmer, lifted skin in 60–90 days — with a plan written before you decide. 15,000+
+                aesthetic procedures. Featured in Forbes &amp; Univisión.</span>
+              <span class="only-es">Piel más firme y levantada en 60 a 90 días — con un plan escrito antes de que
+                decidas. Más de 15,000 procedimientos. Destacados en Forbes y Univisión.</span>
+            </p>
+          </div>
+          <div class="reveal d-2 flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
+            <div class="flex items-center gap-1">
+              <span class="text-amber-500">★★★★★</span>
+              <span class="font-bold ml-1">5.0</span>
+            </div>
+            <div class="text-sm text-gray-400 flex items-center gap-2">
+              <span class="only-en">Google — 395 reviews</span>
+              <span class="only-es">Google — 395 reseñas</span>
+              <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+              <span class="only-en">Best of Pembroke Pines 2024</span>
+              <span class="only-es">Best of Pembroke Pines 2024</span>
+            </div>
+          </div>
+          <div class="reveal d-3 flex flex-wrap gap-4">
+            <a class="bg-brandBlue text-white px-8 py-4 rounded-full font-semibold hover:bg-brandBlueDark transition-all shadow-lg shadow-brandBlue/20 btn-transition"
+              href="#reserve">
+              <span class="only-en">Reserve my $100 diagnostic consultation →</span>
+              <span class="only-es">Reservar mi consulta diagnóstica de $100 →</span>
+            </a>
+          </div>
+          <div class="mt-8 text-xs text-gray-500 flex flex-wrap gap-x-4 gap-y-2 uppercase tracking-widest font-bold">
+            <span class="only-en">$100 consultation credited to treatment</span>
+            <span class="only-es">Consulta de $100 acreditable a tratamiento</span>
+            <span class="hidden md:inline text-gray-300">|</span>
+            <span class="only-en">Financing from $45/mo</span>
+            <span class="only-es">Financiamiento desde $45/mes</span>
+          </div>
+        </div>
+        <div class="reveal d-2 relative">
+          <div class="rounded-brand-lg overflow-hidden shadow-2xl">
+            <img alt="Luxury Med Spa Atmosphere" class="w-full aspect-[4/5] object-cover"
+              src="images/OLAM-MED-SPA-IN-PENBROKE-PINES.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 2. Honest Qualification -->
+    <section class="py-20 md:py-32 bg-white" id="how-it-works">
+      <div class="max-w-6xl mx-auto px-4 md:px-8">
+        <div class="grid lg:grid-cols-3 gap-16">
+          <div class="lg:col-span-1">
+            <span class="text-brandBlue font-bold text-[10px] uppercase tracking-[0.2em] mb-4 block">
+              <span class="only-en">Honest Qualification</span>
+              <span class="only-es">Calificación Honesta</span>
+            </span>
+            <h2 class="font-sora text-3xl md:text-4xl font-medium mb-6">
+              <span class="only-en">Is this<br>for you?</span>
+              <span class="only-es">¿Esto es<br>para ti?</span>
+            </h2>
+            <p class="text-gray-500">
+              <span class="only-en">We'd rather lose a booking than take a patient we can't help. Here's the honest
+                filter.</span>
+              <span class="only-es">Preferimos perder una cita que aceptar una paciente a la que no podemos ayudar. Aquí
+                el filtro honesto.</span>
+            </p>
+          </div>
+          <div class="lg:col-span-2 grid md:grid-cols-2 gap-8">
+            <!-- Card 1: Eligible -->
+            <div
+              class="bg-brandBg border border-black/5 p-8 rounded-brand hover-card-cushion relative overflow-hidden flex flex-col justify-between">
+              <div class="absolute top-0 right-0 w-24 h-24 bg-brandGreen/5 blur-2xl rounded-full"></div>
+              <div class="relative z-10">
+                <p class="text-brandGreen font-bold text-[10px] uppercase tracking-widest mb-6 flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-brandGreen"></span>
+                  <span class="only-en">This is for you if</span>
+                  <span class="only-es">Sí es para ti si</span>
+                </p>
+                <ul class="space-y-5 text-sm leading-relaxed text-brandText">
+                  <li class="flex gap-3 items-start">
+                    <span class="text-brandGreen font-bold select-none">•</span>
+                    <span>
+                      <span class="only-en">You see early loss of firmness along your jawline, neck or cheeks.</span>
+                      <span class="only-es">Notas pérdida de firmeza en el óvalo facial, cuello o pómulos.</span>
+                    </span>
+                  </li>
+                  <li class="flex gap-3 items-start">
+                    <span class="text-brandGreen font-bold select-none">•</span>
+                    <span>
+                      <span class="only-en">You're 35–65 and want to act before it becomes surgical.</span>
+                      <span class="only-es">Tienes entre 35 y 65 y quieres actuar antes de llegar a una cirugía.</span>
+                    </span>
+                  </li>
+                  <li class="flex gap-3 items-start">
+                    <span class="text-brandGreen font-bold select-none">•</span>
+                    <span>
+                      <span class="only-en">You want natural results — like yourself, 5 years ago.</span>
+                      <span class="only-es">Buscas un resultado natural — como tú, cinco años atrás.</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 2: Not Eligible -->
+            <div
+              class="bg-brandBg border border-black/5 p-8 rounded-brand hover-card-cushion relative overflow-hidden flex flex-col justify-between">
+              <div class="absolute top-0 right-0 w-24 h-24 bg-red-500/5 blur-2xl rounded-full"></div>
+              <div class="relative z-10">
+                <p class="text-red-700 font-bold text-[10px] uppercase tracking-widest mb-6 flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                  <span class="only-en">This is NOT for you if</span>
+                  <span class="only-es">NO es para ti si</span>
+                </p>
+                <ul class="space-y-5 text-sm leading-relaxed text-brandText">
+                  <li class="flex gap-3 items-start">
+                    <span class="text-red-400 font-bold select-none">•</span>
+                    <span>
+                      <span class="only-en">You want a dramatic, Instagram-filter look.</span>
+                      <span class="only-es">Quieres un look dramático tipo filtro de Instagram.</span>
+                    </span>
+                  </li>
+                  <li class="flex gap-3 items-start">
+                    <span class="text-red-400 font-bold select-none">•</span>
+                    <span>
+                      <span class="only-en">You expect a single session to fix everything overnight.</span>
+                      <span class="only-es">Esperas que una sola sesión lo resuelva todo en un día.</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 3. Medical Leadership -->
+    <section class="bg-brandBg border-y border-black/5 py-12 md:py-20">
+      <div class="max-w-6xl mx-auto px-4 md:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div class="space-y-8">
+            <div class="reveal d-1">
+              <span class="text-brandBlue font-bold text-[10px] uppercase tracking-[0.2em] mb-4 block">
+                <span class="only-en">Medical Leadership</span>
+                <span class="only-es">Liderazgo Médico</span>
+              </span>
+              <h2 class="font-sora text-4xl md:text-5xl font-medium mb-6">
+                <span class="only-en">Collective expertise. <br><i class="text-brandBlue font-light">Not a
+                    personality.</i></span>
+                <span class="only-es">Excelencia colectiva. <br><i class="text-brandBlue font-light">No una
+                    personalidad.</i></span>
+              </h2>
+              <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                <div class="only-en">
+                  <p class="">Every OLAM treatment plan is personally reviewed and supervised by our <strong>Board
+                      Certified Medical Director</strong>, with over 20 years of experience in aesthetic medicine. Our
+                    team combines more than 30 years of expertise across licensed skin care specialists and health
+                    professionals.</p>
+                  <p class="mt-4">We've performed <strong>15,000+ aesthetic procedures</strong> and <strong>6,000+
+                      injectables</strong> in the last five years. This isn't a rotating-staff franchise. It's a medical
+                    institution — which is why 6 out of 10 of our patients come back.</p>
+                </div>
+                <div class="only-es">
+                  <p class="">Cada plan de tratamiento en OLAM lo revisa y supervisa personalmente nuestro
+                    <strong>Medical Director Board Certified</strong>, con más de 20 años de experiencia. Nuestro equipo
+                    combina más de 30 años de experiencia.
+                  </p>
+                  <p class="mt-4">Hemos realizado <strong>más de 15,000 procedimientos estéticos</strong> y
+                    <strong>6,000+ inyectables</strong> en los últimos cinco años. Somos una institución médica.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="team-photo-container"
+            class="reveal d-3 bg-white rounded-[40px] relative overflow-hidden flex flex-col justify-end min-h-[600px] shadow-2xl border border-black/5">
+            <div class="absolute inset-0 z-0">
+              <img id="team-photo-parallax" alt="OLAM Team" class="w-full h-full object-cover"
+                src="images/Olam Team.jpg">
+              <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+            </div>
+            <div class="relative z-10 p-12 space-y-0">
+              <div class="flex items-center gap-4 py-5 border-b border-black/10">
+                <div class="flex-shrink-0 w-8 h-8 bg-brandBlue rounded-full flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white text-xl">chevron_right</span>
+                </div>
+                <span class="font-sora text-xl text-brandText">
+                  <span class="only-en">Supervised.</span>
+                  <span class="only-es">Supervisado.</span>
+                </span>
+              </div>
+              <div class="flex items-center gap-4 py-5 border-b border-black/10">
+                <div class="flex-shrink-0 w-8 h-8 bg-brandBlue rounded-full flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white text-xl">chevron_right</span>
+                </div>
+                <span class="font-sora text-xl text-brandText">
+                  <span class="only-en">Licensed.</span>
+                  <span class="only-es">Licenciado.</span>
+                </span>
+              </div>
+              <div class="flex items-center gap-4 py-5">
+                <div class="flex-shrink-0 w-8 h-8 bg-brandBlue rounded-full flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white text-xl">chevron_right</span>
+                </div>
+                <span class="font-sora text-xl text-brandText">
+                  <span class="only-en">Accountable.</span>
+                  <span class="only-es">Responsable.</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 4. What We Treat -->
+    <section class="py-20 md:py-32 bg-white">
+      <div class="max-w-6xl mx-auto px-4 md:px-8">
+        <div class="mb-16">
+          <span class="text-brandBlue font-bold text-[10px] uppercase tracking-[0.2em] mb-4 block">
+            <span class="only-en">What we treat</span>
+            <span class="only-es">Qué tratamos</span>
+          </span>
+          <h2 class="font-sora text-3xl md:text-4xl font-medium">
+            <span class="only-en"><span class="" style="font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -0.04em;">Six
+                problems.</span><br><i class="text-brandBlue font-light">One diagnostic path.</i></span>
+            <span class="only-es">No un tratamiento. <br><i class="text-brandBlue font-light">El tratamiento
+                correcto</i> para ti.</span>
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 01 -->
+          <div class="bg-brandBg border border-black/5 p-8 rounded-brand hover-card-cushion group">
+            <span class="text-[10px] font-bold text-brandBlue tracking-widest block mb-4">01</span>
+            <h3 class="font-sora text-xl mb-3 group-hover:text-brandBlue transition-colors">
+              <span class="only-en">Loss of jawline definition</span>
+              <span class="only-es">Pérdida de definición del óvalo facial</span>
+            </h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              <span class="only-en">The first place skin laxity becomes visible. Caused by collagen depletion at the
+                deeper SMAS layer.</span>
+              <span class="only-es">El primer lugar donde la flacidez se nota. Causado por pérdida de colágeno en la
+                capa SMAS.</span>
+            </p>
+          </div>
+          <!-- Card 02 -->
+          <div class="bg-brandBg border border-black/5 p-8 rounded-brand hover-card-cushion group">
+            <span class="text-[10px] font-bold text-brandBlue tracking-widest block mb-4">02</span>
+            <h3 class="font-sora text-xl mb-3 group-hover:text-brandBlue transition-colors">
+              <span class="only-en">Sagging neck and "turkey neck"</span>
+              <span class="only-es">Cuello caído y "papada de pavo"</span>
+            </h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              <span class="only-en">Loss of tone in the platysma and overlying skin. Often visible in photos before the
+                mirror catches it.</span>
+              <span class="only-es">Pérdida de tono en el platisma. Frecuentemente visible en fotos antes que en el
+                espejo.</span>
+            </p>
+          </div>
+          <!-- Card 03 -->
+          <div class="bg-brandBg border border-black/5 p-8 rounded-brand hover-card-cushion group">
+            <span class="text-[10px] font-bold text-brandBlue tracking-widest block mb-4">03</span>
+            <h3 class="font-sora text-xl mb-3 group-hover:text-brandBlue transition-colors">
+              <span class="only-en">Drooping cheeks and mid-face</span>
+              <span class="only-es">Pómulos y tercio medio descendidos</span>
+            </h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              <span class="only-en">Volume migration and structural descent. The face shifts from heart-shaped to more
+                square or rectangular.</span>
+              <span class="only-es">Migración de volumen y descenso estructural. El rostro pasa de forma de corazón a
+                cuadrada o rectangular.</span>
+            </p>
+          </div>
+          <!-- Card 04 -->
+          <div class="bg-brandBg border border-black/5 p-8 rounded-brand hover-card-cushion group">
+            <span class="text-[10px] font-bold text-brandBlue tracking-widest block mb-4">04</span>
+            <h3 class="font-sora text-xl mb-3 group-hover:text-brandBlue transition-colors">
+              <span class="only-en">Crepey skin on neck and chest</span>
+              <span class="only-es">Piel crepé en cuello y escote</span>
+            </h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              <span class="only-en">Surface texture loss, often combined with sun damage. Different protocol than facial
+                laxity.</span>
+              <span class="only-es">Pérdida de textura superficial, a menudo combinada con daño solar. Protocolo
+                diferente a la laxitud facial.</span>
+            </p>
+          </div>
+          <!-- Card 05 -->
+          <div class="bg-brandBg border border-black/5 p-8 rounded-brand hover-card-cushion group">
+            <span class="text-[10px] font-bold text-brandBlue tracking-widest block mb-4">05</span>
+            <h3 class="font-sora text-xl mb-3 group-hover:text-brandBlue transition-colors">
+              <span class="only-en">Post-weight-loss laxity</span>
+              <span class="only-es">Flacidez post pérdida de peso</span>
+            </h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              <span class="only-en">Skin that didn't retract after significant weight change. Requires deeper energy
+                delivery to remodel collagen.</span>
+              <span class="only-es">Piel que no se retrajo tras un cambio de peso significativo. Requiere energía
+                profunda para remodelar el colágeno.</span>
+            </p>
+          </div>
+          <!-- Card 06 -->
+          <div class="bg-brandBg border border-black/5 p-8 rounded-brand hover-card-cushion group">
+            <span class="text-[10px] font-bold text-brandBlue tracking-widest block mb-4">06</span>
+            <h3 class="font-sora text-xl mb-3 group-hover:text-brandBlue transition-colors">
+              <span class="only-en">Brow descent and hooded eyes</span>
+              <span class="only-es">Caída de cejas y párpados pesados</span>
+            </h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              <span class="only-en">The forehead and brow drop subtly with time, making the upper face look heavier.
+                Treatable non-surgically.</span>
+              <span class="only-es">La frente y las cejas caen sutilmente con el tiempo, dando peso al rostro superior.
+                Tratable sin cirugía.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 5. Technologies -->
+    <section class="py-20 md:py-32 bg-white text-brandText overflow-hidden relative">
+      <div class="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
+        <div class="max-w-4xl mb-20">
+          <span class="text-brandBlue font-bold text-[10px] uppercase tracking-[0.2em] mb-6 block">
+            <span class="only-en">THE CATEGORY, NOT A SINGLE PROTOCOL</span>
+            <span class="only-es">LA CATEGORÍA, NO UN SOLO PROTOCOLO</span>
+          </span>
+          <h2 class="editorial-heading mb-8">
+            <span class="only-en">Not one treatment. <br><span class="italic font-light text-brandBlue">The right
+                treatment</span> for your skin.</span>
+            <span class="only-es">No un tratamiento. <br><span class="italic font-light text-brandBlue">El tratamiento
+                correcto</span> para tu piel.</span>
+          </h2>
+          <p class="text-gray-500 text-lg leading-relaxed max-w-2xl">
+            <span class="only-en">Skin tightening isn't a single machine. It's a category. The technology that works for
+              your neck may be the wrong answer for your jawline.</span>
+            <span class="only-es">La firmeza de la piel no es una sola máquina. Es una categoría. La tecnología que
+              funciona para tu cuello puede ser la respuesta incorrecta para tu mandíbula.</span>
+          </p>
+        </div>
+        <div class="w-full h-px bg-black/10 mb-12"></div>
+        <!-- Tab Buttons Navigation -->
+        <div class="flex flex-wrap gap-2 md:gap-4 mb-12 justify-center max-w-2xl mx-auto border-b border-black/5 pb-6">
+          <button
+            class="tab-btn active px-6 py-3 rounded-full border border-black/10 text-xs font-semibold tracking-widest uppercase transition-all duration-300 font-inter text-gray-500 hover:text-brandDark"
+            data-tab="ultherapy">Ultherapy</button>
+          <button
+            class="tab-btn px-6 py-3 rounded-full border border-black/10 text-xs font-semibold tracking-widest uppercase transition-all duration-300 font-inter text-gray-500 hover:text-brandDark"
+            data-tab="rf-microneedling">RF Microneedling</button>
+          <button
+            class="tab-btn px-6 py-3 rounded-full border border-black/10 text-xs font-semibold tracking-widest uppercase transition-all duration-300 font-inter text-gray-500 hover:text-brandDark"
+            data-tab="agnes-rf">Agnes RF</button>
+        </div>
+
+        <!-- Tab Contents Container -->
+        <div class="relative min-h-[380px]">
+          <!-- Tab 1: Ultherapy -->
+          <div id="ultherapy" class="tab-content active">
+            <div
+              class="bg-white p-8 md:p-12 rounded-brand-lg border border-black/5 shadow-[0_30px_50px_rgba(0,0,0,0.03)] grid md:grid-cols-5 gap-8 items-center">
+              <div class="md:col-span-3 space-y-6">
+                <span class="text-xs font-bold text-primary tracking-widest uppercase block">Deep SMAS Ultrasound
+                  Lifting</span>
+                <h3 class="font-sora text-3xl font-medium text-brandDark">Ultherapy®</h3>
+                <p class="text-gray-500 text-base leading-relaxed">
+                  <span class="only-en">Micro-focused ultrasound energy targets the SMAS layer—the exact same muscle
+                    layer addressed in surgical facelifts—stimulating structural collagen without breaking the skin's
+                    surface.</span>
+                  <span class="only-es">La energía de ultrasonido microfocalizada se dirige a la capa SMAS (la misma
+                    capa muscular que se trata en un estiramiento facial quirúrgico) estimulando el colágeno estructural
+                    sin dañar la superficie de la piel.</span>
+                </p>
+                <ul class="space-y-3 text-sm text-brandText font-medium">
+                  <li class="flex items-center gap-3">
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                    <span class="only-en">Excellent for jawline sagging and brow lifting</span>
+                    <span class="only-es">Excelente para la flacidez de la mandíbula y elevación de cejas</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                    <span class="only-en">Single session results that improve over 2–6 months</span>
+                    <span class="only-es">Resultados en una sola sesión que mejoran de 2 a 6 meses</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="md:col-span-2 bg-[#FCF9F8] p-6 md:p-8 rounded-brand border border-black/5 space-y-4">
+                <h4
+                  class="font-sora text-lg font-medium text-brandDark uppercase tracking-wider text-xs pb-3 border-b border-black/5">
+                  Clinical Overview</h4>
+                <div class="grid grid-cols-2 gap-4 text-xs">
+                  <div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Target</p>
+                    <p class="font-bold text-brandDark">Deep SMAS Layer</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Duration</p>
+                    <p class="font-bold text-brandDark">60 - 90 Minutes</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Downtime</p>
+                    <p class="font-bold text-brandDark">Zero Days</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Anesthesia</p>
+                    <p class="font-bold text-brandDark">Topical Numbing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: RF Microneedling -->
+          <div id="rf-microneedling" class="tab-content">
+            <div
+              class="bg-white p-8 md:p-12 rounded-brand-lg border border-black/5 shadow-[0_30px_50px_rgba(0,0,0,0.03)] grid md:grid-cols-5 gap-8 items-center">
+              <div class="md:col-span-3 space-y-6">
+                <span class="text-xs font-bold text-primary tracking-widest uppercase block">Radiofrequency &
+                  Microneedling</span>
+                <h3 class="font-sora text-3xl font-medium text-brandDark">RF Microneedling</h3>
+                <p class="text-gray-500 text-base leading-relaxed">
+                  <span class="only-en">Synergistic microneedling and dynamic radiofrequency delivered at precise
+                    depths, remodeling surface layers to tighten crepey skin, smooth wrinkles, and restore elastic
+                    fibers.</span>
+                  <span class="only-es">La sinergia de microagujas y radiofrecuencia dinámica aplicada a profundidades
+                    precisas remodela las capas superficiales para tensar la piel crepé, suavizar arrugas y restaurar
+                    fibras elásticas.</span>
+                </p>
+                <ul class="space-y-3 text-sm text-brandText font-medium">
+                  <li class="flex items-center gap-3">
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                    <span class="only-en">Superb for neck skin texture and fine lines</span>
+                    <span class="only-es">Magnífico para la textura de la piel del cuello y líneas finas</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                    <span class="only-en">Restores clinical density to aging skin profiles</span>
+                    <span class="only-es">Restaura la densidad clínica en perfiles de piel envejecidos</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="md:col-span-2 bg-[#FCF9F8] p-6 md:p-8 rounded-brand border border-black/5 space-y-4">
+                <h4
+                  class="font-sora text-lg font-medium text-brandDark uppercase tracking-wider text-xs pb-3 border-b border-black/5">
+                  Clinical Overview</h4>
+                <div class="grid grid-cols-2 gap-4 text-xs">
+                  <div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Target</p>
+                    <p class="font-bold text-brandDark">Dermis & Epidermis</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Duration</p>
+                    <p class="font-bold text-brandDark">45 - 60 Minutes</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Downtime</p>
+                    <p class="font-bold text-brandDark">1 - 2 Days Redness</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Anesthesia</p>
+                    <p class="font-bold text-brandDark">Topical Numbing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Agnes RF -->
+          <div id="agnes-rf" class="tab-content">
+            <div
+              class="bg-white p-8 md:p-12 rounded-brand-lg border border-black/5 shadow-[0_30px_50px_rgba(0,0,0,0.03)] grid md:grid-cols-5 gap-8 items-center">
+              <div class="md:col-span-3 space-y-6">
+                <span class="text-xs font-bold text-primary tracking-widest uppercase block">Targeted Precision
+                  Sculpting</span>
+                <h3 class="font-sora text-3xl font-medium text-brandDark">Agnes RF™</h3>
+                <p class="text-gray-500 text-base leading-relaxed">
+                  <span class="only-en">Singular precision micro-insulation technology melts targeted pockets of fat and
+                    tightens saggy areas simultaneously. Ideal for under-eye bags, heavy jowls, and stubborn
+                    pockets.</span>
+                  <span class="only-es">La tecnología de microaislamiento de precisión singular derrite acumulaciones
+                    específicas de grasa y tensa zonas caídas simultáneamente. Ideal para bolsas en los ojos y
+                    papada.</span>
+                </p>
+                <ul class="space-y-3 text-sm text-brandText font-medium">
+                  <li class="flex items-center gap-3">
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                    <span class="only-en">Pinpoint sculpting for jaw definition & eye bags</span>
+                    <span class="only-es">Escultura de precisión para definición de mandíbula y bolsas de ojos</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                    <span class="only-en">Permanent fat cell destruction in treated zones</span>
+                    <span class="only-es">Destrucción permanente de células grasas en zonas tratadas</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="md:col-span-2 bg-[#FCF9F8] p-6 md:p-8 rounded-brand border border-black/5 space-y-4">
+                <h4
+                  class="font-sora text-lg font-medium text-brandDark uppercase tracking-wider text-xs pb-3 border-b border-black/5">
+                  Clinical Overview</h4>
+                <div class="grid grid-cols-2 gap-4 text-xs">
+                  <div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Target</p>
+                    <p class="font-bold text-brandDark">Subcutaneous Fat & SMAS</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Duration</p>
+                    <p class="font-bold text-brandDark">30 - 45 Minutes</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Downtime</p>
+                    <p class="font-bold text-brandDark">2 - 3 Days Swelling</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Anesthesia</p>
+                    <p class="font-bold text-brandDark">Local / Topical</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-24 max-w-4xl">
+          <p class="font-sora text-2xl md:text-3xl leading-tight font-medium">
+            <span class="only-en">Which one is right for you is determined in your Diagnostic Consultation with 3D
+              analysis — <span class="italic text-brandBlue font-light">not by Google, not by guessing, and not by us
+                trying to upsell you.</span></span>
+            <span class="only-es">Cuál es la correcta para ti se decide en tu Consulta Diagnóstica con análisis 3D —
+              <span class="italic text-brandBlue font-light">no por Google, no adivinando, y no por nosotros intentando
+                venderte más.</span></span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- 6. Realistic Expectations -->
+    <section class="py-20 md:py-32 bg-white" id="expectations">
+      <div class="max-w-6xl mx-auto px-4 md:px-8">
+        <div class="mb-12">
+          <span class="text-brandBlue font-bold text-[10px] uppercase tracking-[0.2em] mb-4 block">
+            <span class="only-en">REALISTIC EXPECTATIONS</span>
+            <span class="only-es">EXPECTATIVAS REALES</span>
+          </span>
+          <h2 class="font-sora text-4xl md:text-5xl font-medium mb-12">
+            <span class="only-en">What real results <i class="text-brandBlue font-light">look like.</i></span>
+            <span class="only-es">Cómo se ven <i class="text-brandBlue font-light">los resultados reales.</i></span>
+          </h2>
+          <div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
+            <div class="flex gap-4 items-start">
+              <span class="text-brandBlue font-bold text-sm tracking-widest mt-1">01</span>
+              <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                <span class="only-en">Visible firmness on the jaw and neck starting around week 4–6.</span>
+                <span class="only-es">Firmeza visible en óvalo facial y cuello desde la semana 4 a 6.</span>
+              </p>
+            </div>
+            <div class="flex gap-4 items-start">
+              <span class="text-brandBlue font-bold text-sm tracking-widest mt-1">02</span>
+              <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                <span class="only-en">Clearer jawline definition progressing over 2–6 months.</span>
+                <span class="only-es">Definición progresiva del jawline a lo largo de 2 a 6 meses.</span>
+              </p>
+            </div>
+            <div class="flex gap-4 items-start">
+              <span class="text-brandBlue font-bold text-sm tracking-widest mt-1">03</span>
+              <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                <span class="only-en">Gradual collagen rebuild — the kind of change your friends notice without asking
+                  why.</span>
+                <span class="only-es">Reconstrucción gradual de colágeno — el tipo de cambio que tus amigas notan sin
+                  preguntar por qué.</span>
+              </p>
+            </div>
+            <div class="flex gap-4 items-start">
+              <span class="text-brandBlue font-bold text-sm tracking-widest mt-1">04</span>
+              <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                <span class="only-en">Natural-looking skin — not stretched, not frozen, not filtered.</span>
+                <span class="only-es">Piel de aspecto natural — sin tirantez, sin congelamiento, sin filtro.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1: Interactive Before/After Slider -->
+          <div
+            class="bg-white rounded-brand-lg border border-black/5 shadow-[0_30px_50px_rgba(0,0,0,0.02)] hover-card-cushion overflow-hidden flex flex-col group lg:col-span-2">
+            <div class="relative overflow-hidden aspect-[4/3] ba-slider">
+              <!-- Before Image Container -->
+              <div class="absolute inset-0 w-full h-full overflow-hidden ba-before">
+                <img src="images/jawline_before_after.png" alt="Jawline tightening before treatment"
+                  class="absolute top-0 left-0 w-[200%] h-full object-cover max-w-none">
+              </div>
+              <!-- After Image Container (clipped) -->
+              <div class="absolute inset-0 w-full h-full overflow-hidden ba-after">
+                <img src="images/jawline_before_after.png" alt="Jawline tightening after treatment"
+                  class="absolute top-0 left-0 w-[200%] h-full object-cover max-w-none transform -translate-x-1/2">
+              </div>
+              <!-- Slider Handle -->
+              <div class="ba-handle">
+                <div class="ba-handle-button select-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="text-gray-700 select-none">
+                    <line x1="15" y1="18" x2="9" y2="12"></line>
+                    <line x1="9" y1="6" x2="15" y2="12"></line>
+                  </svg>
+                </div>
+              </div>
+              <!-- Range Input -->
+              <input type="range" min="0" max="100" value="50" class="ba-slider-input"
+                aria-label="Before and after comparison slider">
+
+              <!-- Labels -->
+              <span class="ba-label ba-label-before only-en">Before</span>
+              <span class="ba-label ba-label-before only-es">Antes</span>
+              <span class="ba-label ba-label-after only-en">After</span>
+              <span class="ba-label ba-label-after only-es">Después</span>
+            </div>
+            <div class="p-6 space-y-1">
+              <h4 class="font-sora text-sm font-semibold text-brandDark">
+                <span class="only-en">Interactive jawline contour comparison</span>
+                <span class="only-es">Comparación interactiva de contorno mandibular</span>
+              </h4>
+              <p class="text-xs text-gray-400 font-inter">
+                <span class="only-en">Drag the slider to compare (Week 12 result vs Baseline)</span>
+                <span class="only-es">Arrastra para comparar (Semana 12 vs Inicio)</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: Cheek lift -->
+          <div
+            class="bg-white rounded-brand-lg border border-black/5 shadow-[0_30px_50px_rgba(0,0,0,0.02)] hover-card-cushion overflow-hidden flex flex-col group lg:col-span-1">
+            <div class="relative overflow-hidden aspect-[3/4]">
+              <img src="images/treatment_result_1.png" alt="Cheek lift skin outcome"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+              <span
+                class="absolute top-4 left-4 bg-brandBgSecondary/90 backdrop-blur-sm border border-black/5 text-[9px] font-bold tracking-widest text-brandDark px-3 py-1.5 rounded-full">MID-FACE
+                LIFT</span>
+            </div>
+            <div class="p-6 space-y-1">
+              <h4 class="font-sora text-sm font-semibold text-brandDark">
+                <span class="only-en">Cheek volume elevation</span>
+                <span class="only-es">Elevación de pómulos</span>
+              </h4>
+              <p class="text-xs text-gray-400 font-inter">
+                <span class="only-en">Clinical Outcome</span>
+                <span class="only-es">Resultado Clínico</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: Live Ultrasound procedure -->
+          <div
+            class="bg-white rounded-brand-lg border border-black/5 shadow-[0_30px_50px_rgba(0,0,0,0.02)] hover-card-cushion overflow-hidden flex flex-col group lg:col-span-1">
+            <div class="relative overflow-hidden aspect-[3/4]">
+              <img src="images/treatment_result_3.png" alt="Live ultrasound treatment"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+              <span
+                class="absolute top-4 left-4 bg-brandBgSecondary/90 backdrop-blur-sm border border-black/5 text-[9px] font-bold tracking-widest text-brandDark px-3 py-1.5 rounded-full">PROCEDURE</span>
+            </div>
+            <div class="p-6 space-y-1">
+              <h4 class="font-sora text-sm font-semibold text-brandDark">
+                <span class="only-en">Ultrasound precision delivery</span>
+                <span class="only-es">Ultrasonido focalizado directo</span>
+              </h4>
+              <p class="text-xs text-gray-400 font-inter">
+                <span class="only-en">Live Session</span>
+                <span class="only-es">Sesión en Vivo</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4: Natural jawline contour -->
+          <div
+            class="bg-white rounded-brand-lg border border-black/5 shadow-[0_30px_50px_rgba(0,0,0,0.02)] hover-card-cushion overflow-hidden flex flex-col group lg:col-span-1">
+            <div class="relative overflow-hidden aspect-[3/4]">
+              <img src="images/treatment_result_4.png" alt="Natural defined profile glow"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+              <span
+                class="absolute top-4 left-4 bg-brandBgSecondary/90 backdrop-blur-sm border border-black/5 text-[9px] font-bold tracking-widest text-brandDark px-3 py-1.5 rounded-full">COLLAGEN
+                REMODELING</span>
+            </div>
+            <div class="p-6 space-y-1">
+              <h4 class="font-sora text-sm font-semibold text-brandDark">
+                <span class="only-en">Natural jawline contour</span>
+                <span class="only-es">Contorno natural de mandíbula</span>
+              </h4>
+              <p class="text-xs text-gray-400 font-inter">
+                <span class="only-en">Serene Radiance</span>
+                <span class="only-es">Radiación Serena</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5: Serene Spa Lobby Showcase -->
+          <div
+            class="bg-white rounded-brand-lg border border-black/5 shadow-[0_30px_50px_rgba(0,0,0,0.02)] hover-card-cushion overflow-hidden flex flex-col lg:flex-row lg:col-span-3 group">
+            <div class="relative overflow-hidden aspect-[4/3] lg:aspect-auto lg:w-1/2">
+              <img src="images/treatment_result_2.png" alt="Travertine luxury spa lobby"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+              <span
+                class="absolute top-4 left-4 bg-brandBgSecondary/90 backdrop-blur-sm border border-black/5 text-[9px] font-bold tracking-widest text-brandDark px-3 py-1.5 rounded-full">OUR
+                SANCTUARY</span>
+            </div>
+            <div class="p-8 lg:w-1/2 flex flex-col justify-center space-y-4">
+              <span class="text-brandBlue font-bold text-[9px] uppercase tracking-widest block">THE OLAM
+                EXPERIENCE</span>
+              <h4 class="font-sora text-xl font-medium text-brandDark">
+                <span class="only-en">Serene clinical excellence</span>
+                <span class="only-es">Excelencia clínica serena</span>
+              </h4>
+              <p class="text-xs text-gray-500 leading-relaxed">
+                <span class="only-en">A space engineered for calm and absolute safety. From the minimalist travertine
+                  lobby to our private diagnostics suites, every detail supports a refined, professional journey.</span>
+                <span class="only-es">Un espacio diseñado para la calma y la seguridad absoluta. Desde nuestro lobby
+                  minimalista de travertino hasta las suites de diagnóstico privadas.</span>
+              </p>
+              <div class="pt-2">
+                <a href="#reserve"
+                  class="inline-flex items-center text-xs font-semibold text-primary hover:text-brandBlueDark transition-colors gap-1">
+                  <span class="only-en">Reserve diagnostic session →</span>
+                  <span class="only-es">Reservar sesión de diagnóstico →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 7. The $100 Diagnostic Consultation (Dark Callout) -->
+    <section class="py-20 md:py-32 bg-brandDark text-white overflow-hidden relative border-y border-white/5">
+      <div class="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-20">
+          <!-- Left Column -->
+          <div>
+            <span class="text-brandBlue font-bold text-[10px] uppercase tracking-[0.2em] mb-4 block">
+              <span class="only-en">THE $100 DIAGNOSTIC CONSULTATION</span>
+              <span class="only-es">LA CONSULTA DIAGNÓSTICA DE $100</span>
+            </span>
+            <h2 class="font-sora text-4xl md:text-5xl font-medium mb-8 leading-tight">
+              <span class="only-en">A medical session. <br><i class="italic text-brandBlue font-light">Not a sales
+                  pitch.</i></span>
+              <span class="only-es">Una sesión médica. <br><i class="italic text-brandBlue font-light">No un pitch de
+                  ventas.</i></span>
+            </h2>
+            <div class="space-y-6 text-gray-300 leading-relaxed text-lg">
+              <div class="only-en">
+                <p class="">$100 is what we charge to do the work properly: 3D skin analysis with medical ultrasound, a
+                  written treatment plan reviewed by our Board Certified Medical Director, exact pricing in writing, and
+                  a realistic projection of your results at months 2, 4 and 6.</p>
+                <p class="mt-4">If you decide to move forward within 30 days, your $100 is credited to your first
+                  treatment. If you decide skin tightening isn't right for you, the plan is yours to keep — for a second
+                  opinion, for later, or for nothing at all.</p>
+              </div>
+              <div class="only-es">
+                <p class="">$100 es lo que cobramos por realizar el trabajo adecuadamente: análisis 3D con ultrasonido
+                  médico, un plan escrito revisado por nuestro Director Médico, precios exactos por escrito y una
+                  proyección realista de tus resultados a los 2, 4 y 6 meses.</p>
+                <p class="mt-4">Si decides avanzar en los próximos 30 días, tus $100 se acreditan a tu primer
+                  tratamiento. Si decides que esto no es para ti, el plan es tuyo — para una segunda opinión, para
+                  después, o para nada en absoluto.</p>
+              </div>
+            </div>
+            <div class="mt-12">
+              <a class="inline-block bg-brandBlue text-white px-10 py-5 rounded-full font-bold hover:bg-brandBlueDark transition-all shadow-lg shadow-brandBlue/20 btn-transition"
+                href="#reserve">
+                <span class="only-en">Reserve my consultation →</span>
+                <span class="only-es">Reservar mi consulta →</span>
+              </a>
+            </div>
+          </div>
+          <!-- Right Column -->
+          <div class="lg:border-l lg:border-white/10 lg:pl-20">
+            <span class="text-brandBlue font-bold text-[10px] uppercase tracking-[0.2em] mb-12 block">
+              <span class="only-en">WHAT YOUR CONSULTATION INCLUDES</span>
+              <span class="only-es">QUÉ INCLUYE TU CONSULTA</span>
+            </span>
+            <div class="space-y-10">
+              <!-- Item 01 -->
+              <div class="flex gap-6 border-b border-white/5 pb-8">
+                <span class="font-sora text-3xl font-medium text-brandBlue opacity-60">01</span>
+                <div>
+                  <h4 class="font-bold text-lg mb-2">
+                    <span class="only-en">3D skin analysis with medical ultrasound</span>
+                    <span class="only-es">Análisis 3D con ultrasonido médico</span>
+                  </h4>
+                  <p class="text-sm text-gray-400">
+                    <span class="only-en">An objective reading of your collagen, laxity, and structural condition — not
+                      a visual guess.</span>
+                    <span class="only-es">Lectura objetiva de tu colágeno, flacidez y condición estructural — sin
+                      adivinanzas visuales.</span>
+                  </p>
+                </div>
+              </div>
+              <!-- Item 02 -->
+              <div class="flex gap-6 border-b border-white/5 pb-8">
+                <span class="font-sora text-3xl font-medium text-brandBlue opacity-60">02</span>
+                <div>
+                  <h4 class="font-bold text-lg mb-2">
+                    <span class="only-en">Personalized treatment plan, in writing</span>
+                    <span class="only-es">Plan personalizado por escrito</span>
+                  </h4>
+                  <p class="text-sm text-gray-400">
+                    <span class="only-en">Technology, area, sessions and sequence — reviewed and signed off by our
+                      Medical Director.</span>
+                    <span class="only-es">Tecnología, área, sesiones y secuencia — revisado y firmado por nuestro
+                      Director Médico.</span>
+                  </p>
+                </div>
+              </div>
+              <!-- Item 03 -->
+              <div class="flex gap-6 border-b border-white/5 pb-8">
+                <span class="font-sora text-3xl font-medium text-brandBlue opacity-60">03</span>
+                <div>
+                  <h4 class="font-bold text-lg mb-2">
+                    <span class="only-en">Exact price for your case, in writing</span>
+                    <span class="only-es">Precio exacto para tu caso, por escrito</span>
+                  </h4>
+                  <p class="text-sm text-gray-400">
+                    <span class="only-en">Before any decision. No upsell on the day of treatment.</span>
+                    <span class="only-es">Antes de cualquier decisión. Sin ventas forzadas el día del
+                      tratamiento.</span>
+                  </p>
+                </div>
+              </div>
+              <!-- Item 04 -->
+              <div class="flex gap-6">
+                <span class="font-sora text-3xl font-medium text-brandBlue opacity-60">04</span>
+                <div>
+                  <h4 class="font-bold text-lg mb-2">
+                    <span class="only-en">Results projection at months 2, 4 and 6</span>
+                    <span class="only-es">Proyección de resultados a los meses 2, 4 y 6</span>
+                  </h4>
+                  <p class="text-sm text-gray-400">
+                    <span class="only-en">A realistic timeline so you know what to expect — and what not to
+                      expect.</span>
+                    <span class="only-es">Una línea de tiempo realista para que sepas qué esperar — y qué no
+                      esperar.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 8. The Process (Steps) -->
+    <section class="py-20 md:py-32 bg-white">
+      <div class="max-w-6xl mx-auto px-4 md:px-8 grid lg:grid-cols-2 gap-20 items-center">
+        <div>
+          <span class="text-brandBlue font-bold text-[10px] uppercase tracking-[0.2em] mb-4 block">
+            <span class="only-en">Diagnostic Consultation</span>
+            <span class="only-es">Consulta Diagnóstica</span>
+          </span>
+          <h2 class="font-sora text-3xl md:text-4xl font-medium mb-8">
+            <span class="only-en">A medical session. <br><i class="text-brandBlue font-light">Not a sales
+                pitch.</i></span>
+            <span class="only-es">Una sesión médica. <br><i class="text-brandBlue font-light">No un pitch de
+                ventas.</i></span>
+          </h2>
+          <div class="space-y-6">
+            <div class="flex items-start gap-6 pb-6 border-b border-black/5">
+              <span class="font-sora text-3xl text-brandBlue font-medium">01</span>
+              <div>
+                <h4 class="font-bold mb-1">
+                  <span class="only-en">3D skin analysis with medical ultrasound</span>
+                  <span class="only-es">Análisis 3D con ultrasonido médico</span>
+                </h4>
+                <p class="text-sm text-gray-500">
+                  <span class="only-en">Objective reading of your collagen and structural condition.</span>
+                  <span class="only-es">Lectura objetiva de tu colágeno y condición estructural.</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-6 pb-6 border-b border-black/5">
+              <span class="font-sora text-3xl text-brandBlue font-medium">02</span>
+              <div>
+                <h4 class="font-bold mb-1">
+                  <span class="only-en">Personalized plan in writing</span>
+                  <span class="only-es">Plan personalizado por escrito</span>
+                </h4>
+                <p class="text-sm text-gray-500">
+                  <span class="only-en">Technology, area, and sequence signed off by our Medical Director.</span>
+                  <span class="only-es">Tecnología, zona y secuencia aprobada por el Director Médico.</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-6 pb-6 border-b border-black/5">
+              <span class="font-sora text-3xl text-brandBlue font-medium">03</span>
+              <div>
+                <h4 class="font-bold mb-1">
+                  <span class="only-en">$100 credited back</span>
+                  <span class="only-es">$100 acreditados</span>
+                </h4>
+                <p class="text-sm text-gray-500">
+                  <span class="only-en">If you decide to proceed within 30 days, your fee is applied to
+                    treatment.</span>
+                  <span class="only-es">Si decides avanzar en 30 días, se aplica a tu tratamiento.</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-6">
+              <span class="font-sora text-3xl text-brandBlue font-medium">04</span>
+              <div>
+                <h4 class="font-bold mb-1">
+                  <span class="only-en">Treatment + follow-up protocol</span>
+                  <span class="only-es">Tratamiento + protocolo de seguimiento</span>
+                </h4>
+                <p class="text-sm text-gray-500">
+                  <span class="only-en">Every session supervised by licensed professionals. Complete follow-up through
+                    your result milestones.</span>
+                  <span class="only-es">Cada sesión supervisada por profesionales licenciados. Seguimiento completo
+                    hasta tus hitos de resultado.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12">
+            <a class="inline-block bg-brandDark text-white px-8 py-4 rounded-full font-semibold hover:bg-black transition-all btn-transition"
+              href="#reserve">
+              <span class="only-en">Book my session →</span>
+              <span class="only-es">Agendar mi sesión →</span>
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="rounded-brand-lg overflow-hidden shadow-2xl relative z-10">
+            <img alt="Diagnostic Ultrasound Session" class="w-full h-auto"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBatIMF8V1kfUPp6cpjUaVYVhNroXFjnu1qGNGx3LqbH3kU1cYM42HJC3M1pX5FE9sCRkVOxD0ns3aK2SJNAjg7qAqHjoVGWFSGegS1Fr_5lS3l3GCDTYW5YQB_wk08ltzwD4Pkt3QBibbvekaOiiOEdvSdBJ7f9ImnRGw2ld7UHuxjtvAk9rVoBLQWK5G09K85Vwgyz2Irv6C3GI15YRBj0-5caFDdgFmAidRur9a1FlYA-kh8e64H9yZiGNJ5yO-cfxnVZfbBE-s84g">
+          </div>
+          <div
+            class="absolute -bottom-10 -right-10 w-full h-full border-2 border-brandBlue rounded-brand-lg -z-10 hidden md:block">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 9. Price Transparency -->
+    <section class="py-20 bg-brandBg border-y border-black/5">
+      <div class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row md:items-center justify-between gap-12">
+        <div>
+          <span class="text-brandBlue font-bold text-[10px] uppercase tracking-[0.2em] mb-4 block">
+            <span class="only-en">Price Transparency</span>
+            <span class="only-es">Transparencia de Precios</span>
+          </span>
+          <h2 class="font-sora text-3xl md:text-4xl font-medium">
+            <span class="only-en">Real prices.<br><i class="text-brandBlue font-light">No hidden estimates.</i></span>
+            <span class="only-es">Precios reales.<br><i class="text-brandBlue font-light">Sin estimados
+                escondidos.</i></span>
+          </h2>
+        </div>
+        <div class="bg-white p-10 rounded-brand shadow-sm border border-black/5 text-center md:text-left min-w-[300px]">
+          <p class="font-sora text-4xl md:text-5xl font-medium text-brandDark">$500 – $3,500</p>
+          <p class="text-gray-400 text-xs mt-2 uppercase tracking-widest font-bold">
+            <span class="only-en">Range per session area</span>
+            <span class="only-es">Rango por zona de sesión</span>
+          </p>
+          <p class="mt-6 text-sm text-gray-500 max-w-xs leading-relaxed">
+            <span class="only-en">Financing from <strong>$45/mo</strong> via CareCredit or Cherry. 12 months
+              interest-free for qualified applicants.</span>
+            <span class="only-es">Financiamiento desde <strong>$45/mes</strong> vía CareCredit o Cherry. 12 meses sin
+              interés.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- 10. FAQ -->
+    <section class="py-20 md:py-32 bg-[#F2F4F5]" id="faq">
+      <div class="max-w-5xl mx-auto px-4 md:px-8">
+        <div class="text-center mb-16">
+          <span class="text-brandBlue font-bold text-[10px] uppercase tracking-[0.2em] mb-4 block">
+            <span class="only-en">Common Doubts</span>
+            <span class="only-es">Dudas Comunes</span>
+          </span>
+          <h2 class="font-sora text-3xl md:text-4xl font-medium">
+            <span class="only-en">Questions <i class="text-brandBlue font-light italic">real patients</i> ask us.</span>
+            <span class="only-es">Preguntas que <i class="text-brandBlue font-light italic">pacientes reales</i> nos
+              hacen.</span>
+          </h2>
+        </div>
+        <div class="mt-12 border-b border-black/10"><!-- Q1 -->
+          <details class="group border-black/5 overflow-hidden border-t border-black/10 transition-all">
+            <summary class="flex items-center justify-between py-8 cursor-pointer list-none">
+              <h4 class="font-sora text-lg md:text-xl font-medium text-brandText pr-8">
+                <span class="only-en">Does it hurt?</span>
+                <span class="only-es">¿Duele?</span>
+              </h4>
+              <span class="summary-plus text-brandBlue font-light text-3xl transition-transform duration-300">+</span>
+            </summary>
+            <div class="pb-8 text-gray-500 text-base leading-relaxed">
+              <span class="only-en">For most skin-tightening technologies (Ultherapy, RF Microneedling, Agnes RF) we
+                apply topical numbing before your session. Patients typically describe the sensation as warmth or a
+                quick tingling, not sharp pain. You can work and socialize the same day.</span>
+              <span class="only-es">Para la mayoría de tecnologías de skin tightening (Ultherapy, RF Microneedling,
+                Agnes RF) aplicamos anestesia tópica antes de la sesión. Las pacientes describen una sensación de calor
+                o cosquilleo breve, no dolor agudo. Puedes trabajar y salir el mismo día.</span>
+            </div>
+          </details>
+          <!-- Q2 -->
+          <details class="group border-black/5 overflow-hidden border-t border-black/10 transition-all">
+            <summary class="flex items-center justify-between py-8 cursor-pointer list-none">
+              <h4 class="font-sora text-lg md:text-xl font-medium text-brandText pr-8">
+                <span class="only-en">When will I see results?</span>
+                <span class="only-es">¿En cuánto tiempo veré resultados?</span>
+              </h4>
+              <span class="summary-plus text-brandBlue font-light text-3xl transition-transform duration-300">+</span>
+            </summary>
+            <div class="pb-8 text-gray-500 text-base leading-relaxed">
+              <span class="only-en">Initial firmness is often visible between weeks 4–6. Full collagen rebuild
+                progresses over 2–6 months. This is a real biological process, not a filter — which is why the result
+                lasts.</span>
+              <span class="only-es">La firmeza inicial suele verse entre las semanas 4 y 6. La reconstrucción completa
+                de colágeno avanza entre 2 y 6 meses. Es un proceso biológico real, no un filtro — por eso el resultado
+                dura.</span>
+            </div>
+          </details>
+          <!-- Q3 -->
+          <details class="group border-black/5 overflow-hidden border-t border-black/10 transition-all">
+            <summary class="flex items-center justify-between py-8 cursor-pointer list-none">
+              <h4 class="font-sora text-lg md:text-xl font-medium text-brandText pr-8">
+                <span class="only-en">Why does this cost more than what some chain med spas charge?</span>
+                <span class="only-es">¿Por qué esto cuesta más que lo que cobran algunas cadenas de med spas?</span>
+              </h4>
+              <span class="summary-plus text-brandBlue font-light text-3xl transition-transform duration-300">+</span>
+            </summary>
+            <div class="pb-8 text-gray-500 text-base leading-relaxed">
+              <span class="only-en">Three reasons: your plan is reviewed by a Board Certified Medical Director, every
+                procedure is performed by licensed professionals who don't rotate every six months, and you receive a
+                complete follow-up protocol — not a handshake at the door. You're paying for medical supervision, not a
+                room with a machine.</span>
+              <span class="only-es">Tres razones: tu plan lo revisa un Medical Director Board Certified, cada
+                procedimiento lo hacen profesionales licenciados que no rotan cada seis meses, y recibes un protocolo de
+                seguimiento completo — no un apretón de manos en la puerta. Pagas por supervisión médica, no por un
+                cuarto con una máquina.</span>
+            </div>
+          </details>
+          <!-- Q4 -->
+          <details class="group border-black/5 overflow-hidden border-t border-black/10 transition-all">
+            <summary class="flex items-center justify-between py-8 cursor-pointer list-none">
+              <h4 class="font-sora text-lg md:text-xl font-medium text-brandText pr-8">
+                <span class="only-en">What if the treatment isn't right for me?</span>
+                <span class="only-es">¿Y si el tratamiento no es el adecuado para mí?</span>
+              </h4>
+              <span class="summary-plus text-brandBlue font-light text-3xl transition-transform duration-300">+</span>
+            </summary>
+            <div class="pb-8 text-gray-500 text-base leading-relaxed">
+              <span class="only-en">Your Diagnostic Consultation is designed to find that out before we recommend
+                anything. If skin tightening isn't right for you, we'll tell you clearly — and you walk away with the
+                written analysis, an honest second opinion you can use elsewhere, and no pressure to book a
+                treatment.</span>
+              <span class="only-es">Tu Consulta Diagnóstica está diseñada para averiguarlo antes de recomendarte algo.
+                Si skin tightening no es lo correcto para ti, te lo decimos con claridad — y te llevas el análisis por
+                escrito, una segunda opinión honesta que puedes usar en otro lugar, y cero presión para agendar
+                tratamiento.</span>
+            </div>
+          </details>
+          <!-- Q5 -->
+          <details class="group border-black/5 overflow-hidden border-t border-black/10 transition-all">
+            <summary class="flex items-center justify-between py-8 cursor-pointer list-none">
+              <h4 class="font-sora text-lg md:text-xl font-medium text-brandText pr-8">
+                <span class="only-en">It's my first time — is it safe?</span>
+                <span class="only-es">Es mi primera vez — ¿es seguro?</span>
+              </h4>
+              <span class="summary-plus text-brandBlue font-light text-3xl transition-transform duration-300">+</span>
+            </summary>
+            <div class="pb-8 text-gray-500 text-base leading-relaxed">
+              <span class="only-en">Every plan is supervised by our Board Certified Medical Director. We only use
+                FDA-approved technology. You'll receive a complete follow-up protocol, with direct contact if anything
+                feels off — because that's how medicine should work.</span>
+              <span class="only-es">Cada plan está supervisado por nuestro Medical Director Board Certified. Usamos solo
+                tecnología aprobada por la FDA. Recibirás un protocolo de seguimiento completo, con contacto directo si
+                algo no se siente bien — así es como debería funcionar la medicina.</span>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+    <!-- 11. ReservationForm -->
+    <section class="py-20 md:py-32 bg-brandDark relative overflow-hidden" id="reserve">
+      <div class="absolute inset-0 opacity-10 grayscale">
+        <img alt="Spa Background" class="w-full h-full object-cover" src="images/treatment_result_2.png">
+      </div>
+      <div class="max-w-5xl mx-auto px-4 md:px-8 relative z-10">
+        <div class="grid lg:grid-cols-5 gap-16 items-start">
+          <div class="lg:col-span-2 text-white">
+            <span class="text-brandBlue font-bold text-[10px] uppercase tracking-[0.2em] mb-4 block">
+              <span class="only-en">RESERVE YOUR CONSULTATION</span>
+              <span class="only-es">RESERVA TU CONSULTA</span>
+            </span>
+            <h2 class="font-sora text-4xl md:text-5xl font-medium mb-8 leading-tight">
+              <span class="only-en">One honest conversation.<br><i class="font-light italic opacity-60">Then you
+                  decide.</i></span>
+              <span class="only-es">Una conversación honesta.<br><i class="font-light italic opacity-60">Tú decides
+                  después.</i></span>
+            </h2>
+            <p class="text-gray-300 mb-8 leading-relaxed">
+              <span class="only-en">We'll contact you within 5 minutes during business hours to confirm your preferred
+                time.</span>
+              <span class="only-es">Te contactaremos en 5 minutos en horario laboral para confirmar tu horario
+                preferido.</span>
+            </p>
+            <ul class="space-y-6">
+              <li class="flex items-start gap-4 text-sm text-gray-300">
+                <span class="text-brandBlue mt-1">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <span class="">
+                  <span class="only-en">$100 credited to your first treatment within 30 days</span>
+                  <span class="only-es">$100 acreditables a tu primer tratamiento en 30 días</span>
+                </span>
+              </li>
+              <li class="flex items-start gap-4 text-sm text-gray-300">
+                <span class="text-brandBlue mt-1">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <span class="">
+                  <span class="only-en">Written treatment plan you keep, regardless</span>
+                  <span class="only-es">Plan de tratamiento por escrito, pase lo que pase</span>
+                </span>
+              </li>
+              <li class="flex items-start gap-4 text-sm text-gray-300">
+                <span class="text-brandBlue mt-1">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <span class="">
+                  <span class="only-en">Financing options from $45/mo via CareCredit or Cherry</span>
+                  <span class="only-es">Opciones de financiamiento desde $45/mes vía CareCredit o Cherry</span>
+                </span>
+              </li>
+              <li class="flex items-start gap-4 text-sm text-gray-300">
+                <span class="text-brandBlue mt-1">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <span class="">
+                  <span class="only-en">Board Certified Medical Director supervision</span>
+                  <span class="only-es">Supervisión de Medical Director Board Certified</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-3">
+            <div class="bg-white p-6 md:p-8 rounded-brand-lg shadow-2xl overflow-hidden">
+              <iframe data-activation-type="alwaysActivated" data-activation-value=""
+                data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-id="sBVCgsLHajzvRUaJTkfa"
+                data-form-name="Landing Page Medical Laser Skin Resurfacing" data-height="623"
+                data-layout="{'id':'INLINE'}" data-layout-iframe-id="inline-sBVCgsLHajzvRUaJTkfa"
+                data-trigger-type="alwaysShow" data-trigger-value="" id="inline-sBVCgsLHajzvRUaJTkfa"
+                src="https://api.leadconnectorhq.com/widget/form/sBVCgsLHajzvRUaJTkfa"
+                style="width: 100%; height: 237px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 8px; opacity: 0; visibility: hidden; pointer-events: none; left: -9999px; position: absolute; overflow: auto;"
+                title="Landing Page Medical Laser Skin Resurfacing" data-initial-iframe-hidden="true"
+                data-unique-id-mapped="true" data-iframe-resizer-initialized="true" scrolling="yes">
+              </iframe>
+              <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // ── 1. Language Toggle Logic ──
+      const langButtons = document.querySelectorAll('.lang-btn');
+      const htmlElement = document.documentElement;
+
+      langButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const selectedLang = btn.getAttribute('data-setlang');
+          htmlElement.setAttribute('data-lang', selectedLang);
+          langButtons.forEach(b => {
+            if (b.getAttribute('data-setlang') === selectedLang) {
+              b.classList.add('bg-brandDark', 'text-white');
+              b.classList.remove('text-gray-500');
+              b.setAttribute('aria-pressed', 'true');
+            } else {
+              b.classList.remove('bg-brandDark', 'text-white');
+              b.classList.add('text-gray-500');
+              b.setAttribute('aria-pressed', 'false');
+            }
+          });
+        });
+      });
+
+      // ── 2. Lenis Smooth Scroll Initialization ──
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        direction: 'vertical',
+        gestureDirection: 'vertical',
+        smooth: true,
+        mouseMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+        infinite: false,
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+
+      // Sync Lenis with GSAP ScrollTrigger
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add((time) => {
+        lenis.raf(time * 1000);
+      });
+      gsap.ticker.lagSmoothing(0);
+
+      // Handle scroll to anchor with Lenis smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const targetEl = document.querySelector(targetId);
+          if (targetEl) {
+            lenis.scrollTo(targetEl, { offset: -80 });
+          }
+        });
+      });
+
+      // ── 3. GSAP ScrollTrigger Reveals ──
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.utils.toArray('.reveal').forEach((elem) => {
+        let delay = 0;
+        if (elem.classList.contains('d-1')) delay = 0.05;
+        if (elem.classList.contains('d-2')) delay = 0.15;
+        if (elem.classList.contains('d-3')) delay = 0.25;
+
+        gsap.fromTo(elem,
+          { opacity: 0, y: 35 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            delay: delay,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: elem,
+              start: 'top 88%',
+              toggleActions: 'play none none none',
+            }
+          }
+        );
+      });
+
+      // ── 4. Medical Leadership Photo Parallax ──
+      const teamPhoto = document.getElementById('team-photo-parallax');
+      const teamContainer = document.getElementById('team-photo-container');
+      if (teamPhoto && teamContainer) {
+        gsap.fromTo(teamPhoto,
+          { yPercent: -8, scale: 1.12 },
+          {
+            yPercent: 8,
+            scale: 1.12,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: teamContainer,
+              start: 'top bottom',
+              end: 'bottom top',
+              scrub: true,
+            }
+          }
+        );
+      }
+
+      // ── 5. Interactive Technology Tabs ──
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetTabId = btn.getAttribute('data-tab');
+
+          // Toggle buttons
+          tabButtons.forEach(b => {
+            if (b === btn) {
+              b.classList.add('active');
+              b.setAttribute('aria-pressed', 'true');
+            } else {
+              b.classList.remove('active');
+              b.setAttribute('aria-pressed', 'false');
+            }
+          });
+
+          // Toggle contents
+          tabContents.forEach(content => {
+            if (content.getAttribute('id') === targetTabId) {
+              content.classList.add('active');
+            } else {
+              content.classList.remove('active');
+            }
+          });
+
+          // Update ScrollTrigger to ensure smooth reveals and scroll bounds recalculate
+          ScrollTrigger.refresh();
+        });
+      });
+
+      // ── 6. Interactive Before/After Sliders ──
+      const sliders = document.querySelectorAll('.ba-slider');
+      sliders.forEach(slider => {
+        const input = slider.querySelector('.ba-slider-input');
+        const handle = slider.querySelector('.ba-handle');
+        const afterImg = slider.querySelector('.ba-after');
+
+        // Update position on input change
+        const updatePosition = (val) => {
+          slider.style.setProperty('--position', `${val}%`);
+        };
+
+        // Initialize position
+        updatePosition(input.value);
+
+        input.addEventListener('input', (e) => {
+          updatePosition(e.target.value);
+        });
+
+        // Enable drag start/end helper visual styling
+        input.addEventListener('mousedown', () => slider.classList.add('dragging'));
+        input.addEventListener('mouseup', () => slider.classList.remove('dragging'));
+        input.addEventListener('touchstart', () => slider.classList.add('dragging'));
+        input.addEventListener('touchend', () => slider.classList.remove('dragging'));
+      });
+
+      // ── 7. FAQ Accordions (Smooth Slide Transition) ──
+      document.querySelectorAll('details').forEach(details => {
+        const summary = details.querySelector('summary');
+        const content = details.querySelector('div');
+
+        summary.addEventListener('click', (e) => {
+          // Prevent default toggle behavior to handle it smoothly with JS
+          e.preventDefault();
+
+          const isOpen = details.hasAttribute('open');
+
+          if (isOpen) {
+            // Slide up/close
+            gsap.to(content, {
+              height: 0,
+              opacity: 0,
+              duration: 0.35,
+              ease: 'power2.out',
+              onComplete: () => {
+                details.removeAttribute('open');
+                ScrollTrigger.refresh();
+              }
+            });
+          } else {
+            // Set to open immediately so we can measure auto height, but hide container visually
+            details.setAttribute('open', '');
+            gsap.fromTo(content,
+              { height: 0, opacity: 0 },
+              {
+                height: 'auto',
+                opacity: 1,
+                duration: 0.45,
+                ease: 'power3.out',
+                onComplete: () => {
+                  ScrollTrigger.refresh();
+                }
+              }
+            );
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

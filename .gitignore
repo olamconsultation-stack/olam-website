@@ -1,0 +1,7 @@
+# build / deploy
+.vercel/
+node_modules/
+.DS_Store
+
+# large design handoff artifacts (kept locally, not needed in repo/deploy)
+design_payload.raw

@@ -1,0 +1,56 @@
+/* ============================================================
+   OLAM Med Spa — Spacing, Radius, Shadow & Layout Tokens
+   Generous editorial whitespace. 80px desktop / 48px mobile
+   section rhythm. Max content width 1152px (max-w-6xl).
+   ============================================================ */
+
+:root {
+  /* ---- Spacing scale (4px base) ---- */
+  --space-1: 0.25rem;   /* 4 */
+  --space-2: 0.5rem;    /* 8 */
+  --space-3: 0.75rem;   /* 12 */
+  --space-4: 1rem;      /* 16 */
+  --space-5: 1.5rem;    /* 24 */
+  --space-6: 2rem;      /* 32 */
+  --space-7: 2.5rem;    /* 40 */
+  --space-8: 3rem;      /* 48  mobile section padding */
+  --space-9: 4rem;      /* 64 */
+  --space-10: 5rem;     /* 80  desktop section padding */
+  --space-11: 8rem;     /* 128 large section rhythm */
+
+  /* ---- Semantic spacing ---- */
+  --section-pad-y: var(--space-10);     /* desktop */
+  --section-pad-y-mobile: var(--space-8);
+  --gutter: var(--space-5);             /* page side padding mobile */
+  --gutter-lg: var(--space-6);          /* page side padding desktop */
+  --card-pad: var(--space-6);           /* 32 default card interior */
+  --content-max: 1152px;                /* max-w-6xl */
+  --content-narrow: 1024px;             /* max-w-5xl (FAQ, forms) */
+
+  /* ---- Radii ---- */
+  --radius-sm: 8px;       /* inputs, small chips inner */
+  --radius-md: 12px;      /* small cards */
+  --radius-brand: 20px;   /* BRAND — standard cards */
+  --radius-brand-lg: 28px;/* large feature cards / image frames */
+  --radius-xl: 40px;      /* hero media, leadership panel */
+  --radius-pill: 9999px;  /* buttons, tags, toggles */
+
+  /* ---- Shadows (soft, diffuse, low-opacity) ---- */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 30px 50px rgba(0, 0, 0, 0.03);     /* resting feature card */
+  --shadow-cushion: 0 40px 60px rgba(0, 0, 0, 0.05);  /* hover lift */
+  --shadow-2xl: 0 35px 60px -15px rgba(0, 0, 0, 0.18); /* hero media */
+  --shadow-brand: 0 12px 24px rgba(122, 181, 32, 0.20); /* green button glow */
+  --shadow-accent: 0 12px 24px rgba(75, 168, 200, 0.20); /* blue button glow */
+
+  /* ---- Motion ---- */
+  --ease-cushion: cubic-bezier(0.16, 1, 0.3, 1);   /* @kind other */ /* signature card/button ease */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);   /* @kind other */
+  --dur-fast: 0.2s;   /* @kind other */
+  --dur-base: 0.4s;   /* @kind other */
+  --dur-slow: 0.7s;   /* @kind other */
+
+  /* ---- Hover lift ---- */
+  --lift-card: translateY(-8px) scale(1.01);   /* @kind other */
+}

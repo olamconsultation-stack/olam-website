@@ -1,0 +1,29 @@
+<!-- @dsCard group="Spacing" viewport="700x200" name="Shadows & Cushion Lift" subtitle="Soft diffuse shadows; the signature hover lift." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-body); background: var(--surface-1); color: var(--text-body); }
+  .wrap { padding: 36px 32px; display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+  .col { display: flex; flex-direction: column; gap: 12px; align-items: center; }
+  .card { width: 110px; height: 72px; background: var(--surface-card); border: 1px solid var(--border-hairline);
+    border-radius: var(--radius-brand); }
+  .lab { font-size: 11px; color: var(--text-body); font-weight: 600; }
+  .sm { box-shadow: var(--shadow-sm); }
+  .cd { box-shadow: var(--shadow-card); }
+  .cu { box-shadow: var(--shadow-cushion); transform: var(--lift-card); border-color: rgba(31,100,137,.15); }
+  .glow { box-shadow: var(--shadow-brand); background: var(--green-500); }
+  .px { font-size: 10px; color: var(--text-subtle); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="col"><div class="card sm"></div><span class="lab">shadow-sm</span></div>
+    <div class="col"><div class="card cd"></div><span class="lab">shadow-card</span></div>
+    <div class="col"><div class="card cu"></div><span class="lab">cushion · hover</span><span class="px">−8px · scale 1.01</span></div>
+    <div class="col"><div class="card glow"></div><span class="lab">brand glow</span><span class="px">colored button shadow</span></div>
+  </div>
+</body>
+</html>

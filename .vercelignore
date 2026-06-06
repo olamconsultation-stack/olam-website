@@ -1,0 +1,5 @@
+design/
+design_payload.raw
+*.md
+.DS_Store
+node_modules/

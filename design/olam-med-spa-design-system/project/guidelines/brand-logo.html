@@ -1,0 +1,24 @@
+<!-- @dsCard group="Brand" viewport="700x180" name="Logo" subtitle="Horizontal lockup on light. Tri-stroke swoosh + wordmark." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-body); background: var(--surface-card); }
+  .wrap { padding: 32px; display: flex; gap: 32px; align-items: center; }
+  .panel { flex: 1; display: flex; align-items: center; justify-content: center; height: 110px;
+    border-radius: var(--radius-brand); border: 1px solid var(--border-hairline); }
+  .light { background: var(--surface-1); }
+  .warm { background: var(--surface-warm); }
+  img { height: 44px; width: auto; }
+  .mark { height: 60px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="panel light"><img src="../assets/logo-olam.png" alt="OLAM Med Spa logo"></div>
+    <div class="panel warm"><img class="mark" src="../assets/favicon-olam.png" alt="OLAM swoosh mark"></div>
+  </div>
+</body>
+</html>

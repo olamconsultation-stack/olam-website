@@ -1,0 +1,26 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Accent — Steel Blue" subtitle="Emphasis hue: italic words, eyebrows, accent CTAs." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-body); background: var(--surface-card); color: var(--text-body); }
+  .row { display: flex; gap: 12px; padding: 20px; }
+  .sw { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+  .chip { height: 64px; border-radius: var(--radius-md); border: 1px solid var(--border-hairline); }
+  .name { font-size: 11px; font-weight: 600; color: var(--text-body); }
+  .hex { font-size: 11px; color: var(--text-subtle); font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="sw"><div class="chip" style="background:var(--blue-100)"></div><span class="name">blue-100</span><span class="hex">#E5F0F5</span></div>
+    <div class="sw"><div class="chip" style="background:var(--blue-300)"></div><span class="name">blue-300</span><span class="hex">#8FC3D8</span></div>
+    <div class="sw"><div class="chip" style="background:var(--blue-400)"></div><span class="name">blue-400</span><span class="hex">#5B98BF</span></div>
+    <div class="sw"><div class="chip" style="background:var(--blue-500);border-color:transparent"></div><span class="name">blue-500 · ACCENT</span><span class="hex">#4BA8C8</span></div>
+    <div class="sw"><div class="chip" style="background:var(--blue-600);border-color:transparent"></div><span class="name">blue-600 · hover</span><span class="hex">#2E86A8</span></div>
+    <div class="sw"><div class="chip" style="background:var(--blue-700);border-color:transparent"></div><span class="name">blue-700 · ink</span><span class="hex">#1F6489</span></div>
+  </div>
+</body>
+</html>
