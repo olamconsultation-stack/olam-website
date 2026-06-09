@@ -21,7 +21,7 @@
 
 <style>
   *,*::before,*::after { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
   body {
     margin: 0;
     font-family: var(--font-body);
@@ -88,6 +88,7 @@
   .btn-white { background: #fff; color: var(--charcoal); }
   .btn-white:hover { background: var(--linen); transform: translateY(-2px); }
   .btn-lg { padding: 17px 32px; font-size: 1.05rem; }
+  @media (max-width: 480px){ .btn-lg { padding: 13px 20px; font-size: 0.9rem; } }
   .btn .arr { transition: transform var(--dur-base) var(--ease-cushion); }
   .btn:hover .arr { transform: translateX(4px); }
 
