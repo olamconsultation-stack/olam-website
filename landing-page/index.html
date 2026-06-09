@@ -112,8 +112,10 @@
 
   /* ---------- hero ---------- */
   .hero { position: relative; overflow: hidden; background: linear-gradient(180deg, var(--surface-linen), var(--surface-page)); }
-  .hero-glow { position: absolute; width: 540px; height: 540px; border-radius: 9999px; background: radial-gradient(circle, rgba(143,167,182,0.20), transparent 70%); filter: blur(80px); top: -140px; right: -120px; z-index: 0; pointer-events: none; }
-  .hero .grid { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; padding: 56px 0 64px; position: relative; z-index: 1; }
+  .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; pointer-events: none; }
+  .hero-overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(248,243,234,0.82) 0%, rgba(255,255,255,0.78) 100%); pointer-events: none; }
+  .hero-glow { position: absolute; width: 540px; height: 540px; border-radius: 9999px; background: radial-gradient(circle, rgba(143,167,182,0.20), transparent 70%); filter: blur(80px); top: -140px; right: -120px; z-index: 2; pointer-events: none; }
+  .hero .grid { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; padding: 56px 0 64px; position: relative; z-index: 3; }
   @media (min-width: 920px){ .hero .grid { grid-template-columns: 1.05fr 0.95fr; gap: 60px; padding: 88px 0 100px; } }
   .hero-sub { margin: 26px 0 0; max-width: 42ch; }
   .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
@@ -205,6 +207,11 @@
   .tcard .who span { font-size: var(--text-caption); color: var(--text-muted); }
   .placeholder-tag { font-size: var(--text-caption); color: var(--warm-grey-2); font-style: italic; font-family: var(--font-body); }
 
+  /* ---------- card image header ---------- */
+  .card-img-wrap { margin: -2rem -2rem 20px; border-radius: var(--radius-brand) var(--radius-brand) 0 0; overflow: hidden; height: 180px; }
+  .card-img-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transition: transform 0.4s var(--ease-cushion); }
+  .card.hoverable:hover .card-img-wrap img { transform: scale(1.04); }
+
   /* ---------- before / after ---------- */
   .ba-wrap { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
   @media (min-width: 920px){ .ba-wrap { grid-template-columns: 1fr 1fr; gap: 56px; } }
@@ -212,10 +219,9 @@
     position: relative; width: 100%; aspect-ratio: 4/5; border-radius: var(--radius-brand-lg);
     overflow: hidden; box-shadow: var(--shadow-card); user-select: none; touch-action: none; cursor: ew-resize;
   }
-  .ba .layer { position: absolute; inset: 0; }
-  .ba .after { z-index: 1; }
-  .ba .before { z-index: 2; overflow: hidden; width: 50%; border-right: 2px solid #fff; }
-  .ba .before .inner { width: 100vw; max-width: none; height: 100%; }
+  .ba-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+  .ba-after-img { z-index: 1; }
+  .ba-before-img { z-index: 2; clip-path: inset(0 50% 0 0); }
   .ba .lbl { position: absolute; top: 14px; z-index: 4; font-size: var(--text-caption); font-weight: var(--fw-semibold); letter-spacing: 0.08em; text-transform: uppercase; background: rgba(31,32,32,0.82); color: #fff; padding: 5px 12px; border-radius: var(--radius-pill); backdrop-filter: blur(4px); }
   .ba .lbl.l { left: 14px; } .ba .lbl.r { right: 14px; }
   .ba .handle { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: #fff; z-index: 3; transform: translateX(-1px); }
@@ -308,6 +314,10 @@
 
 <!-- ===================== HERO ===================== -->
 <section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+    <source src="assets/Background Video.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay" aria-hidden="true"></div>
   <span class="hero-glow" aria-hidden="true"></span>
   <div class="wrap grid">
     <div class="reveal">
@@ -332,7 +342,7 @@
     </div>
     <div class="reveal">
       <div class="hero-media">
-        <img src="assets/after01.jpg" alt="Woman examining her skin after Olam Med Spa treatment" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+        <img src="assets/hero-Ba2wACGM (1).jpg" alt="Woman examining her skin after Olam Med Spa treatment" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
         <div class="hero-badge">
           <span class="big">60–90</span>
           <span class="sm"><span class="only-en">days to visible,<br>natural results</span><span class="only-es">días para resultados<br>visibles y naturales</span></span>
@@ -358,7 +368,7 @@
     </div>
     <div class="grid-cards four">
       <article class="card hoverable reveal">
-        <div class="icowrap"><span class="material-symbols-outlined">spa</span></div>
+        <div class="card-img-wrap"><img src="assets/skin tating.jpg" alt="Skin Tightening treatment"></div>
         <h3 class="h"><span class="only-en">Skin Tightening</span><span class="only-es">Tensado de Piel</span></h3>
         <p><span class="only-en">Non-surgical lifting that stimulates your own collagen at the deeper SMAS and dermal layers.</span><span class="only-es">Lifting no quirúrgico que estimula tu propio colágeno en las capas profundas (SMAS y dermis).</span></p>
         <ul class="feat">
@@ -368,7 +378,7 @@
         </ul>
       </article>
       <article class="card hoverable reveal">
-        <div class="icowrap alt"><span class="material-symbols-outlined">vaccines</span></div>
+        <div class="card-img-wrap"><img src="assets/injectables.jpg" alt="Injectables treatment"></div>
         <h3 class="h"><span class="only-en">Injectables</span><span class="only-es">Inyectables</span></h3>
         <p><span class="only-en">Botox and fillers to soften lines and restore volume — natural, never overdone.</span><span class="only-es">Botox y rellenos para suavizar líneas y restaurar volumen — natural, nunca exagerado.</span></p>
         <ul class="feat">
@@ -378,7 +388,7 @@
         </ul>
       </article>
       <article class="card hoverable reveal">
-        <div class="icowrap"><span class="material-symbols-outlined">light_mode</span></div>
+        <div class="card-img-wrap"><img src="assets/Laser.jpg" alt="Laser treatment"></div>
         <h3 class="h"><span class="only-en">Laser Treatments</span><span class="only-es">Tratamientos Láser</span></h3>
         <p><span class="only-en">Targeted energy for texture, tone, pigment and unwanted hair on the face and body.</span><span class="only-es">Energía dirigida para textura, tono, pigmento y vello no deseado en rostro y cuerpo.</span></p>
         <ul class="feat">
@@ -388,7 +398,7 @@
         </ul>
       </article>
       <article class="card hoverable reveal">
-        <div class="icowrap alt"><span class="material-symbols-outlined">accessibility_new</span></div>
+        <div class="card-img-wrap"><img src="assets/body-contouring.jpg" alt="Body Contouring treatment"></div>
         <h3 class="h"><span class="only-en">Body Contouring</span><span class="only-es">Contorno Corporal</span></h3>
         <p><span class="only-en">Non-invasive fat reduction and skin tightening to refine and define the body.</span><span class="only-es">Reducción de grasa y tensado de piel no invasivos para definir el cuerpo.</span></p>
         <ul class="feat">
@@ -498,8 +508,8 @@
     <div class="ba-wrap">
       <div class="reveal">
         <div class="ba" id="ba" role="slider" aria-label="Before and after comparison slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
-          <div class="layer after"><img src="assets/after01.jpg" alt="After treatment — skin firmer and lifted" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;"></div>
-          <div class="layer before" id="baBefore"><div class="inner"><img src="assets/before01.jpeg" alt="Before treatment — natural baseline" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;"></div></div>
+          <img class="ba-img ba-after-img" src="assets/after01.jpg" alt="After treatment — skin firmer and lifted">
+          <img class="ba-img ba-before-img" id="baBeforeImg" src="assets/before01.jpeg" alt="Before treatment — natural baseline">
           <span class="lbl l"><span class="only-en">Before</span><span class="only-es">Antes</span></span>
           <span class="lbl r"><span class="only-en">After</span><span class="only-es">Después</span></span>
           <div class="handle" id="baHandle"><div class="knob"><span class="material-symbols-outlined">drag_indicator</span></div></div>
@@ -697,9 +707,9 @@
 
   // ---------- before / after slider ----------
   (function(){
-    var ba = document.getElementById('ba'), before = document.getElementById('baBefore'), handle = document.getElementById('baHandle');
+    var ba = document.getElementById('ba'), beforeImg = document.getElementById('baBeforeImg'), handle = document.getElementById('baHandle');
     if(!ba) return;
-    function set(pct){ pct = Math.max(0, Math.min(100, pct)); before.style.width = pct + '%'; handle.style.left = pct + '%'; ba.setAttribute('aria-valuenow', Math.round(pct)); }
+    function set(pct){ pct = Math.max(0, Math.min(100, pct)); beforeImg.style.clipPath = 'inset(0 ' + (100 - pct) + '% 0 0)'; handle.style.left = pct + '%'; ba.setAttribute('aria-valuenow', Math.round(pct)); }
     function fromEvent(e){ var r = ba.getBoundingClientRect(); var x = (e.touches ? e.touches[0].clientX : e.clientX) - r.left; set((x / r.width) * 100); }
     var dragging = false;
     ba.addEventListener('pointerdown', function(e){ dragging = true; ba.setPointerCapture(e.pointerId); fromEvent(e); });
