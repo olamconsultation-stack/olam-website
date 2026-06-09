@@ -21,7 +21,7 @@
 
 <style>
   *,*::before,*::after { box-sizing: border-box; }
-  html { scroll-behavior: smooth; overflow-x: hidden; }
+  html { scroll-behavior: smooth; overflow-x: clip; }
   body {
     margin: 0;
     font-family: var(--font-body);
@@ -30,7 +30,7 @@
     background: var(--surface-page);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
   a { color: inherit; text-decoration: none; }
 
@@ -106,6 +106,11 @@
   .site .actions { display: flex; align-items: center; gap: 12px; }
   .site .actions .btn { display: none; }
   @media (min-width: 600px){ .site .actions .btn { display: inline-flex; } }
+  .btn-icon { width: 40px; height: 40px; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; background: var(--action); color: #fff; box-shadow: var(--shadow-button); border: none; cursor: pointer; transition: all var(--dur-base) var(--ease-cushion); flex-shrink: 0; }
+  .btn-icon:hover { background: var(--action-hover); transform: translateY(-2px); }
+  .btn-icon .material-symbols-outlined { font-size: 20px; }
+  .btn-icon-mobile { display: inline-flex; }
+  @media (min-width: 600px){ .btn-icon-mobile { display: none; } }
   .phone { display: none; align-items: center; gap: 6px; font-weight: var(--fw-medium); font-size: var(--text-sm); color: var(--text-strong); }
   @media (min-width: 680px){ .phone { display: inline-flex; } }
   .phone .material-symbols-outlined { font-size: 18px; color: var(--action); }
@@ -308,6 +313,7 @@
         <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
         <button type="button" data-lang-btn="es" aria-pressed="false">ES</button>
       </div>
+      <a class="btn-icon btn-icon-mobile" href="#book" aria-label="Book my consultation"><span class="material-symbols-outlined">calendar_month</span></a>
       <a class="btn btn-primary" href="#book"><span class="only-en">Book My Consultation</span><span class="only-es">Agenda tu consulta</span> <span class="arr">→</span></a>
     </div>
   </div>
