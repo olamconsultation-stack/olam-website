@@ -1066,7 +1066,7 @@ const osq = (() => {
 
   function setLang(lang){
     OSQ_CONFIG.LANG=lang;T=OSQ_I18N[lang];
-    if(state.step===0)applyI18n();
+    applyI18n();
   }
 
   function init(){
