@@ -165,6 +165,20 @@
     @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   }
 
+  /* ---------- philosophy ---------- */
+  .philosophy-grid { display: grid; grid-template-columns: 1fr; gap: 56px; align-items: start; }
+  @media (min-width: 900px) { .philosophy-grid { grid-template-columns: 1.1fr 0.9fr; gap: 80px; } }
+  .phil-list { list-style: none; padding: 0; margin: 28px 0 0; display: flex; flex-direction: column; gap: 12px; }
+  .phil-list li { display: flex; align-items: flex-start; gap: 12px; font-size: var(--text-sm); color: var(--text-body); }
+  .phil-list li::before { content: "—"; color: var(--action); font-weight: 600; flex-shrink: 0; }
+  .phil-quote { margin: 32px 0 0; font-family: var(--font-display); font-style: italic; font-size: 1.05rem; color: var(--text-accent); line-height: 1.65; border-left: 3px solid var(--action); padding-left: 20px; }
+  .phil-stats { display: flex; flex-direction: column; gap: 16px; }
+  .phil-stat-card { background: var(--surface-linen); border: 1px solid var(--border-hairline); border-radius: var(--radius-brand); padding: 24px 28px; }
+  .phil-stat-num { font-family: var(--font-display); font-size: 2.8rem; font-weight: var(--fw-medium); color: var(--text-strong); line-height: 1; margin-bottom: 6px; }
+  .phil-stat-label { font-size: var(--text-sm); color: var(--text-muted); line-height: 1.5; }
+  .phil-award { display: flex; align-items: flex-start; gap: 16px; }
+  .phil-award-icon { font-size: 1.6rem; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+
   /* ---------- services grid ---------- */
   .svc-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 48px; }
   @media (min-width: 600px){ .svc-grid { grid-template-columns: 1fr 1fr; } }
@@ -331,12 +345,16 @@
               <span><b>4.9</b> · <span class="only-en">Google — 400+ reviews</span><span class="only-es">Google — 400+ reseñas</span></span>
             </div>
             <div class="trust-item">
-              <b>35,000+</b>
-              <span><span class="only-en">procedures performed</span><span class="only-es">procedimientos realizados</span></span>
+              <b>30+</b>
+              <span><span class="only-en">years of medical expertise</span><span class="only-es">años de experiencia médica</span></span>
             </div>
             <div class="trust-item">
-              <b><span class="only-en">Forbes & TV</span><span class="only-es">Forbes y TV</span></b>
-              <span>Univision · Telemundo · Hola TV</span>
+              <b>15,000+</b>
+              <span><span class="only-en">aesthetic procedures</span><span class="only-es">procedimientos estéticos</span></span>
+            </div>
+            <div class="trust-item">
+              <b><span class="only-en">Featured in</span><span class="only-es">Presencia en</span></b>
+              <span>Forbes · Univision · Telemundo · RCN</span>
             </div>
           </div>
         </div>
@@ -387,6 +405,59 @@
     </div>
   </div>
 </div>
+
+<!-- ===================== PHILOSOPHY ===================== -->
+<section class="band" id="philosophy">
+  <div class="wrap">
+    <div class="philosophy-grid">
+      <div class="reveal">
+        <p class="eyebrow"><span class="dot"></span><span class="only-en">Our philosophy</span><span class="only-es">Nuestra filosofía</span></p>
+        <h2 class="h"><span class="only-en">Introducing the <em class="em">new natural beauty.</em></span><span class="only-es">La nueva <em class="em">belleza natural.</em></span></h2>
+        <p class="lead" style="margin-top:24px;">
+          <span class="only-en">Are you concerned about the natural aging of your skin? You're not alone. Over time, factors like sun exposure, stress, and hormonal changes can affect your skin's appearance — causing spots, fine lines, wrinkles, dullness, enlarged pores, and uneven texture. But that is not your true self.</span>
+          <span class="only-es">¿Te preocupa el envejecimiento natural de tu piel? No estás sola. Con el tiempo, factores como la exposición solar, el estrés y los cambios hormonales pueden afectar tu apariencia — causando manchas, líneas finas, arrugas, opacidad, poros dilatados y textura irregular. Pero ese no es tu verdadero yo.</span>
+        </p>
+        <p class="lead" style="margin-top:20px;">
+          <span class="only-en">At Olam Med Spa, we guide you through a transformation that respects your essence and enhances your natural beauty. We offer personalized, non-invasive aesthetic treatments that smooth wrinkles, improve texture, reduce imperfections, and help you feel confident in your skin — no filters, no exaggerations.</span>
+          <span class="only-es">En Olam Med Spa te guiamos en una transformación que respeta tu esencia y realza tu belleza natural. Ofrecemos tratamientos estéticos no invasivos y personalizados que suavizan arrugas, mejoran la textura, reducen imperfecciones y te ayudan a sentirte segura — sin filtros ni exageraciones.</span>
+        </p>
+        <ul class="phil-list reveal">
+          <li><span class="only-en">Anti-aging facial treatments</span><span class="only-es">Tratamientos faciales anti-envejecimiento</span></li>
+          <li><span class="only-en">Injectables such as Botox and dermal fillers</span><span class="only-es">Inyectables como Botox y fillers dérmicos</span></li>
+          <li><span class="only-en">Rejuvenation with laser and radiofrequency</span><span class="only-es">Rejuvenecimiento con láser y radiofrecuencia</span></li>
+          <li><span class="only-en">Non-surgical body contouring</span><span class="only-es">Contorno corporal no quirúrgico</span></li>
+          <li><span class="only-en">3D skin diagnostics and customized treatment plans</span><span class="only-es">Diagnóstico 3D de piel y planes de tratamiento personalizados</span></li>
+        </ul>
+        <p class="phil-quote reveal">
+          <span class="only-en">"We believe true beauty is not imposed — it's revealed. It's not about changing who you are, but rediscovering your best self with confidence, authenticity, and care."</span>
+          <span class="only-es">"Creemos que la verdadera belleza no se impone — se revela. No se trata de cambiar quién eres, sino de redescubrir tu mejor versión con confianza, autenticidad y cuidado."</span>
+        </p>
+      </div>
+      <div class="phil-stats reveal">
+        <div class="phil-stat-card">
+          <div class="phil-stat-num">30+</div>
+          <div class="phil-stat-label"><span class="only-en">years of combined medical expertise</span><span class="only-es">años de experiencia médica combinada</span></div>
+        </div>
+        <div class="phil-stat-card">
+          <div class="phil-stat-num">6,000+</div>
+          <div class="phil-stat-label"><span class="only-en">injectable procedures in the last 5 years</span><span class="only-es">procedimientos de inyectables en los últimos 5 años</span></div>
+        </div>
+        <div class="phil-stat-card">
+          <div class="phil-stat-num">15,000+</div>
+          <div class="phil-stat-label"><span class="only-en">aesthetic procedures in the last 5 years</span><span class="only-es">procedimientos estéticos en los últimos 5 años</span></div>
+        </div>
+        <div class="phil-stat-card phil-award">
+          <div class="phil-award-icon">★</div>
+          <div class="phil-stat-label"><span class="only-en">Featured in Forbes Magazine as a high-end medical spa</span><span class="only-es">Destacados en Forbes Magazine como med spa de alta gama</span></div>
+        </div>
+        <div class="phil-stat-card phil-award">
+          <div class="phil-award-icon">📺</div>
+          <div class="phil-stat-label"><span class="only-en">Featured on Univision, Telemundo, Hola TV, RCN as experts in medical aesthetics</span><span class="only-es">Presencia en Univision, Telemundo, Hola TV, RCN como expertos en estética médica</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ===================== SERVICES ===================== -->
 <section class="band" id="services">
@@ -662,6 +733,7 @@
       <div class="foot-col">
         <p style="color:var(--text-strong);font-weight:600;margin-bottom:4px;"><span class="only-en">Visit</span><span class="only-es">Visítanos</span></p>
         <a href="tel:19542370930">954.237.0930</a>
+        <a href="mailto:info@olammedspa.com">info@olammedspa.com</a>
         <p style="line-height:1.6;">17901 NW 5th St, Ste 201<br>Pembroke Pines, FL 33029</p>
         <p><span class="only-en">Mon–Fri · 9am–6pm</span><span class="only-es">Lun–Vie · 9am–6pm</span></p>
       </div>
