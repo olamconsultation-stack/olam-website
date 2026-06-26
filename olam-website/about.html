@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Olam Med Spa | Pembroke Pines, FL</title>
+<meta name="description" content="Meet the team behind Olam Med Spa. 30+ years of combined experience, 15,000+ injectable procedures. Board-certified aesthetic medicine in Pembroke Pines, FL.">
+<link rel="icon" href="assets/favicon-olam.png" type="image/png">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap">
+
+<style>
+  *,*::before,*::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; overflow-x: clip; }
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    font-weight: var(--fw-light);
+    color: var(--text-body);
+    background: var(--surface-page);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  /* bilingual */
+  html[data-lang="en"] .only-es { display: none !important; }
+  html[data-lang="es"] .only-en { display: none !important; }
+
+  /* layout */
+  .wrap { max-width: var(--content-max); margin: 0 auto; padding: 0 var(--gutter); }
+  @media (min-width: 768px){ .wrap { padding: 0 var(--gutter-lg); } }
+  section.band { padding: var(--space-8) 0; position: relative; }
+  @media (min-width: 768px){ section.band { padding: var(--space-10) 0; } }
+
+  /* type */
+  .eyebrow {
+    font-family: var(--font-body); font-size: var(--text-label); font-weight: var(--fw-semibold);
+    text-transform: uppercase; letter-spacing: var(--ls-label);
+    color: var(--text-accent); margin: 0 0 18px; display: flex; align-items: center; gap: 10px;
+  }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 9999px; background: var(--action); display: inline-block; }
+  h2.h {
+    font-family: var(--font-display); font-weight: var(--fw-medium);
+    letter-spacing: var(--ls-tight); line-height: var(--lh-tight);
+    margin: 0; color: var(--text-strong); font-size: var(--text-h2);
+  }
+  .em { font-style: italic; font-weight: var(--fw-medium); color: var(--text-accent); }
+  .lead { font-family: var(--font-body); font-weight: var(--fw-light); font-size: var(--text-lead); line-height: var(--lh-body); color: var(--text-muted); margin: 0; }
+
+  /* buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-body); font-weight: var(--fw-semibold);
+    font-size: var(--text-sm); padding: 13px 24px; border-radius: var(--radius-pill);
+    border: 1.5px solid transparent; cursor: pointer; line-height: 1; white-space: nowrap;
+    transition: background-color var(--dur-fast) var(--ease-cushion), transform var(--dur-fast) var(--ease-cushion), border-color var(--dur-fast) var(--ease-cushion);
+  }
+  .btn .arr { transition: transform var(--dur-fast) var(--ease-cushion); }
+  .btn:hover .arr { transform: translateX(5px); }
+  .btn-primary { background: var(--action); color: #fff; box-shadow: var(--shadow-button); }
+  .btn-primary:hover { background: var(--action-hover); transform: translateY(-3px); }
+  .btn-outline { background: transparent; color: var(--text-strong); border-color: var(--border-strong); }
+  .btn-outline:hover { background: var(--action-ink); color: #fff; border-color: var(--action-ink); }
+  .btn-white { background: #fff; color: var(--charcoal); }
+  .btn-white:hover { background: var(--linen); transform: translateY(-2px); }
+  .btn-lg { padding: 17px 32px; font-size: 1.05rem; }
+  @media (max-width: 480px){ .btn-lg { padding: 13px 20px; font-size: 0.9rem; } }
+  .btn-icon { width: 40px; height: 40px; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; background: var(--action); color: #fff; border: none; cursor: pointer; flex-shrink: 0; }
+  .btn-icon .material-symbols-outlined { font-size: 20px; }
+  .btn-icon-mobile { display: inline-flex; }
+  @media (min-width: 600px){ .btn-icon-mobile { display: none; } }
+
+  /* header */
+  header.site {
+    position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
+    z-index: 50; width: calc(100% - 32px); max-width: 1100px;
+    background: rgba(255,255,255,0.96); backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); border-radius: 9999px;
+    border: 1px solid var(--border-hairline);
+    box-shadow: 0 4px 28px rgba(31,32,32,0.10), 0 1px 4px rgba(31,32,32,0.06);
+  }
+  header.site .wrap { max-width: 100%; margin: 0; }
+  header.site .row { display: flex; align-items: center; justify-content: space-between; height: 62px; gap: 12px; padding: 6px 6px 6px 36px; }
+  .site .logo { height: 28px; width: auto; display: block; }
+  .nav-links { display: none; gap: 26px; font-size: var(--text-sm); color: var(--text-body); font-weight: var(--fw-regular); }
+  .nav-links a:hover { color: var(--text-accent); }
+  @media (min-width: 1040px){ .nav-links { display: flex; } }
+  .site .actions { display: flex; align-items: center; gap: 10px; }
+  .site .actions .btn { display: none; }
+  @media (min-width: 600px){ .site .actions .btn { display: inline-flex; } }
+  .phone { display: none; align-items: center; gap: 6px; font-weight: var(--fw-medium); font-size: var(--text-sm); color: var(--text-strong); }
+  @media (min-width: 800px){ .phone { display: inline-flex; } }
+  .phone .material-symbols-outlined { font-size: 18px; color: var(--action); }
+  .lang { display: inline-flex; border: 1px solid var(--border-soft); border-radius: var(--radius-pill); overflow: hidden; }
+  .lang button { font-family: var(--font-body); font-weight: var(--fw-semibold); font-size: var(--text-caption); letter-spacing: 0.06em; padding: 7px 12px; background: transparent; border: 0; cursor: pointer; color: var(--text-muted); }
+  .lang button[aria-pressed="true"] { background: var(--action); color: #fff; }
+
+  /* reveal animation */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s var(--ease-cushion), transform 0.7s var(--ease-cushion); }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* footer */
+  footer.site { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 64px 0 32px; }
+  .foot-grid { display: grid; grid-template-columns: 1fr; gap: 36px; margin-bottom: 48px; }
+  @media (min-width: 640px){ .foot-grid { grid-template-columns: repeat(2,1fr); } }
+  @media (min-width: 900px){ .foot-grid { grid-template-columns: 2fr 1fr 1fr 1fr; } }
+  .foot-col { display: flex; flex-direction: column; gap: 10px; }
+  .foot-logo { height: 28px; width: auto; margin-bottom: 8px; filter: brightness(0) invert(1); }
+  .foot-col p { margin: 0; font-size: var(--text-sm); line-height: 1.65; }
+  .foot-col a { font-size: var(--text-sm); color: rgba(255,255,255,0.6); transition: color 0.2s; }
+  .foot-col a:hover { color: #fff; }
+  .foot-social { display: flex; gap: 10px; margin-top: 4px; }
+  .foot-social a { width: 36px; height: 36px; border-radius: 9999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); display: grid; place-items: center; color: rgba(255,255,255,0.6); font-size: 16px; transition: background 0.2s, color 0.2s; }
+  .foot-social a:hover { background: rgba(255,255,255,0.16); color: #fff; }
+  .foot-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-size: var(--text-caption); color: rgba(255,255,255,0.4); }
+
+  /* ===================== ABOUT-SPECIFIC ===================== */
+
+  /* hero */
+  .about-hero {
+    padding-top: 120px; padding-bottom: 80px;
+    background: var(--olam-blue); position: relative; overflow: hidden;
+  }
+  .about-hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: url('assets/olam-spa-livingroom.png') center/cover no-repeat;
+    opacity: 0.18;
+  }
+  .about-hero .wrap { position: relative; z-index: 1; }
+  .about-hero .eyebrow { color: rgba(255,255,255,0.7); }
+  .about-hero .eyebrow .dot { background: rgba(255,255,255,0.5); }
+  .about-hero h1 {
+    font-family: var(--font-display); font-style: italic; font-weight: 300;
+    font-size: clamp(2.8rem, 6vw, 5rem); color: #fff;
+    line-height: 1.1; margin: 0 0 20px; letter-spacing: -0.01em;
+  }
+  .about-hero h1 strong {
+    font-family: var(--font-body); font-weight: 600; font-style: normal;
+    color: rgba(255,255,255,0.9);
+  }
+  .about-hero .tagline {
+    font-family: var(--font-body); font-weight: 300;
+    font-size: clamp(1rem, 2vw, 1.25rem); color: rgba(255,255,255,0.8);
+    margin: 0 0 40px; max-width: 48ch; line-height: 1.65;
+  }
+
+  /* stats */
+  .stats-band { background: var(--surface-mist); }
+  .stats-row {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 0;
+    border: 1px solid var(--border-hairline); border-radius: var(--radius-brand-lg);
+    overflow: hidden; background: var(--surface-card);
+    box-shadow: var(--shadow-card);
+  }
+  @media (min-width: 640px){ .stats-row { grid-template-columns: repeat(4, 1fr); } }
+  .stat-cell {
+    padding: 32px 24px; text-align: center;
+    border-right: 1px solid var(--border-hairline);
+    border-bottom: 1px solid var(--border-hairline);
+  }
+  .stat-cell:last-child { border-right: none; }
+  @media (min-width: 640px){ .stat-cell { border-bottom: none; } }
+  .stat-cell:nth-child(2n){ border-right: none; }
+  @media (min-width: 640px){ .stat-cell:nth-child(2n){ border-right: 1px solid var(--border-hairline); } }
+  .stat-num {
+    font-family: var(--font-display); font-style: italic; font-weight: 300;
+    font-size: clamp(2rem, 4vw, 3rem); color: var(--olam-blue); line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-label {
+    font-family: var(--font-body); font-size: var(--text-sm);
+    color: var(--text-muted); line-height: 1.4;
+  }
+
+  /* mission / vision */
+  .mv-grid {
+    display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 48px;
+  }
+  @media (min-width: 768px){ .mv-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+  .mv-card {
+    border-radius: var(--radius-brand-lg);
+    padding: 40px 36px; position: relative; overflow: hidden;
+  }
+  .mv-card.mission { background: var(--olam-blue); color: #fff; }
+  .mv-card.vision { background: var(--surface-card); border: 1px solid var(--border-hairline); box-shadow: var(--shadow-card); }
+  .mv-card-label {
+    font-family: var(--font-body); font-size: var(--text-caption); font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px;
+    display: block;
+  }
+  .mv-card.mission .mv-card-label { color: rgba(255,255,255,0.6); }
+  .mv-card.vision .mv-card-label { color: var(--text-accent); }
+  .mv-card h3 {
+    font-family: var(--font-display); font-style: italic; font-weight: 300;
+    font-size: clamp(1.4rem, 2.5vw, 2rem); line-height: 1.2; margin: 0 0 16px;
+  }
+  .mv-card.mission h3 { color: #fff; }
+  .mv-card.vision h3 { color: var(--text-strong); }
+  .mv-card p {
+    font-family: var(--font-body); font-size: var(--text-sm); line-height: 1.75; margin: 0;
+  }
+  .mv-card.mission p { color: rgba(255,255,255,0.8); }
+  .mv-card.vision p { color: var(--text-muted); }
+
+  /* recognition */
+  .recognition-band { background: var(--surface-linen); }
+  .awards-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 48px;
+  }
+  @media (min-width: 768px){ .awards-grid { grid-template-columns: repeat(4,1fr); gap: 20px; } }
+  .award-card {
+    background: var(--surface-card); border: 1px solid var(--border-hairline);
+    border-radius: var(--radius-brand); padding: 24px 20px; text-align: center;
+    box-shadow: var(--shadow-card);
+  }
+  .award-icon {
+    width: 48px; height: 48px; border-radius: 50%; background: var(--action-tint);
+    display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;
+    color: var(--action);
+  }
+  .award-icon .material-symbols-outlined { font-size: 26px; }
+  .award-card h4 {
+    font-family: var(--font-body); font-weight: 600; font-size: 0.9rem;
+    color: var(--text-strong); margin: 0 0 4px; line-height: 1.3;
+  }
+  .award-card p { font-size: 0.78rem; color: var(--text-muted); margin: 0; }
+
+  .media-row {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+    gap: 32px; margin-top: 48px; padding-top: 40px;
+    border-top: 1px solid var(--border-hairline);
+  }
+  .media-row img { height: 52px; width: auto; object-fit: contain; filter: grayscale(100%) opacity(0.55); transition: filter 0.2s; }
+  .media-row img:hover { filter: grayscale(0%) opacity(1); }
+
+  /* team */
+  .team-band { background: var(--surface-page); }
+  .team-card {
+    display: grid; grid-template-columns: 1fr; gap: 0;
+    border-radius: var(--radius-brand-lg); overflow: hidden;
+    background: var(--surface-card); border: 1px solid var(--border-hairline);
+    box-shadow: var(--shadow-card); max-width: 860px; margin: 48px auto 0;
+  }
+  @media (min-width: 680px){ .team-card { grid-template-columns: 280px 1fr; } }
+  .team-avatar-col {
+    background: linear-gradient(145deg, var(--olam-blue) 0%, #1a3d5c 100%);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 48px 32px; gap: 16px;
+  }
+  .team-initials {
+    width: 100px; height: 100px; border-radius: 50%;
+    background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display); font-style: italic; font-weight: 300;
+    font-size: 2.4rem; color: #fff; letter-spacing: -0.02em;
+  }
+  .team-name {
+    font-family: var(--font-body); font-weight: 600; font-size: 1.15rem;
+    color: #fff; text-align: center; margin: 0;
+  }
+  .team-title-tag {
+    font-family: var(--font-body); font-size: 0.78rem; color: rgba(255,255,255,0.65);
+    text-align: center; line-height: 1.5;
+  }
+  .team-content-col { padding: 40px 36px; }
+  .team-content-col .team-cred-row {
+    display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;
+  }
+  .team-cred {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: var(--action-tint); color: var(--action);
+    font-family: var(--font-body); font-size: 0.74rem; font-weight: 600;
+    padding: 4px 12px; border-radius: 99px; letter-spacing: 0.01em;
+  }
+  .team-bio {
+    font-family: var(--font-body); font-size: var(--text-sm);
+    color: var(--text-muted); line-height: 1.75; margin: 0;
+  }
+  .team-bio + .team-bio { margin-top: 12px; }
+
+  /* cta */
+  .cta-about { background: var(--surface-linen); }
+  .cta-benefits { list-style: none; padding: 0; margin: 28px 0 0; display: inline-flex; flex-direction: column; align-items: flex-start; gap: 10px; text-align: left; }
+  .cta-benefits li { display: flex; align-items: center; gap: 10px; font-size: var(--text-sm); color: var(--text-muted); }
+  .cta-benefits svg { stroke: var(--action); flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<header class="site">
+  <div class="wrap row">
+    <a href="index.html" aria-label="Olam Med Spa home"><img class="logo" src="assets/logo-olam.png" alt="Olam Med Spa"></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#services"><span class="only-en">Services</span><span class="only-es">Servicios</span></a>
+      <a href="index.html#proof"><span class="only-en">Why Olam</span><span class="only-es">Por qué Olam</span></a>
+      <a href="index.html#results"><span class="only-en">Results</span><span class="only-es">Resultados</span></a>
+      <a href="about.html" style="color:var(--text-accent);font-weight:600;"><span class="only-en">About</span><span class="only-es">Nosotros</span></a>
+      <a href="index.html#book"><span class="only-en">Contact</span><span class="only-es">Contacto</span></a>
+    </nav>
+    <div class="actions">
+      <a class="phone" href="tel:19542370930"><span class="material-symbols-outlined">call</span>954.237.0930</a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang-btn="es" aria-pressed="false">ES</button>
+      </div>
+      <a class="btn-icon btn-icon-mobile" href="index.html#book" aria-label="Book my consultation"><span class="material-symbols-outlined">calendar_month</span></a>
+      <a class="btn btn-primary" href="index.html#book"><span class="only-en">Book My Consultation</span><span class="only-es">Agenda tu consulta</span> <span class="arr">→</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ====== HERO ====== -->
+<section class="about-hero">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">Our story</span><span class="only-es">Nuestra historia</span></p>
+      <h1>
+        <span class="only-en">Elevating beauty,<br><strong>empowering you.</strong></span>
+        <span class="only-es">Elevando la belleza,<br><strong>empoderándote.</strong></span>
+      </h1>
+      <p class="tagline">
+        <span class="only-en">At Olam Med Spa, we believe that natural beauty and self-assurance should be accessible to everyone. For over 30 years of combined experience, we've helped thousands of women look and feel their absolute best — without surgery, without compromise.</span>
+        <span class="only-es">En Olam Med Spa creemos que la belleza natural y la confianza en una misma deben ser accesibles para todos. Con más de 30 años de experiencia combinada, hemos ayudado a miles de mujeres a verse y sentirse increíbles — sin cirugía, sin concesiones.</span>
+      </p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;">
+        <a class="btn btn-white btn-lg" href="index.html#book"><span class="only-en">Book a consultation</span><span class="only-es">Agenda una consulta</span> <span class="arr">→</span></a>
+        <a class="btn btn-outline btn-lg" href="index.html#services" style="border-color:rgba(255,255,255,0.4);color:#fff;"><span class="only-en">Explore services</span><span class="only-es">Ver servicios</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== STATS ====== -->
+<section class="band stats-band">
+  <div class="wrap">
+    <div class="stats-row reveal">
+      <div class="stat-cell">
+        <div class="stat-num">30+</div>
+        <div class="stat-label"><span class="only-en">Years combined<br>experience</span><span class="only-es">Años de experiencia<br>combinada</span></div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">15k+</div>
+        <div class="stat-label"><span class="only-en">Injectable<br>procedures</span><span class="only-es">Procedimientos<br>de inyectables</span></div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">25k+</div>
+        <div class="stat-label"><span class="only-en">Aesthetic procedures<br>in 8 years</span><span class="only-es">Procedimientos estéticos<br>en 8 años</span></div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">4.9★</div>
+        <div class="stat-label"><span class="only-en">Average rating<br>across 300+ reviews</span><span class="only-es">Calificación promedio<br>en más de 300 reseñas</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== MISSION & VISION ====== -->
+<section class="band">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">What drives us</span><span class="only-es">Lo que nos mueve</span></p>
+      <h2 class="h"><span class="only-en">Purpose-built for <em class="em">real transformation.</em></span><span class="only-es">Diseñados para <em class="em">transformaciones reales.</em></span></h2>
+    </div>
+    <div class="mv-grid">
+      <div class="mv-card mission reveal">
+        <span class="mv-card-label"><span class="only-en">Our Mission</span><span class="only-es">Nuestra Misión</span></span>
+        <h3><span class="only-en">Harmonize the outside with the inside.</span><span class="only-es">Armonizar el exterior con el interior.</span></h3>
+        <p><span class="only-en">We commit to harmonizing outward appearance with inner self-esteem through personalized, innovative, and safe aesthetic solutions. We empower our clients by enhancing their natural beauty, promoting positive self-images, and enriching their lives through meticulous care and customized treatment plans.</span><span class="only-es">Nos comprometemos a armonizar la apariencia exterior con la autoestima interior a través de soluciones estéticas personalizadas, innovadoras y seguras. Empoderamos a nuestras clientas realzando su belleza natural, promoviendo una imagen positiva de sí mismas y enriqueciendo sus vidas con atención meticulosa y planes de tratamiento personalizados.</span></p>
+      </div>
+      <div class="mv-card vision reveal">
+        <span class="mv-card-label"><span class="only-en">Our Vision</span><span class="only-es">Nuestra Visión</span></span>
+        <h3><span class="only-en">A world where confidence is a given.</span><span class="only-es">Un mundo donde la confianza es un derecho.</span></h3>
+        <p><span class="only-en">We envision a world where natural beauty and self-assurance are accessible to everyone. We strive to be innovation leaders in aesthetic medicine — guiding people globally toward confidence and radiant skin, supporting each client on their transformative journey toward self-love with top-tier aesthetic care.</span><span class="only-es">Imaginamos un mundo donde la belleza natural y la confianza en una misma sean accesibles para todos. Nos esforzamos por ser líderes en innovación estética — guiando a personas en todo el mundo hacia la confianza y una piel radiante, acompañando a cada cliente en su camino de transformación.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== RECOGNITION ====== -->
+<section class="band recognition-band">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;max-width:580px;margin:0 auto;">
+      <p class="eyebrow" style="justify-content:center;"><span class="dot"></span><span class="only-en">Recognition</span><span class="only-es">Reconocimientos</span></p>
+      <h2 class="h"><span class="only-en">Recognized as Florida's <em class="em">best.</em></span><span class="only-es">Reconocidos como los <em class="em">mejores de Florida.</em></span></h2>
+    </div>
+
+    <div class="awards-grid">
+      <div class="award-card reveal">
+        <div class="award-icon"><span class="material-symbols-outlined">workspace_premium</span></div>
+        <h4><span class="only-en">Best Florida Med Spa</span><span class="only-es">Mejor Med Spa de Florida</span></h4>
+        <p>2024</p>
+      </div>
+      <div class="award-card reveal">
+        <div class="award-icon"><span class="material-symbols-outlined">emoji_events</span></div>
+        <h4><span class="only-en">Best Pembroke Pines Med Spa</span><span class="only-es">Mejor Med Spa de Pembroke Pines</span></h4>
+        <p>2022 · 2023 · 2024</p>
+      </div>
+      <div class="award-card reveal">
+        <div class="award-icon"><span class="material-symbols-outlined">verified</span></div>
+        <h4><span class="only-en">Featured in Forbes Magazine</span><span class="only-es">Destacados en Forbes</span></h4>
+        <p><span class="only-en">National recognition</span><span class="only-es">Reconocimiento nacional</span></p>
+      </div>
+      <div class="award-card reveal">
+        <div class="award-icon"><span class="material-symbols-outlined">star</span></div>
+        <h4>4.9 ★ <span class="only-en">Rating</span><span class="only-es">Calificación</span></h4>
+        <p><span class="only-en">300+ verified reviews</span><span class="only-es">Más de 300 reseñas verificadas</span></p>
+      </div>
+    </div>
+
+    <div class="media-row reveal">
+      <img src="assets/Forbes.png" alt="Forbes">
+      <img src="assets/Univision.png" alt="Univision">
+      <img src="assets/Telemundo.png" alt="Telemundo">
+      <img src="assets/voyagemia.png" alt="VoyageMIA">
+      <img src="assets/shoutout-miami.png" alt="Shoutout Miami">
+      <img src="assets/diario las americas logo.png" alt="Diario Las Américas">
+    </div>
+  </div>
+</section>
+
+<!-- ====== TEAM ====== -->
+<section class="band team-band">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;max-width:580px;margin:0 auto;">
+      <p class="eyebrow" style="justify-content:center;"><span class="dot"></span><span class="only-en">Meet the team</span><span class="only-es">Conoce al equipo</span></p>
+      <h2 class="h"><span class="only-en">The expert behind <em class="em">Olam.</em></span><span class="only-es">La experta detrás de <em class="em">Olam.</em></span></h2>
+    </div>
+
+    <div class="team-card reveal">
+      <div class="team-avatar-col">
+        <div class="team-initials">G.R.</div>
+        <p class="team-name">Gabriela Rodriguez</p>
+        <p class="team-title-tag"><span class="only-en">Co-Founder · Operations Director</span><span class="only-es">Co-Fundadora · Directora de Operaciones</span></p>
+      </div>
+      <div class="team-content-col">
+        <div class="team-cred-row">
+          <span class="team-cred">Attorney</span>
+          <span class="team-cred">Dr. Medical Law &amp; Bioethics</span>
+          <span class="team-cred">MBA</span>
+        </div>
+        <p class="team-bio">
+          <span class="only-en">Born in Venezuela, Gabriela arrived in the United States in 2015 and joined Olam Med Spa in 2016. Analytical, studious, and deeply committed to continuous improvement, she brings a unique combination of legal, ethical, and business expertise to everything she does.</span>
+          <span class="only-es">Nacida en Venezuela, Gabriela llegó a los Estados Unidos en 2015 y se unió a Olam Med Spa en 2016. Analítica, estudiosa y profundamente comprometida con la mejora continua, aporta una combinación única de experiencia legal, ética y empresarial a todo lo que hace.</span>
+        </p>
+        <p class="team-bio">
+          <span class="only-en">As a Foreign Attorney with a Doctorate in Medical Law and Bioethics and an MBA, Gabriela oversees the operational and ethical framework of Olam — ensuring every treatment plan is delivered with the highest standards of care, compliance, and personalized attention.</span>
+          <span class="only-es">Como Abogada Internacional con Doctorado en Derecho Médico y Bioética y un MBA, Gabriela supervisa el marco operativo y ético de Olam — garantizando que cada plan de tratamiento se entregue con los más altos estándares de atención, cumplimiento y atención personalizada.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== CTA ====== -->
+<section class="band cta-about" id="book">
+  <div class="wrap" style="max-width:720px;text-align:center;">
+    <div class="reveal">
+      <p class="eyebrow" style="justify-content:center;"><span class="dot"></span><span class="only-en">Start your journey</span><span class="only-es">Comienza tu camino</span></p>
+      <h2 class="h"><span class="only-en">Ready to experience Olam <em class="em">for yourself?</em></span><span class="only-es">¿Lista para vivir la experiencia Olam <em class="em">por ti misma?</em></span></h2>
+      <p class="lead" style="margin-top:16px;">
+        <span class="only-en">Book your personalized consultation and let our team build a treatment plan designed exclusively for you.</span>
+        <span class="only-es">Agenda tu consulta personalizada y deja que nuestro equipo diseñe un plan de tratamiento exclusivo para ti.</span>
+      </p>
+      <div style="margin-top:36px;display:flex;flex-wrap:wrap;gap:14px;justify-content:center;">
+        <a class="btn btn-primary btn-lg" href="tel:19542370930"><span class="only-en">Call 954.237.0930</span><span class="only-es">Llama 954.237.0930</span></a>
+        <a class="btn btn-outline btn-lg" href="mailto:info@olammedspa.com">info@olammedspa.com</a>
+      </div>
+      <ul class="cta-benefits">
+        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="only-en">Personalized plan with 3D skin diagnosis</span><span class="only-es">Plan personalizado con diagnóstico 3D</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="only-en">Board-certified, physician-supervised care</span><span class="only-es">Atención certificada y supervisada médicamente</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="only-en">Pembroke Pines, FL · Mon–Fri 9am–6pm</span><span class="only-es">Pembroke Pines, FL · Lun–Vie 9am–6pm</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ====== FOOTER ====== -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col" style="max-width:300px;">
+        <img class="foot-logo" src="assets/logo-olam.png" alt="Olam Med Spa">
+        <p><span class="only-en">La nueva belleza natural. Personalized, physician-supervised non-invasive aesthetic medicine in Pembroke Pines, FL.</span><span class="only-es">La nueva belleza natural. Medicina estética no invasiva, personalizada y supervisada por médicos en Pembroke Pines, FL.</span></p>
+        <div class="foot-social">
+          <a href="#" aria-label="Instagram">&#9679;</a>
+          <a href="#" aria-label="Facebook">&#9679;</a>
+          <a href="#" aria-label="TikTok">&#9679;</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <p style="color:rgba(255,255,255,0.9);font-weight:600;margin-bottom:4px;"><span class="only-en">Services</span><span class="only-es">Servicios</span></p>
+        <a href="index.html#services"><span class="only-en">Injectables</span><span class="only-es">Inyectables</span></a>
+        <a href="index.html#services"><span class="only-en">Skin Tightening</span><span class="only-es">Tensado de Piel</span></a>
+        <a href="index.html#services"><span class="only-en">Laser Treatments</span><span class="only-es">Tratamientos Láser</span></a>
+        <a href="index.html#services"><span class="only-en">Body Contouring</span><span class="only-es">Contorno Corporal</span></a>
+        <a href="index.html#services"><span class="only-en">Hormone & Weight</span><span class="only-es">Hormonas y Peso</span></a>
+        <a href="index.html#services"><span class="only-en">Laser Hair Removal</span><span class="only-es">Remoción de Vello</span></a>
+      </div>
+      <div class="foot-col">
+        <p style="color:rgba(255,255,255,0.9);font-weight:600;margin-bottom:4px;"><span class="only-en">Clinic</span><span class="only-es">Clínica</span></p>
+        <a href="index.html#proof"><span class="only-en">Why Olam</span><span class="only-es">Por qué Olam</span></a>
+        <a href="index.html#results"><span class="only-en">Results</span><span class="only-es">Resultados</span></a>
+        <a href="index.html#process"><span class="only-en">How it works</span><span class="only-es">Cómo funciona</span></a>
+        <a href="about.html"><span class="only-en">About Us</span><span class="only-es">Nosotros</span></a>
+      </div>
+      <div class="foot-col">
+        <p style="color:rgba(255,255,255,0.9);font-weight:600;margin-bottom:4px;"><span class="only-en">Visit</span><span class="only-es">Visítanos</span></p>
+        <a href="tel:19542370930">954.237.0930</a>
+        <a href="mailto:info@olammedspa.com">info@olammedspa.com</a>
+        <p style="line-height:1.6;">17901 NW 5th St, Ste 201<br>Pembroke Pines, FL 33029</p>
+        <p><span class="only-en">Mon–Fri · 9am–6pm</span><span class="only-es">Lun–Vie · 9am–6pm</span></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Olam Med Spa. <span class="only-en">All rights reserved.</span><span class="only-es">Todos los derechos reservados.</span></span>
+      <span><span class="only-en">FDA-approved technology · Individual results may vary.</span><span class="only-es">Tecnología aprobada por la FDA · Los resultados varían según la persona.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* lang switcher */
+  document.querySelectorAll('[data-lang-btn]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = this.dataset.langBtn;
+      document.documentElement.dataset.lang = lang;
+      document.querySelectorAll('[data-lang-btn]').forEach(function(b) {
+        b.setAttribute('aria-pressed', b.dataset.langBtn === lang ? 'true' : 'false');
+      });
+    });
+  });
+
+  /* reveal on scroll */
+  var revealEls = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(function(el) { io.observe(el); });
+</script>
+
+</body>
+</html>
