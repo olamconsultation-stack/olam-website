@@ -211,36 +211,39 @@
 
   .svc-card {
     position: relative; border-radius: 24px; overflow: hidden;
-    background: #fff;
-    box-shadow: 0 4px 24px rgba(0,0,0,.09), 0 1px 4px rgba(0,0,0,.06);
+    aspect-ratio: 3/4;
+    box-shadow: 0 4px 28px rgba(0,0,0,.13), 0 1px 4px rgba(0,0,0,.07);
     cursor: pointer;
     transition: transform var(--dur-base) var(--ease-cushion), box-shadow var(--dur-base) var(--ease-cushion);
-    display: flex; flex-direction: column;
   }
-  .svc-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(0,0,0,.14), 0 2px 8px rgba(0,0,0,.06); }
+  .svc-card:hover { transform: translateY(-6px); box-shadow: 0 20px 56px rgba(0,0,0,.18), 0 2px 8px rgba(0,0,0,.07); }
 
-  /* image area */
-  .svc-card-img-wrap { width: 100%; overflow: hidden; flex-shrink: 0; }
-  .svc-card-img {
-    width: 100%; height: 260px; object-fit: cover; display: block;
-    transition: transform 0.5s var(--ease-cushion);
-  }
-  .svc-card:hover .svc-card-img { transform: scale(1.06); }
+  /* image fills entire card */
+  .svc-card-img-wrap { position: absolute; inset: 0; }
+  .svc-card-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.55s var(--ease-cushion); }
+  .svc-card:hover .svc-card-img { transform: scale(1.07); }
   .svc-card-ph {
-    width: 100%; height: 260px;
-    background: linear-gradient(145deg, #e8eef5 0%, #d4dde8 100%);
-    display: flex; align-items: center; justify-content: center; color: var(--olam-blue); opacity: 0.7;
+    width: 100%; height: 100%;
+    background: linear-gradient(145deg, #c8d8e8 0%, #a8bfd4 100%);
+    display: flex; align-items: center; justify-content: center; color: var(--olam-blue);
   }
-  .svc-card-ph .material-symbols-outlined { font-size: 52px; }
+  .svc-card-ph .material-symbols-outlined { font-size: 56px; opacity: 0.5; }
 
-  /* body */
-  .svc-card-body { padding: 20px 20px 22px; display: flex; flex-direction: column; flex: 1; }
+  /* frosted glass body — positioned at the bottom */
+  .svc-card-body {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: rgba(255, 255, 255, 0.68);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255,255,255,0.55);
+    padding: 18px 20px 20px;
+  }
 
   /* name row */
-  .svc-name-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .svc-name-row { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
   .svc-card-body h3 {
     font-family: var(--font-body); font-weight: 600; font-size: 1.05rem;
-    color: var(--text-strong); margin: 0; line-height: 1.2;
+    color: #1a1a2e; margin: 0; line-height: 1.2;
   }
   .svc-badge {
     width: 22px; height: 22px; border-radius: 50%;
@@ -251,24 +254,21 @@
 
   /* description */
   .svc-card-body p {
-    font-family: var(--font-body); font-size: 0.82rem; color: var(--text-muted);
-    line-height: 1.55; margin: 0 0 auto; padding-bottom: 18px;
+    font-family: var(--font-body); font-size: 0.8rem; color: rgba(30,30,50,0.72);
+    line-height: 1.5; margin: 0 0 14px;
   }
 
   /* footer row */
-  .svc-footer {
-    display: flex; align-items: center; justify-content: space-between;
-    padding-top: 14px; border-top: 1px solid #f0f0f0; margin-top: auto;
-  }
+  .svc-footer { display: flex; align-items: center; justify-content: space-between; }
   .svc-tag {
-    display: inline-flex; align-items: center; gap: 5px;
-    font-family: var(--font-body); font-size: 0.76rem; color: #888; font-weight: 400;
+    display: inline-flex; align-items: center; gap: 4px;
+    font-family: var(--font-body); font-size: 0.74rem; color: rgba(30,30,50,0.55); font-weight: 400;
   }
-  .svc-tag .material-symbols-outlined { font-size: 15px; color: var(--olam-blue); opacity: 0.7; }
+  .svc-tag .material-symbols-outlined { font-size: 14px; color: var(--olam-blue); }
   .svc-book-btn {
     display: inline-flex; align-items: center; gap: 4px;
     background: var(--olam-blue); color: #fff;
-    font-family: var(--font-body); font-size: 0.82rem; font-weight: 600;
+    font-family: var(--font-body); font-size: 0.8rem; font-weight: 600;
     padding: 8px 18px; border-radius: 100px;
     text-decoration: none; letter-spacing: 0.01em;
     transition: background var(--dur-fast) var(--ease-cushion), transform var(--dur-fast) var(--ease-cushion);
