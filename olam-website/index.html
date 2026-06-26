@@ -180,12 +180,11 @@
   .phil-stat-label { font-size: var(--text-caption); color: var(--text-muted); line-height: 1.4; }
 
   /* video */
-  .video-wrap { position: relative; margin-top: 56px; border-radius: var(--radius-xl); overflow: hidden; cursor: pointer; box-shadow: var(--shadow-2xl); }
-  .video-poster { width: 100%; height: 480px; object-fit: cover; display: block; }
-  @media (max-width: 640px) { .video-poster { height: 240px; } }
-  .video-play-btn { position: absolute; inset: 0; margin: auto; width: 80px; height: 80px; background: none; border: none; cursor: pointer; padding: 0; transition: transform 0.2s; }
+  .video-wrap { position: relative; margin-top: 56px; border-radius: var(--radius-xl); overflow: hidden; cursor: pointer; box-shadow: var(--shadow-2xl); aspect-ratio: 16/9; background: #000; }
+  .video-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity 0.3s; }
+  .video-play-btn { position: absolute; inset: 0; margin: auto; width: 80px; height: 80px; background: none; border: none; cursor: pointer; padding: 0; transition: transform 0.2s; z-index: 2; }
   .video-play-btn:hover { transform: scale(1.1); }
-  .video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+  .video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; z-index: 3; }
 
   /* discover banner */
   .discover-banner { background: var(--olam-blue); padding: 72px 0; text-align: center; position: relative; overflow: hidden; }
@@ -350,8 +349,12 @@
     <div class="wrap">
       <div class="hero-grid">
         <div class="reveal">
-          <span class="hero-welcome"><span class="only-en">Welcome to</span><span class="only-es">Bienvenida a</span></span>
-          <h1 class="hero-brand">OLAM MED SPA</h1>
+          <h1>
+            <span class="h-top-line">
+              <span class="h-hair"><span class="only-en">Welcome to </span><span class="only-es">Bienvenida a </span></span><span class="h-hero"><span class="only-en">Olam</span><span class="only-es">Olam</span></span>
+            </span>
+            <span class="h-close">Med Spa</span>
+          </h1>
           <p class="lead hero-sub">
             <span class="only-en">Enhance your skin and confidence with personalized aesthetic treatments in Pembroke Pines — because beauty begins with care.</span>
             <span class="only-es">Realza tu piel y confianza con tratamientos estéticos personalizados en Pembroke Pines — porque la belleza comienza con el cuidado.</span>
@@ -805,9 +808,9 @@
       iframe.src = 'https://www.youtube.com/embed/Xq38FvXcSrw?autoplay=1&rel=0';
       iframe.allow = 'autoplay; encrypted-media';
       iframe.allowFullscreen = true;
-      iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;';
-      wrap.querySelector('.video-poster').style.display = 'none';
-      btn.style.display = 'none';
+      wrap.querySelector('.video-poster').style.opacity = '0';
+      btn.style.opacity = '0';
+      btn.style.pointerEvents = 'none';
       wrap.appendChild(iframe);
     });
   })();
