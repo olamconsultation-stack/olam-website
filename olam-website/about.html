@@ -103,19 +103,15 @@
   .reveal.in { opacity: 1; transform: none; }
 
   /* footer */
-  footer.site { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 64px 0 32px; }
-  .foot-grid { display: grid; grid-template-columns: 1fr; gap: 36px; margin-bottom: 48px; }
-  @media (min-width: 640px){ .foot-grid { grid-template-columns: repeat(2,1fr); } }
-  @media (min-width: 900px){ .foot-grid { grid-template-columns: 2fr 1fr 1fr 1fr; } }
-  .foot-col { display: flex; flex-direction: column; gap: 10px; }
-  .foot-logo { height: 28px; width: auto; margin-bottom: 8px; filter: brightness(0) invert(1); }
-  .foot-col p { margin: 0; font-size: var(--text-sm); line-height: 1.65; }
-  .foot-col a { font-size: var(--text-sm); color: rgba(255,255,255,0.6); transition: color 0.2s; }
-  .foot-col a:hover { color: #fff; }
-  .foot-social { display: flex; gap: 10px; margin-top: 4px; }
-  .foot-social a { width: 36px; height: 36px; border-radius: 9999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); display: grid; place-items: center; color: rgba(255,255,255,0.6); font-size: 16px; transition: background 0.2s, color 0.2s; }
-  .foot-social a:hover { background: rgba(255,255,255,0.16); color: #fff; }
-  .foot-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-size: var(--text-caption); color: rgba(255,255,255,0.4); }
+  footer.site { background: var(--surface-linen); border-top: 1px solid var(--border-hairline); padding: 52px 0 36px; }
+  .foot-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px; align-items: flex-start; }
+  .foot-logo { height: 32px; margin-bottom: 16px; }
+  .foot-col p, .foot-col a { font-size: var(--text-sm); color: var(--text-muted); line-height: 1.9; display: block; }
+  .foot-col a:hover { color: var(--text-accent); }
+  .foot-bottom { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--border-champagne); font-size: var(--text-caption); color: var(--text-subtle); display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: space-between; }
+  .foot-social { display: flex; gap: 12px; margin-top: 16px; }
+  .foot-social a { width: 36px; height: 36px; border-radius: 9999px; background: var(--surface-card); border: 1px solid var(--border-hairline); display: grid; place-items: center; color: var(--text-muted); font-size: 16px; transition: background var(--dur-fast) var(--ease-cushion), color var(--dur-fast) var(--ease-cushion); }
+  .foot-social a:hover { background: var(--action); color: #fff; border-color: var(--action); }
 
   /* ===================== ABOUT-SPECIFIC ===================== */
 
@@ -293,7 +289,7 @@
 <!-- ====== HEADER ====== -->
 <header class="site">
   <div class="wrap row">
-    <a href="index.html" aria-label="Olam Med Spa home"><img class="logo" src="assets/logo-olam.png" alt="Olam Med Spa"></a>
+    <a href="/" aria-label="Olam Med Spa home"><img class="logo" src="assets/logo-olam.png" alt="Olam Med Spa"></a>
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html#services"><span class="only-en">Services</span><span class="only-es">Servicios</span></a>
       <a href="index.html#proof"><span class="only-en">Why Olam</span><span class="only-es">Por qué Olam</span></a>
@@ -496,7 +492,7 @@
         </div>
       </div>
       <div class="foot-col">
-        <p style="color:rgba(255,255,255,0.9);font-weight:600;margin-bottom:4px;"><span class="only-en">Services</span><span class="only-es">Servicios</span></p>
+        <p style="color:var(--text-strong);font-weight:600;margin-bottom:4px;"><span class="only-en">Services</span><span class="only-es">Servicios</span></p>
         <a href="index.html#services"><span class="only-en">Injectables</span><span class="only-es">Inyectables</span></a>
         <a href="index.html#services"><span class="only-en">Skin Tightening</span><span class="only-es">Tensado de Piel</span></a>
         <a href="index.html#services"><span class="only-en">Laser Treatments</span><span class="only-es">Tratamientos Láser</span></a>
@@ -505,14 +501,14 @@
         <a href="index.html#services"><span class="only-en">Laser Hair Removal</span><span class="only-es">Remoción de Vello</span></a>
       </div>
       <div class="foot-col">
-        <p style="color:rgba(255,255,255,0.9);font-weight:600;margin-bottom:4px;"><span class="only-en">Clinic</span><span class="only-es">Clínica</span></p>
+        <p style="color:var(--text-strong);font-weight:600;margin-bottom:4px;"><span class="only-en">Clinic</span><span class="only-es">Clínica</span></p>
         <a href="index.html#proof"><span class="only-en">Why Olam</span><span class="only-es">Por qué Olam</span></a>
         <a href="index.html#results"><span class="only-en">Results</span><span class="only-es">Resultados</span></a>
         <a href="index.html#process"><span class="only-en">How it works</span><span class="only-es">Cómo funciona</span></a>
-        <a href="about.html"><span class="only-en">About Us</span><span class="only-es">Nosotros</span></a>
+        <a href="index.html#book"><span class="only-en">Book a consultation</span><span class="only-es">Agenda una consulta</span></a>
       </div>
       <div class="foot-col">
-        <p style="color:rgba(255,255,255,0.9);font-weight:600;margin-bottom:4px;"><span class="only-en">Visit</span><span class="only-es">Visítanos</span></p>
+        <p style="color:var(--text-strong);font-weight:600;margin-bottom:4px;"><span class="only-en">Visit</span><span class="only-es">Visítanos</span></p>
         <a href="tel:19542370930">954.237.0930</a>
         <a href="mailto:info@olammedspa.com">info@olammedspa.com</a>
         <p style="line-height:1.6;">17901 NW 5th St, Ste 201<br>Pembroke Pines, FL 33029</p>
