@@ -199,8 +199,17 @@
   .ba-section { padding: 80px 0; background: var(--surface-page); }
   .ba-inner { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; margin-top: 48px; }
   @media (min-width: 860px){ .ba-inner { grid-template-columns: 1fr 1fr; gap: 64px; } }
-  .ba-img { border-radius: 20px; overflow: hidden; cursor: zoom-in; }
+  .ba-img { border-radius: 20px; overflow: hidden; }
   .ba-img img { width: 100%; display: block; object-fit: cover; }
+  .ba-video-wrap {
+    border-radius: 20px; overflow: hidden;
+    position: relative; max-width: 340px;
+    aspect-ratio: 9/16;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.18);
+  }
+  .ba-video-wrap iframe {
+    position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block;
+  }
   .ba-text { display: flex; flex-direction: column; gap: 20px; }
   .ba-text p { font-size: 1.05rem; color: var(--text-body); line-height: 1.75; margin: 0; }
   .ba-tag { display: inline-block; background: var(--olam-blue); color: #fff; font-size: var(--text-caption); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 16px; border-radius: 9999px; margin-bottom: 4px; }
@@ -543,8 +552,13 @@
       </h2>
     </div>
     <div class="ba-inner">
-      <div class="ba-img reveal" data-lb="gallery">
-        <img src="../../assets/prf-results.jpg" alt="PRF before and after at Olam Med Spa">
+      <div class="ba-video-wrap reveal">
+        <iframe
+          src="https://www.youtube.com/embed/txHyDD96JO8"
+          title="PRF patient testimonial — Olam Med Spa"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
       <div class="ba-text reveal">
         <span class="ba-tag"><span class="only-en">Patient Results</span><span class="only-es">Resultados de Paciente</span></span>
