@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dermal Fillers — Injectables | Olam Med Spa Pembroke Pines, FL</title>
+<meta name="description" content="Restore lost volume, smooth wrinkles, and enhance your features with dermal fillers at Olam Med Spa in Pembroke Pines, FL. Juvederm®, Restylane®, Radiesse®, and Sculptra® — natural, beautiful results.">
+<link rel="icon" href="../../assets/favicon-olam.png" type="image/png">
+
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap">
+
+<style>
+  *,*::before,*::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; overflow-x: clip; }
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    font-weight: var(--fw-light);
+    color: var(--text-body);
+    background: var(--surface-page);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  html[data-lang="en"] .only-es { display: none !important; }
+  html[data-lang="es"] .only-en { display: none !important; }
+
+  .wrap { max-width: var(--content-max); margin: 0 auto; padding: 0 var(--gutter); }
+  @media (min-width: 768px){ .wrap { padding: 0 var(--gutter-lg); } }
+  section.band { padding: var(--space-8) 0; position: relative; }
+  @media (min-width: 768px){ section.band { padding: var(--space-10) 0; } }
+
+  .eyebrow {
+    font-family: var(--font-body); font-size: var(--text-label); font-weight: var(--fw-semibold);
+    text-transform: uppercase; letter-spacing: var(--ls-label);
+    color: var(--text-accent); margin: 0 0 18px; display: flex; align-items: center; gap: 10px;
+  }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 9999px; background: var(--action); display: inline-block; }
+  h2.h {
+    font-family: var(--font-display); font-weight: var(--fw-medium);
+    letter-spacing: var(--ls-tight); line-height: var(--lh-tight);
+    margin: 0; color: var(--text-strong); font-size: var(--text-h2);
+  }
+  .em { font-style: italic; font-weight: var(--fw-medium); color: var(--text-accent); }
+  .lead { font-family: var(--font-body); font-weight: var(--fw-light); font-size: var(--text-lead); line-height: var(--lh-body); color: var(--text-muted); margin: 0; }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-body); font-weight: var(--fw-semibold);
+    font-size: var(--text-sm); padding: 13px 24px; border-radius: var(--radius-pill);
+    border: 1.5px solid transparent; cursor: pointer; line-height: 1; white-space: nowrap;
+    transition: background-color var(--dur-fast) var(--ease-cushion), transform var(--dur-fast) var(--ease-cushion), border-color var(--dur-fast) var(--ease-cushion);
+  }
+  .btn .arr { transition: transform var(--dur-fast) var(--ease-cushion); }
+  .btn:hover .arr { transform: translateX(5px); }
+  .btn-primary { background: var(--action); color: #fff; box-shadow: var(--shadow-button); }
+  .btn-primary:hover { background: var(--action-hover); transform: translateY(-3px); }
+  .btn-outline { background: transparent; color: var(--text-strong); border-color: var(--border-strong); }
+  .btn-outline:hover { background: var(--action-ink); color: #fff; border-color: var(--action-ink); }
+  .btn-lg { padding: 17px 32px; font-size: 1.05rem; }
+  @media (max-width: 480px){ .btn-lg { padding: 13px 20px; font-size: 0.9rem; } }
+  .btn-white { background: #fff; color: var(--olam-blue); font-weight: var(--fw-semibold); }
+  .btn-white:hover { background: var(--surface-linen); transform: translateY(-2px); }
+  .btn-ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.4); }
+  .btn-ghost:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.7); }
+  .btn-icon { width: 40px; height: 40px; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; background: var(--action); color: #fff; border: none; cursor: pointer; flex-shrink: 0; }
+  .btn-icon .material-symbols-outlined { font-size: 20px; }
+  .btn-icon-mobile { display: inline-flex; }
+  @media (min-width: 600px){ .btn-icon-mobile { display: none; } }
+
+  /* header */
+  header.site {
+    position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
+    z-index: 50; width: calc(100% - 32px); max-width: 1100px;
+    background: rgba(255,255,255,0.96); backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); border-radius: 9999px;
+    border: 1px solid var(--border-hairline);
+    box-shadow: 0 4px 28px rgba(31,32,32,0.10), 0 1px 4px rgba(31,32,32,0.06);
+  }
+  header.site .wrap { max-width: 100%; margin: 0; }
+  header.site .row { display: flex; align-items: center; justify-content: space-between; height: 62px; gap: 12px; padding: 6px 6px 6px 36px; }
+  .site .logo { height: 28px; width: auto; display: block; }
+  .nav-links { display: none; gap: 26px; font-size: var(--text-sm); color: var(--text-body); font-weight: var(--fw-regular); }
+  .nav-links a:hover { color: var(--text-accent); }
+  @media (min-width: 1040px){ .nav-links { display: flex; } }
+  .site .actions { display: flex; align-items: center; gap: 10px; }
+  .site .actions .btn { display: none; }
+  @media (min-width: 600px){ .site .actions .btn { display: inline-flex; } }
+  .lang { display: inline-flex; border: 1px solid var(--border-soft); border-radius: var(--radius-pill); overflow: hidden; }
+  .lang button { font-family: var(--font-body); font-weight: var(--fw-semibold); font-size: var(--text-caption); letter-spacing: 0.06em; padding: 7px 12px; background: transparent; border: 0; cursor: pointer; color: var(--text-muted); }
+  .lang button[aria-pressed="true"] { background: var(--action); color: #fff; }
+
+  /* reveal */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s var(--ease-cushion), transform 0.7s var(--ease-cushion); }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* footer */
+  footer.site { background: var(--surface-linen); border-top: 1px solid var(--border-hairline); padding: 52px 0 36px; }
+  .foot-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px; align-items: flex-start; }
+  .foot-logo { height: 32px; margin-bottom: 16px; }
+  .foot-col p, .foot-col a { font-size: var(--text-sm); color: var(--text-muted); line-height: 1.9; display: block; }
+  .foot-col a:hover { color: var(--text-accent); }
+  .foot-bottom { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--border-champagne); font-size: var(--text-caption); color: var(--text-subtle); display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: space-between; }
+  .foot-social { display: flex; gap: 12px; margin-top: 16px; }
+  .foot-social a { width: 36px; height: 36px; border-radius: 9999px; background: var(--surface-card); border: 1px solid var(--border-hairline); display: grid; place-items: center; color: var(--text-muted); font-size: 16px; transition: background var(--dur-fast) var(--ease-cushion), color var(--dur-fast) var(--ease-cushion); }
+  .foot-social a:hover { background: var(--action); color: #fff; border-color: var(--action); }
+
+  /* ===== PAGE-SPECIFIC ===== */
+
+  /* hero */
+  .svc-hero {
+    padding-top: 140px; padding-bottom: 0;
+    background: #ffffff; position: relative; overflow: hidden;
+  }
+  .svc-hero-inner {
+    display: grid; grid-template-columns: 1fr;
+    gap: 48px; align-items: center;
+  }
+  @media (min-width: 860px) {
+    .svc-hero-inner { grid-template-columns: 1fr 1fr; gap: 64px; padding-bottom: 0; }
+  }
+  .svc-hero-text { padding-bottom: 64px; }
+  @media (min-width: 860px){ .svc-hero-text { padding-bottom: 80px; } }
+  .svc-hero h1 {
+    font-family: var(--font-display); font-style: italic; font-weight: 300;
+    font-size: clamp(2.6rem, 5.5vw, 4.4rem); color: var(--charcoal);
+    line-height: 1.08; margin: 0 0 10px; letter-spacing: -0.02em;
+  }
+  .svc-hero h1 strong {
+    font-family: var(--font-body); font-weight: 700; font-style: normal;
+    color: var(--olam-blue); display: block;
+  }
+  .svc-hero-lead {
+    font-size: var(--text-lead); color: var(--text-muted); font-weight: var(--fw-light);
+    line-height: 1.65; margin: 24px 0 36px; max-width: 52ch;
+  }
+  .svc-hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+  .svc-hero-img {
+    position: relative; border-radius: 24px 24px 0 0; overflow: hidden;
+    height: 480px; align-self: flex-end;
+  }
+  @media (min-width: 860px){ .svc-hero-img { height: 560px; } }
+  .svc-hero-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+
+  /* breadcrumb */
+  .breadcrumb {
+    display: flex; align-items: center; gap: 8px;
+    font-size: var(--text-caption); color: var(--text-subtle); margin-bottom: 20px;
+  }
+  .breadcrumb a:hover { color: var(--text-accent); }
+  .breadcrumb span { color: var(--border-strong); }
+
+  /* detail chips */
+  .detail-band { background: var(--surface-linen); padding: 48px 0; }
+  .detail-grid {
+    display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;
+  }
+  .detail-chip {
+    background: #fff; border: 1px solid var(--border-hairline);
+    border-radius: 14px; padding: 18px 24px; display: flex; flex-direction: column; gap: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); min-width: 160px;
+  }
+  .detail-chip-label { font-size: var(--text-caption); color: var(--text-subtle); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+  .detail-chip-value { font-size: var(--text-sm); color: var(--text-strong); font-weight: 600; line-height: 1.4; }
+
+  /* intro split */
+  .intro-split {
+    display: grid; grid-template-columns: 1fr;
+    gap: 48px; align-items: center; padding: 80px 0;
+  }
+  @media (min-width: 860px){ .intro-split { grid-template-columns: 1fr 1fr; gap: 72px; } }
+  .intro-split-img { border-radius: 20px; overflow: hidden; height: 420px; }
+  .intro-split-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .intro-split-text { display: flex; flex-direction: column; gap: 20px; }
+  .intro-split-text p { font-size: 1.05rem; color: var(--text-body); line-height: 1.75; margin: 0; }
+
+  /* treatment areas */
+  .areas-section { padding: 72px 0; background: var(--surface-page); }
+  .areas-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+  .area-pill {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--surface-card); border: 1px solid var(--border-hairline);
+    border-radius: 9999px; padding: 10px 20px;
+    font-size: var(--text-sm); color: var(--text-body); font-weight: 500;
+  }
+  .area-pill .material-symbols-outlined { font-size: 16px; color: var(--action); }
+
+  /* brands */
+  .brands-section { padding: 72px 0; background: var(--surface-linen); }
+  .brands-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 48px; }
+  @media (min-width: 640px){ .brands-grid { grid-template-columns: repeat(2,1fr); } }
+  @media (min-width: 960px){ .brands-grid { grid-template-columns: repeat(4,1fr); } }
+  .brand-card {
+    background: #fff; border-radius: 20px; padding: 28px 24px;
+    border: 1px solid var(--border-hairline);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+  .brand-card-name {
+    font-family: var(--font-display); font-style: italic; font-weight: 300;
+    font-size: 1.6rem; color: var(--olam-blue); margin: 0 0 6px;
+  }
+  .brand-card-tag {
+    display: inline-block; background: var(--surface-linen); color: var(--text-accent);
+    font-size: var(--text-caption); font-weight: 600; letter-spacing: 0.06em;
+    text-transform: uppercase; padding: 4px 14px; border-radius: 9999px; margin-bottom: 14px;
+  }
+  .brand-card p { font-size: var(--text-sm); color: var(--text-muted); line-height: 1.7; margin: 0; }
+
+  /* steps */
+  .steps-section { padding: 80px 0; background: var(--surface-page); }
+  .steps-grid { display: grid; grid-template-columns: 1fr; gap: 32px; margin-top: 48px; }
+  @media (min-width: 640px){ .steps-grid { grid-template-columns: repeat(4,1fr); gap: 20px; } }
+  .step-card {
+    background: #fff; border-radius: 20px; padding: 32px 28px;
+    border: 1px solid var(--border-hairline);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+  .step-num {
+    width: 44px; height: 44px; border-radius: 9999px;
+    background: var(--action); color: #fff; display: grid; place-items: center;
+    font-family: var(--font-display); font-style: italic; font-size: 1.4rem; font-weight: 300;
+    margin-bottom: 20px;
+  }
+  .step-card h3 { font-family: var(--font-body); font-weight: 600; font-size: 1.05rem; color: var(--text-strong); margin: 0 0 10px; }
+  .step-card p { font-size: var(--text-sm); color: var(--text-muted); line-height: 1.7; margin: 0; }
+
+  /* gallery */
+  .gallery-section { padding: 72px 0; }
+  .gallery-grid {
+    display: grid; gap: 16px; margin-top: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 640px){ .gallery-grid { grid-template-columns: repeat(3,1fr); } }
+  .gallery-img { border-radius: 16px; overflow: hidden; aspect-ratio: 3/4; cursor: zoom-in; }
+  .gallery-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+  .gallery-img:hover img { transform: scale(1.04); }
+
+  /* lightbox */
+  .lb-overlay {
+    display: none; position: fixed; inset: 0; z-index: 200;
+    background: rgba(0,0,0,0.88); align-items: center; justify-content: center;
+    padding: 24px;
+    animation: lbFadeIn 0.2s ease;
+  }
+  .lb-overlay.open { display: flex; }
+  @keyframes lbFadeIn { from { opacity:0; } to { opacity:1; } }
+  .lb-img-wrap {
+    position: relative; max-width: 90vw; max-height: 90vh;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .lb-img-wrap img {
+    max-width: 90vw; max-height: 88vh;
+    border-radius: 12px; object-fit: contain;
+    box-shadow: 0 32px 80px rgba(0,0,0,0.6);
+    animation: lbScaleIn 0.25s cubic-bezier(0.34,1.56,0.64,1);
+  }
+  @keyframes lbScaleIn { from { transform: scale(0.88); } to { transform: scale(1); } }
+  .lb-close {
+    position: fixed; top: 20px; right: 24px;
+    width: 44px; height: 44px; border-radius: 9999px;
+    background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
+    color: #fff; font-size: 20px; cursor: pointer;
+    display: grid; place-items: center; backdrop-filter: blur(8px);
+    transition: background 0.15s;
+  }
+  .lb-close:hover { background: rgba(255,255,255,0.22); }
+  .lb-prev, .lb-next {
+    position: fixed; top: 50%; transform: translateY(-50%);
+    width: 48px; height: 48px; border-radius: 9999px;
+    background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
+    color: #fff; font-size: 22px; cursor: pointer;
+    display: grid; place-items: center; backdrop-filter: blur(8px);
+    transition: background 0.15s; user-select: none;
+  }
+  .lb-prev:hover, .lb-next:hover { background: rgba(255,255,255,0.22); }
+  .lb-prev { left: 16px; }
+  .lb-next { right: 16px; }
+
+  /* before after */
+  .ba-section { padding: 80px 0; background: var(--surface-linen); }
+  .ba-inner {
+    display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; margin-top: 48px;
+  }
+  @media (min-width: 860px){ .ba-inner { grid-template-columns: 1fr 1fr; gap: 64px; } }
+  .ba-img { border-radius: 20px; overflow: hidden; cursor: zoom-in; }
+  .ba-img img { width: 100%; display: block; object-fit: cover; }
+  .ba-text { display: flex; flex-direction: column; gap: 20px; }
+  .ba-text p { font-size: 1.05rem; color: var(--text-body); line-height: 1.75; margin: 0; }
+  .ba-tag {
+    display: inline-block; background: var(--olam-blue); color: #fff;
+    font-size: var(--text-caption); font-weight: 600; letter-spacing: 0.06em;
+    text-transform: uppercase; padding: 5px 16px; border-radius: 9999px; margin-bottom: 4px;
+  }
+
+  /* volume callout */
+  .vol-section {
+    padding: 80px 0; background: var(--olam-blue); position: relative; overflow: hidden;
+  }
+  .vol-section::before {
+    content: ''; position: absolute; inset: 0;
+    background: url('../../assets/filler-juvederm-02.jpg') center/cover no-repeat;
+    opacity: 0.12; mix-blend-mode: luminosity;
+  }
+  .vol-inner { position: relative; z-index: 1; max-width: 640px; }
+  .vol-inner .eyebrow { color: rgba(255,255,255,0.7); }
+  .vol-inner .eyebrow .dot { background: rgba(255,255,255,0.5); }
+  .vol-inner h2 {
+    font-family: var(--font-display); font-style: italic; font-weight: 300;
+    font-size: clamp(2rem, 4vw, 3rem); color: #fff; margin: 0 0 20px; line-height: 1.15;
+  }
+  .vol-inner h2 strong { font-style: normal; font-weight: 600; }
+  .vol-inner p { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0 0 32px; }
+
+  /* why olam */
+  .why-section { padding: 80px 0; }
+  .why-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 48px; }
+  @media (min-width: 640px){ .why-grid { grid-template-columns: repeat(3,1fr); } }
+  .why-card {
+    border: 1px solid var(--border-hairline); border-radius: 20px; padding: 32px 28px;
+    background: var(--surface-card);
+  }
+  .why-icon {
+    width: 48px; height: 48px; border-radius: 14px; background: var(--surface-linen);
+    display: grid; place-items: center; margin-bottom: 18px;
+  }
+  .why-icon .material-symbols-outlined { font-size: 24px; color: var(--action); }
+  .why-card h3 { font-family: var(--font-body); font-weight: 600; font-size: 1.05rem; color: var(--text-strong); margin: 0 0 10px; }
+  .why-card p { font-size: var(--text-sm); color: var(--text-muted); line-height: 1.7; margin: 0; }
+
+  /* cta band */
+  .svc-cta { background: linear-gradient(135deg, #0d2d45 0%, #1a4a6b 50%, #2a6a96 100%); padding: 72px 0; text-align: center; }
+  .svc-cta h2 {
+    font-family: var(--font-display); font-style: italic; font-weight: 300;
+    font-size: clamp(1.8rem, 4vw, 3rem); color: #fff; margin: 0 0 14px;
+  }
+  .svc-cta h2 strong { font-style: normal; font-weight: 600; color: var(--champagne); }
+  .svc-cta p { font-size: var(--text-sm); color: rgba(255,255,255,0.65); margin: 0 0 36px; }
+  .svc-cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site">
+  <div class="wrap row">
+    <a href="/" aria-label="Olam Med Spa home"><img class="logo" src="../../assets/logo-olam.png" alt="Olam Med Spa"></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/#services" style="color:var(--text-accent);font-weight:600;"><span class="only-en">Services</span><span class="only-es">Servicios</span></a>
+      <a href="/about"><span class="only-en">About</span><span class="only-es">Nosotros</span></a>
+      <a href="/financing"><span class="only-en">Financing</span><span class="only-es">Financiamiento</span></a>
+      <a href="/contact"><span class="only-en">Contact</span><span class="only-es">Contacto</span></a>
+      <a href="https://olamskincare.com/" target="_blank" rel="noopener"><span class="only-en">Shop</span><span class="only-es">Tienda</span></a>
+    </nav>
+    <div class="actions">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang-btn="es" aria-pressed="false">ES</button>
+      </div>
+      <a class="btn-icon btn-icon-mobile" href="/#book" aria-label="Book my consultation"><span class="material-symbols-outlined">calendar_month</span></a>
+      <a class="btn btn-primary" href="/#book"><span class="only-en">Book My Consultation</span><span class="only-es">Agenda tu consulta</span> <span class="arr">→</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="svc-hero">
+  <div class="wrap">
+    <div class="svc-hero-inner">
+      <div class="svc-hero-text reveal">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a><span>›</span>
+          <a href="/#services">Services</a><span>›</span>
+          <span>Injectables</span><span>›</span>
+          <span style="color:var(--text-body);">Dermal Fillers</span>
+        </nav>
+        <p class="eyebrow"><span class="dot"></span><span class="only-en">Injectables · Dermal Fillers</span><span class="only-es">Inyectables · Rellenos Dérmicos</span></p>
+        <h1>
+          <span class="only-en">Restore, Enhance<br><strong>&amp; Rejuvenate.</strong></span>
+          <span class="only-es">Restaura, Realza<br><strong>&amp; Rejuvenece.</strong></span>
+        </h1>
+        <p class="svc-hero-lead">
+          <span class="only-en">Turn back time with natural-looking volume and definition. Dermal fillers restore lost fullness, smooth deep lines, and enhance your features — all with zero surgery and immediate results.</span>
+          <span class="only-es">Retrocede el tiempo con volumen y definición de aspecto natural. Los rellenos dérmicos restauran el volumen perdido, suavizan líneas profundas y realzan tus rasgos — sin cirugía y con resultados inmediatos.</span>
+        </p>
+        <div class="svc-hero-btns">
+          <a class="btn btn-primary btn-lg" href="/#book"><span class="only-en">Book My Consultation</span><span class="only-es">Agenda tu consulta</span> <span class="arr">→</span></a>
+          <a class="btn btn-outline btn-lg" href="tel:19542370930"><span class="only-en">Call 954.237.0930</span><span class="only-es">Llama 954.237.0930</span></a>
+        </div>
+      </div>
+      <div class="svc-hero-img reveal">
+        <img src="../../assets/filler-juvederm-02.jpg" alt="Dermal filler treatment at Olam Med Spa">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAIL CHIPS -->
+<div class="detail-band">
+  <div class="wrap">
+    <div class="detail-grid reveal">
+      <div class="detail-chip">
+        <span class="detail-chip-label"><span class="only-en">Procedure Time</span><span class="only-es">Duración</span></span>
+        <span class="detail-chip-value">30–60 min</span>
+      </div>
+      <div class="detail-chip">
+        <span class="detail-chip-label"><span class="only-en">Results</span><span class="only-es">Resultados</span></span>
+        <span class="detail-chip-value"><span class="only-en">Immediate</span><span class="only-es">Inmediatos</span></span>
+      </div>
+      <div class="detail-chip">
+        <span class="detail-chip-label"><span class="only-en">Longevity</span><span class="only-es">Duración</span></span>
+        <span class="detail-chip-value">6–24 <span class="only-en">months</span><span class="only-es">meses</span></span>
+      </div>
+      <div class="detail-chip">
+        <span class="detail-chip-label"><span class="only-en">Downtime</span><span class="only-es">Recuperación</span></span>
+        <span class="detail-chip-value"><span class="only-en">Minimal</span><span class="only-es">Mínima</span></span>
+      </div>
+      <div class="detail-chip">
+        <span class="detail-chip-label"><span class="only-en">FDA-Approved</span><span class="only-es">Aprobado FDA</span></span>
+        <span class="detail-chip-value"><span class="only-en">Yes</span><span class="only-es">Sí</span></span>
+      </div>
+      <div class="detail-chip">
+        <span class="detail-chip-label"><span class="only-en">Pricing</span><span class="only-es">Precio</span></span>
+        <span class="detail-chip-value"><span class="only-en">By area</span><span class="only-es">Por área</span></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT ARE DERMAL FILLERS -->
+<section class="band">
+  <div class="wrap">
+    <div class="intro-split">
+      <div class="intro-split-img reveal">
+        <img src="../../assets/filler-juvederm-01.jpg" alt="Dermal filler consultation at Olam Med Spa">
+      </div>
+      <div class="intro-split-text reveal">
+        <p class="eyebrow"><span class="dot"></span><span class="only-en">What are dermal fillers?</span><span class="only-es">¿Qué son los rellenos dérmicos?</span></p>
+        <h2 class="h" style="margin-bottom:20px;">
+          <span class="only-en">Volume restored.<br><em class="em">Youth revealed.</em></span>
+          <span class="only-es">Volumen restaurado.<br><em class="em">Juventud revelada.</em></span>
+        </h2>
+        <p>
+          <span class="only-en">As we age, our skin loses collagen, elasticity, and hydration—leading to wrinkles, fine lines, and volume loss. Dermal fillers are injectable treatments using hyaluronic acid or biostimulatory compounds that restore youthful contours, smooth wrinkles, and enhance facial features.</span>
+          <span class="only-es">Con el tiempo, nuestra piel pierde colágeno, elasticidad e hidratación—lo que lleva a arrugas, líneas finas y pérdida de volumen. Los rellenos dérmicos son tratamientos inyectables con ácido hialurónico o compuestos bioestimuladores que restauran contornos juveniles, suavizan arrugas y realzan los rasgos faciales.</span>
+        </p>
+        <p>
+          <span class="only-en">At Olam Med Spa, we use only FDA-approved fillers from leading brands — Juvederm®, Restylane®, Radiesse®, and Sculptra® — administered by our expert injectors for results that look completely natural.</span>
+          <span class="only-es">En Olam Med Spa, usamos únicamente rellenos aprobados por la FDA de marcas líderes — Juvederm®, Restylane®, Radiesse® y Sculptra® — administrados por nuestras expertas para resultados completamente naturales.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENT AREAS -->
+<section class="areas-section">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">Treatment areas</span><span class="only-es">Áreas de tratamiento</span></p>
+      <h2 class="h">
+        <span class="only-en">Enhance where it <em class="em">matters most.</em></span>
+        <span class="only-es">Realza donde más <em class="em">importa.</em></span>
+      </h2>
+    </div>
+    <div class="areas-grid reveal">
+      <div class="area-pill"><span class="material-symbols-outlined">check_circle</span><span class="only-en">Lips — volume &amp; definition</span><span class="only-es">Labios — volumen y definición</span></div>
+      <div class="area-pill"><span class="material-symbols-outlined">check_circle</span><span class="only-en">Cheeks — lift &amp; contour</span><span class="only-es">Mejillas — lifting y contorno</span></div>
+      <div class="area-pill"><span class="material-symbols-outlined">check_circle</span><span class="only-en">Under eyes — dark circles &amp; hollows</span><span class="only-es">Ojeras — círculos oscuros y hundimientos</span></div>
+      <div class="area-pill"><span class="material-symbols-outlined">check_circle</span><span class="only-en">Jawline &amp; chin — sculpt &amp; define</span><span class="only-es">Mandíbula y mentón — esculpir y definir</span></div>
+      <div class="area-pill"><span class="material-symbols-outlined">check_circle</span><span class="only-en">Nasolabial folds</span><span class="only-es">Surcos nasogenianos</span></div>
+      <div class="area-pill"><span class="material-symbols-outlined">check_circle</span><span class="only-en">Temples — volume restoration</span><span class="only-es">Sienes — restauración de volumen</span></div>
+      <div class="area-pill"><span class="material-symbols-outlined">check_circle</span><span class="only-en">Scars &amp; skin texture</span><span class="only-es">Cicatrices y textura de piel</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FILLER BRANDS -->
+<section class="brands-section">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">FDA-approved brands we use</span><span class="only-es">Marcas aprobadas por la FDA que usamos</span></p>
+      <h2 class="h">
+        <span class="only-en">Only the best. <em class="em">Always.</em></span>
+        <span class="only-es">Solo lo mejor. <em class="em">Siempre.</em></span>
+      </h2>
+      <p class="lead" style="margin-top:14px; max-width:54ch;">
+        <span class="only-en">Our expert will recommend the right filler for your goals — each brand has unique properties designed for specific areas and results.</span>
+        <span class="only-es">Nuestra experta recomendará el relleno adecuado para tus objetivos — cada marca tiene propiedades únicas diseñadas para áreas y resultados específicos.</span>
+      </p>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card reveal">
+        <div class="brand-card-name">Juvederm®</div>
+        <span class="brand-card-tag"><span class="only-en">Lips &amp; Cheeks</span><span class="only-es">Labios y Mejillas</span></span>
+        <p><span class="only-en">Hyaluronic acid filler ideal for lips, cheeks, and smoothing moderate-to-severe facial wrinkles. Silky texture, long-lasting results.</span><span class="only-es">Relleno de ácido hialurónico ideal para labios, mejillas y suavizar arrugas moderadas a severas. Textura suave, resultados duraderos.</span></p>
+      </div>
+      <div class="brand-card reveal">
+        <div class="brand-card-name">Restylane®</div>
+        <span class="brand-card-tag"><span class="only-en">Under Eyes &amp; Fine Lines</span><span class="only-es">Ojeras y Líneas Finas</span></span>
+        <p><span class="only-en">Precise and versatile — excellent for delicate areas like under the eyes, fine lines, and subtle lip enhancement with natural movement.</span><span class="only-es">Preciso y versátil — excelente para áreas delicadas como ojeras, líneas finas y mejora sutil de labios con movimiento natural.</span></p>
+      </div>
+      <div class="brand-card reveal">
+        <div class="brand-card-name">Radiesse®</div>
+        <span class="brand-card-tag"><span class="only-en">Jawline &amp; Volume</span><span class="only-es">Mandíbula y Volumen</span></span>
+        <p><span class="only-en">Calcium-based filler that stimulates natural collagen production — ideal for deep volume loss, jawline sculpting, and hand rejuvenation.</span><span class="only-es">Relleno a base de calcio que estimula la producción natural de colágeno — ideal para pérdida de volumen profunda y esculpir la mandíbula.</span></p>
+      </div>
+      <div class="brand-card reveal">
+        <div class="brand-card-name">Sculptra®</div>
+        <span class="brand-card-tag"><span class="only-en">Collagen Stimulator</span><span class="only-es">Estimulador de Colágeno</span></span>
+        <p><span class="only-en">A biostimulator that rebuilds collagen gradually for a natural, long-lasting lift — results develop over weeks and can last up to 2 years.</span><span class="only-es">Un bioestimulador que reconstruye colágeno gradualmente para un lifting natural duradero — los resultados se desarrollan semanas después y duran hasta 2 años.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="steps-section">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">How it works</span><span class="only-es">Cómo funciona</span></p>
+      <h2 class="h">
+        <span class="only-en">Simple process. <em class="em">Beautiful results.</em></span>
+        <span class="only-es">Proceso simple. <em class="em">Resultados hermosos.</em></span>
+      </h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <div class="step-num">1</div>
+        <h3><span class="only-en">Consultation &amp; Custom Plan</span><span class="only-es">Consulta y Plan Personalizado</span></h3>
+        <p><span class="only-en">Our expert assesses your facial anatomy, listens to your goals, and designs a personalized filler plan — selecting the right product and placement for you.</span><span class="only-es">Nuestra experta evalúa tu anatomía, escucha tus objetivos y diseña un plan personalizado — seleccionando el producto y la colocación correcta para ti.</span></p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">2</div>
+        <h3><span class="only-en">Precise, Comfortable Injections</span><span class="only-es">Inyecciones Precisas y Cómodas</span></h3>
+        <p><span class="only-en">Using ultra-fine needles or cannulas, filler is carefully placed in targeted areas. A topical numbing cream ensures your comfort throughout.</span><span class="only-es">Con agujas ultrafinas o cánulas, el relleno se coloca cuidadosamente en las áreas deseadas. Una crema anestésica tópica garantiza tu comodidad durante todo el proceso.</span></p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">3</div>
+        <h3><span class="only-en">Immediate Results</span><span class="only-es">Resultados Inmediatos</span></h3>
+        <p><span class="only-en">See the difference right away. Any mild swelling or bruising typically resolves within a few days, revealing your final, beautiful result.</span><span class="only-es">Ve la diferencia de inmediato. Cualquier hinchazón o moretón leve se resuelve en pocos días, revelando tu resultado final y hermoso.</span></p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">4</div>
+        <h3><span class="only-en">Long-Lasting Beauty</span><span class="only-es">Belleza Duradera</span></h3>
+        <p><span class="only-en">Enjoy your results for 6 to 24 months depending on the filler used and the area treated — with maintenance sessions to keep you looking your best.</span><span class="only-es">Disfruta tus resultados de 6 a 24 meses según el relleno y área tratada — con sesiones de mantenimiento para que siempre luzcas increíble.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="band" style="background:var(--surface-linen);">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">What clients say</span><span class="only-es">Qué dicen nuestras clientas</span></p>
+      <h2 class="h"><span class="only-en">400+ five-star <em class="em">reviews.</em></span><span class="only-es">400+ reseñas de <em class="em">cinco estrellas.</em></span></h2>
+    </div>
+    <div class="reveal" style="margin-top:32px;">
+      <script defer async src='https://cdn.trustindex.io/loader.js?a69d04174bae977ae596485f37a'></script>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE & AFTER -->
+<section class="ba-section">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">Before &amp; After</span><span class="only-es">Antes y Después</span></p>
+      <h2 class="h">
+        <span class="only-en">Real results. <em class="em">Real patients.</em></span>
+        <span class="only-es">Resultados reales. <em class="em">Pacientes reales.</em></span>
+      </h2>
+    </div>
+    <div class="ba-inner">
+      <div class="ba-img reveal" data-lb="gallery">
+        <img src="../../assets/filler-neurotoxin-01.jpg" alt="Dermal filler before and after at Olam Med Spa">
+      </div>
+      <div class="ba-text reveal">
+        <span class="ba-tag"><span class="only-en">Patient Results</span><span class="only-es">Resultados de Paciente</span></span>
+        <h3 style="font-family:var(--font-display);font-style:italic;font-weight:300;font-size:clamp(1.6rem,3vw,2.2rem);color:var(--charcoal);margin:0;line-height:1.2;">
+          <span class="only-en">Natural volume.<br><strong style="font-style:normal;font-weight:700;color:var(--olam-blue);">Never overdone.</strong></span>
+          <span class="only-es">Volumen natural.<br><strong style="font-style:normal;font-weight:700;color:var(--olam-blue);">Nunca exagerado.</strong></span>
+        </h3>
+        <p><span class="only-en">We specialize in natural, balanced enhancements — restoring what time has taken without altering who you are. Our approach is subtle, precise, and always tailored to your unique facial structure.</span><span class="only-es">Nos especializamos en realces naturales y equilibrados — restaurando lo que el tiempo ha llevado sin alterar quién eres. Nuestro enfoque es sutil, preciso y siempre adaptado a tu estructura facial única.</span></p>
+        <p style="font-size:var(--text-caption);color:var(--text-subtle);font-style:italic;"><span class="only-en">Individual results may vary. Photos shown are from actual Olam Med Spa patients.</span><span class="only-es">Los resultados individuales pueden variar. Las fotos mostradas son de pacientes reales de Olam Med Spa.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOLUME CALLOUT -->
+<section class="vol-section">
+  <div class="wrap">
+    <div class="vol-inner reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">Restore what time has taken</span><span class="only-es">Recupera lo que el tiempo se llevó</span></p>
+      <h2>
+        <span class="only-en">Look as young as <strong>you feel.</strong></span>
+        <span class="only-es">Luce tan joven <strong>como te sientes.</strong></span>
+      </h2>
+      <p>
+        <span class="only-en">Volume loss is one of the earliest signs of aging — and one of the most impactful to address. A single filler session can restore youthful definition, lift drooping features, and refresh your entire appearance. No surgery. No downtime. Just you, better.</span>
+        <span class="only-es">La pérdida de volumen es uno de los primeros signos del envejecimiento — y uno de los más impactantes de tratar. Una sola sesión de rellenos puede restaurar la definición juvenil, levantar rasgos caídos y refrescar toda tu apariencia. Sin cirugía. Sin tiempo de recuperación. Solo tú, mejor.</span>
+      </p>
+      <a class="btn btn-white btn-lg" href="/#book"><span class="only-en">Book a consultation</span><span class="only-es">Agenda una consulta</span> <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY OLAM -->
+<section class="why-section">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">Why choose Olam Med Spa</span><span class="only-es">Por qué elegir Olam Med Spa</span></p>
+      <h2 class="h">
+        <span class="only-en">Expert care. <em class="em">Every time.</em></span>
+        <span class="only-es">Atención experta. <em class="em">Siempre.</em></span>
+      </h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon"><span class="material-symbols-outlined">verified</span></div>
+        <h3><span class="only-en">Expert Injectors</span><span class="only-es">Expertas certificadas</span></h3>
+        <p><span class="only-en">Trained professionals with deep expertise in facial anatomy — ensuring precise, safe, and beautiful results every single time.</span><span class="only-es">Profesionales con profundo conocimiento en anatomía facial — garantizando resultados precisos, seguros y hermosos en cada sesión.</span></p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><span class="material-symbols-outlined">tune</span></div>
+        <h3><span class="only-en">Personalized Plans</span><span class="only-es">Planes Personalizados</span></h3>
+        <p><span class="only-en">No cookie-cutter treatments. Every filler plan is designed around your unique facial structure, concerns, and aesthetic goals.</span><span class="only-es">Sin tratamientos genéricos. Cada plan se diseña alrededor de tu estructura facial única, preocupaciones y objetivos estéticos.</span></p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><span class="material-symbols-outlined">shield_check</span></div>
+        <h3><span class="only-en">FDA-Approved Products</span><span class="only-es">Productos Aprobados FDA</span></h3>
+        <p><span class="only-en">We use only authentic, high-quality fillers from Juvederm®, Restylane®, Radiesse®, and Sculptra® for your safety and peace of mind.</span><span class="only-es">Usamos únicamente rellenos auténticos y de alta calidad de Juvederm®, Restylane®, Radiesse® y Sculptra® para tu seguridad y tranquilidad.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="svc-cta">
+  <div class="wrap">
+    <div class="reveal">
+      <h2><span class="only-en">Ready to restore your <strong>natural beauty?</strong></span><span class="only-es">¿Lista para restaurar tu <strong>belleza natural?</strong></span></h2>
+      <p><span class="only-en">Youthful volume. Smooth contours. Radiant confidence. Book your dermal filler consultation today.</span><span class="only-es">Volumen juvenil. Contornos suaves. Confianza radiante. Agenda tu consulta de rellenos dérmicos hoy.</span></p>
+      <div class="svc-cta-btns">
+        <a class="btn btn-white btn-lg" href="/#book"><span class="only-en">Book My Consultation</span><span class="only-es">Agenda tu consulta</span> <span class="arr">→</span></a>
+        <a class="btn btn-ghost btn-lg" href="tel:19542370930">954.237.0930</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col" style="max-width:300px;">
+        <img class="foot-logo" src="../../assets/logo-olam.png" alt="Olam Med Spa">
+        <p><span class="only-en">La nueva belleza natural. Personalized, physician-supervised non-invasive aesthetic medicine in Pembroke Pines, FL.</span><span class="only-es">La nueva belleza natural. Medicina estética no invasiva, personalizada y supervisada por médicos en Pembroke Pines, FL.</span></p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/olammedspa/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UClQbMWIxJrGFIx2Ptiu787g" target="_blank" rel="noopener" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+          <a href="https://www.facebook.com/olammedspa/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <p style="color:var(--text-strong);font-weight:600;margin-bottom:4px;"><span class="only-en">Services</span><span class="only-es">Servicios</span></p>
+        <a href="/#services"><span class="only-en">Injectables</span><span class="only-es">Inyectables</span></a>
+        <a href="/#services"><span class="only-en">Skin Tightening</span><span class="only-es">Tensado de Piel</span></a>
+        <a href="/#services"><span class="only-en">Laser Treatments</span><span class="only-es">Tratamientos Láser</span></a>
+        <a href="/#services"><span class="only-en">Body Contouring</span><span class="only-es">Contorno Corporal</span></a>
+        <a href="/#services"><span class="only-en">Hormone &amp; Weight</span><span class="only-es">Hormonas y Peso</span></a>
+        <a href="/#services"><span class="only-en">Laser Hair Removal</span><span class="only-es">Remoción de Vello</span></a>
+      </div>
+      <div class="foot-col">
+        <p style="color:var(--text-strong);font-weight:600;margin-bottom:4px;"><span class="only-en">Clinic</span><span class="only-es">Clínica</span></p>
+        <a href="/about"><span class="only-en">About Us</span><span class="only-es">Nosotros</span></a>
+        <a href="/financing"><span class="only-en">Financing</span><span class="only-es">Financiamiento</span></a>
+        <a href="/contact"><span class="only-en">Contact</span><span class="only-es">Contacto</span></a>
+        <a href="/#book"><span class="only-en">Book a consultation</span><span class="only-es">Agenda una consulta</span></a>
+      </div>
+      <div class="foot-col">
+        <p style="color:var(--text-strong);font-weight:600;margin-bottom:4px;"><span class="only-en">Visit</span><span class="only-es">Visítanos</span></p>
+        <a href="tel:19542370930">954.237.0930</a>
+        <a href="mailto:info@olammedspa.com">info@olammedspa.com</a>
+        <p style="line-height:1.6;">17901 NW 5th St, Ste 201<br>Pembroke Pines, FL 33029</p>
+        <p><span class="only-en">Tue–Fri · 10am–6pm · Sat 9am–2pm</span><span class="only-es">Mar–Vie · 10am–6pm · Sáb 9am–2pm</span></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Olam Med Spa. <span class="only-en">All rights reserved.</span><span class="only-es">Todos los derechos reservados.</span></span>
+      <span><span class="only-en">FDA-approved technology · Individual results may vary.</span><span class="only-es">Tecnología aprobada por la FDA · Los resultados varían según la persona.</span></span>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lb-overlay" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-close" id="lb-close" aria-label="Close">✕</button>
+  <button class="lb-prev" id="lb-prev" aria-label="Previous">‹</button>
+  <div class="lb-img-wrap"><img id="lb-img" src="" alt=""></div>
+  <button class="lb-next" id="lb-next" aria-label="Next">›</button>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.querySelectorAll('[data-lang-btn]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = this.dataset.langBtn;
+      document.documentElement.setAttribute('data-lang', lang);
+      document.querySelectorAll('[data-lang-btn]').forEach(function(b) {
+        b.setAttribute('aria-pressed', b.dataset.langBtn === lang ? 'true' : 'false');
+      });
+      try { localStorage.setItem('olam-lang', lang); } catch(e){}
+    });
+  });
+  try {
+    var saved = localStorage.getItem('olam-lang');
+    if (saved === 'es') {
+      document.documentElement.setAttribute('data-lang', 'es');
+      document.querySelectorAll('[data-lang-btn]').forEach(function(b) {
+        b.setAttribute('aria-pressed', b.dataset.langBtn === 'es' ? 'true' : 'false');
+      });
+    }
+  } catch(e){}
+
+  // lightbox
+  (function() {
+    var items = Array.from(document.querySelectorAll('[data-lb="gallery"]'));
+    var lb = document.getElementById('lb');
+    var lbImg = document.getElementById('lb-img');
+    var current = 0;
+
+    function open(index) {
+      current = index;
+      var img = items[current].querySelector('img');
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      lb.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function prev() { open((current - 1 + items.length) % items.length); }
+    function next() { open((current + 1) % items.length); }
+
+    items.forEach(function(el, i) {
+      el.addEventListener('click', function() { open(i); });
+    });
+    document.getElementById('lb-close').addEventListener('click', close);
+    document.getElementById('lb-prev').addEventListener('click', function(e) { e.stopPropagation(); prev(); });
+    document.getElementById('lb-next').addEventListener('click', function(e) { e.stopPropagation(); next(); });
+    lb.addEventListener('click', function(e) { if (e.target === lb) close(); });
+    document.addEventListener('keydown', function(e) {
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') prev();
+      if (e.key === 'ArrowRight') next();
+    });
+  })();
+
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  }
+</script>
+
+</body>
+</html>
