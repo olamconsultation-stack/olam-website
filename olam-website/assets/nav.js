@@ -96,6 +96,12 @@
                 '<p class="mega-cat"><span class="only-en">Laser Treatments</span><span class="only-es">Tratamientos Láser</span></p>' +
                 '<a href="/services/laser-treatments/erbium-laser-resurfacing.html"><span class="only-en">Erbium Laser Resurfacing</span><span class="only-es">Láser Erbium</span></a>' +
               '</div>' +
+              '<div class="mega-col">' +
+                '<p class="mega-cat"><span class="only-en">Body Contouring</span><span class="only-es">Contorno Corporal</span></p>' +
+                '<a href="/services/body-contouring/bodysculp.html">BodySculp</a>' +
+                '<a href="/services/body-contouring/body-tone.html">Body Tone</a>' +
+                '<a href="/services/body-contouring/mesotherapy.html">Mesotherapy</a>' +
+              '</div>' +
             '</div>' +
           '</div>' +
         '</div>' +

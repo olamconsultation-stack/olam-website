@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Body Tone Muscle Sculpting Pembroke Pines — Body Contouring | Olam Med Spa</title>
+<meta name="description" content="Body Tone at Olam Med Spa — bio-electric muscle toning with 20,000 contractions in 30 minutes. Sculpt and strengthen without surgery or downtime.">
+<link rel="icon" href="../../assets/favicon-olam.png" type="image/png">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap">
+
+<style>
+  *,*::before,*::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; overflow-x: clip; }
+  body { margin: 0; font-family: var(--font-body); font-weight: var(--fw-light); color: var(--text-body); background: var(--surface-page); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; overflow-x: clip; }
+  a { color: inherit; text-decoration: none; }
+  html[data-lang="en"] .only-es { display: none !important; }
+  html[data-lang="es"] .only-en { display: none !important; }
+  .wrap { max-width: var(--content-max); margin: 0 auto; padding: 0 var(--gutter); }
+  @media (min-width: 768px){ .wrap { padding: 0 var(--gutter-lg); } }
+  section.band { padding: var(--space-8) 0; position: relative; }
+  @media (min-width: 768px){ section.band { padding: var(--space-10) 0; } }
+
+  .eyebrow { font-family: var(--font-body); font-size: var(--text-label); font-weight: var(--fw-semibold); text-transform: uppercase; letter-spacing: var(--ls-label); color: var(--text-accent); margin: 0 0 18px; display: flex; align-items: center; gap: 10px; }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 9999px; background: var(--action); display: inline-block; }
+  h2.h { font-family: var(--font-display); font-weight: var(--fw-medium); letter-spacing: var(--ls-tight); line-height: var(--lh-tight); margin: 0; color: var(--text-strong); font-size: var(--text-h2); }
+  .em { font-style: italic; font-weight: var(--fw-medium); color: var(--text-accent); }
+  .lead { font-family: var(--font-body); font-weight: var(--fw-light); font-size: var(--text-lead); line-height: var(--lh-body); color: var(--text-muted); margin: 0; }
+
+  .btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-body); font-weight: var(--fw-semibold); font-size: var(--text-sm); padding: 13px 24px; border-radius: var(--radius-pill); border: 1.5px solid transparent; cursor: pointer; line-height: 1; white-space: nowrap; transition: background-color var(--dur-fast) var(--ease-cushion), transform var(--dur-fast) var(--ease-cushion), border-color var(--dur-fast) var(--ease-cushion); }
+  .btn .arr { transition: transform var(--dur-fast) var(--ease-cushion); }
+  .btn:hover .arr { transform: translateX(5px); }
+  .btn-primary { background: var(--action); color: #fff; box-shadow: var(--shadow-button); }
+  .btn-primary:hover { background: var(--action-hover); transform: translateY(-3px); }
+  .btn-lg { padding: 17px 32px; font-size: 1.05rem; }
+  @media (max-width: 480px){ .btn-lg { padding: 13px 20px; font-size: 0.9rem; } }
+  .btn-white { background: #fff; color: var(--olam-blue); font-weight: var(--fw-semibold); }
+  .btn-white:hover { background: var(--surface-linen); transform: translateY(-2px); }
+  .btn-ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.4); }
+  .btn-ghost:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.7); }
+  .btn-icon { width: 40px; height: 40px; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; background: var(--action); color: #fff; border: none; cursor: pointer; flex-shrink: 0; }
+  .btn-icon .material-symbols-outlined { font-size: 20px; }
+  .btn-icon-mobile { display: inline-flex; }
+  @media (min-width: 600px){ .btn-icon-mobile { display: none; } }
+
+  /* reveal */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s var(--ease-cushion), transform 0.7s var(--ease-cushion); }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* ===== PAGE-SPECIFIC ===== */
+
+  /* hero */
+  .svc-hero { padding-top: 0; padding-bottom: 0; position: relative; overflow: hidden; min-height: 92vh; display: flex; align-items: center; }
+  .svc-hero-bg { position: absolute; inset: 0; background: url('../../assets/body-tone-hero.jpg') center/cover no-repeat; }
+  .svc-hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(100deg, rgba(6,18,30,0.88) 0%, rgba(6,18,30,0.65) 50%, rgba(6,18,30,0.20) 100%); }
+  .svc-hero-inner { position: relative; z-index: 1; padding-top: 140px; padding-bottom: 80px; }
+  .svc-hero-text { max-width: 680px; }
+  .svc-hero h1 { font-family: var(--font-display); font-style: italic; font-weight: 300; font-size: clamp(3rem, 6.5vw, 5.2rem); color: #fff; line-height: 1.05; margin: 0 0 10px; letter-spacing: -0.02em; }
+  .svc-hero h1 strong { font-family: var(--font-body); font-weight: 700; font-style: normal; color: var(--champagne); display: block; }
+  .svc-hero-lead { font-size: var(--text-lead); color: rgba(255,255,255,0.82); font-weight: var(--fw-light); line-height: 1.65; margin: 24px 0 36px; max-width: 52ch; }
+  .svc-hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+  .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: var(--text-caption); margin-bottom: 20px; }
+
+  /* chips */
+  .detail-band { background: var(--surface-linen); padding: 48px 0; }
+  .detail-grid { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
+  .detail-chip { background: #fff; border: 1px solid var(--border-hairline); border-radius: 14px; padding: 18px 24px; display: flex; flex-direction: column; gap: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); min-width: 150px; }
+  .detail-chip-label { font-size: var(--text-caption); color: var(--text-subtle); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+  .detail-chip-value { font-size: var(--text-sm); color: var(--text-strong); font-weight: 600; line-height: 1.4; }
+
+  /* intro split */
+  .intro-split { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; padding: 80px 0; }
+  @media (min-width: 860px){ .intro-split { grid-template-columns: 1fr 1fr; gap: 72px; } }
+  .intro-split-img { border-radius: 20px; overflow: hidden; height: 480px; box-shadow: 0 16px 48px rgba(0,0,0,0.12); }
+  .intro-split-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .intro-split-text { display: flex; flex-direction: column; gap: 20px; }
+  .intro-split-text p { font-size: 1.05rem; color: var(--text-body); line-height: 1.75; margin: 0; }
+
+  /* procedure steps */
+  .procedure-section { padding: 80px 0; background: var(--surface-linen); }
+  .steps-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 48px; }
+  @media (min-width: 640px){ .steps-grid { grid-template-columns: repeat(3, 1fr); } }
+  .step-card { background: #fff; border: 1px solid var(--border-hairline); border-radius: 20px; padding: 32px 28px; position: relative; }
+  .step-number { font-family: var(--font-display); font-size: 3.5rem; font-weight: 300; color: var(--border-champagne); line-height: 1; margin-bottom: 16px; }
+  .step-card h3 { font-family: var(--font-body); font-weight: 600; font-size: 1.05rem; color: var(--text-strong); margin: 0 0 10px; }
+  .step-card p { font-size: var(--text-sm); color: var(--text-muted); line-height: 1.7; margin: 0; }
+
+  /* candidate checklist */
+  .candidate-section { padding: 80px 0; }
+  .candidate-inner { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: start; }
+  @media (min-width: 860px){ .candidate-inner { grid-template-columns: 1fr 1fr; gap: 72px; } }
+  .checklist { display: flex; flex-direction: column; gap: 14px; margin-top: 0; }
+  .checklist-item { display: flex; align-items: flex-start; gap: 12px; padding: 16px 18px; background: var(--surface-card); border-radius: 14px; border: 1px solid var(--border-hairline); font-size: var(--text-sm); color: var(--text-body); line-height: 1.6; }
+  .checklist-item .material-symbols-outlined { font-size: 20px; color: var(--action); flex-shrink: 0; margin-top: 1px; }
+  .candidate-note { background: var(--surface-linen); border-left: 3px solid var(--action); border-radius: 0 12px 12px 0; padding: 18px 20px; font-size: var(--text-sm); color: var(--text-muted); line-height: 1.7; margin-top: 24px; }
+
+  /* benefits pill grid */
+  .benefits-section { padding: 80px 0; background: var(--surface-linen); }
+  .benefits-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 48px; }
+  @media (min-width: 640px){ .benefits-grid { grid-template-columns: 1fr 1fr; } }
+  .benefit-pill { display: flex; align-items: center; gap: 10px; background: #fff; border: 1px solid var(--border-hairline); border-radius: 14px; padding: 16px 18px; font-size: var(--text-sm); color: var(--text-body); font-weight: 500; }
+  .benefit-pill .material-symbols-outlined { font-size: 18px; color: var(--action); flex-shrink: 0; }
+
+  /* callout */
+  .callout-section { padding: 80px 0; background: var(--olam-blue); position: relative; overflow: hidden; }
+  .callout-section::before { content: ''; position: absolute; inset: 0; background: url('../../assets/body-tone-hero.jpg') center/cover no-repeat; opacity: 0.10; mix-blend-mode: luminosity; }
+  .callout-inner { position: relative; z-index: 1; max-width: 640px; }
+  .callout-inner .eyebrow { color: rgba(255,255,255,0.7); }
+  .callout-inner .eyebrow .dot { background: rgba(255,255,255,0.5); }
+  .callout-inner h2 { font-family: var(--font-display); font-style: italic; font-weight: 300; font-size: clamp(2rem, 4vw, 3rem); color: #fff; margin: 0 0 20px; line-height: 1.15; }
+  .callout-inner h2 strong { font-style: normal; font-weight: 600; }
+  .callout-inner p { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0 0 32px; }
+
+  /* why olam */
+  .why-section { padding: 80px 0; }
+  .why-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 48px; }
+  @media (min-width: 640px){ .why-grid { grid-template-columns: repeat(3,1fr); } }
+  .why-card { border: 1px solid var(--border-hairline); border-radius: 20px; padding: 32px 28px; background: var(--surface-card); }
+  .why-icon { width: 48px; height: 48px; border-radius: 14px; background: var(--surface-linen); display: grid; place-items: center; margin-bottom: 18px; }
+  .why-icon .material-symbols-outlined { font-size: 24px; color: var(--action); }
+  .why-card h3 { font-family: var(--font-body); font-weight: 600; font-size: 1.05rem; color: var(--text-strong); margin: 0 0 10px; }
+  .why-card p { font-size: var(--text-sm); color: var(--text-muted); line-height: 1.7; margin: 0; }
+
+  /* cta */
+  .svc-cta { background: linear-gradient(135deg, #0d2d45 0%, #1a4a6b 50%, #2a6a96 100%); padding: 72px 0; text-align: center; }
+  .svc-cta h2 { font-family: var(--font-display); font-style: italic; font-weight: 300; font-size: clamp(1.8rem, 4vw, 3rem); color: #fff; margin: 0 0 14px; }
+  .svc-cta h2 strong { font-style: normal; font-weight: 600; color: var(--champagne); }
+  .svc-cta p { font-size: var(--text-sm); color: rgba(255,255,255,0.65); margin: 0 0 36px; }
+  .svc-cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+
+<div id="g-header"></div>
+<script src="/assets/nav.js"></script>
+
+<main>
+
+<!-- HERO -->
+<section class="svc-hero">
+  <div class="svc-hero-bg"></div>
+  <div class="wrap" style="width:100%;">
+    <div class="svc-hero-inner">
+      <div class="svc-hero-text reveal">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/" style="color:rgba(255,255,255,0.5);">Home</a><span style="color:rgba(255,255,255,0.3);">›</span>
+          <a href="/#services" style="color:rgba(255,255,255,0.5);">Services</a><span style="color:rgba(255,255,255,0.3);">›</span>
+          <span style="color:rgba(255,255,255,0.7);">Body Tone</span>
+        </nav>
+        <p class="eyebrow" style="color:rgba(255,255,255,0.7);"><span class="dot" style="background:rgba(255,255,255,0.5);"></span><span class="only-en">Body Contouring · Muscle Toning</span><span class="only-es">Contorno Corporal · Tonificación Muscular</span></p>
+        <h1>
+          <span class="only-en">Sculpt &amp; Strengthen<br><strong>Without the Sweat.</strong></span>
+          <span class="only-es">Esculpe y Fortalece<br><strong>Sin Sudar.</strong></span>
+        </h1>
+        <p class="svc-hero-lead">
+          <span class="only-en">Body Tone uses bio-electric energy pulses to tone, strengthen, and sculpt your muscles — generating approximately 20,000 muscle contractions in just 30 minutes. Build definition without a single rep.</span>
+          <span class="only-es">Body Tone utiliza pulsos de energía bioeléctrica para tonificar, fortalecer y esculpir tus músculos — generando aproximadamente 20,000 contracciones musculares en solo 30 minutos. Construye definición sin una sola repetición.</span>
+        </p>
+        <div class="svc-hero-btns">
+          <a class="btn btn-primary btn-lg" href="/#book"><span class="only-en">Book My Consultation</span><span class="only-es">Agenda tu consulta</span> <span class="arr">→</span></a>
+          <a class="btn btn-ghost btn-lg" href="tel:19542370930"><span class="only-en">Call 954.237.0930</span><span class="only-es">Llama 954.237.0930</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAIL CHIPS -->
+<div class="detail-band">
+  <div class="wrap">
+    <div class="detail-grid reveal">
+      <div class="detail-chip">
+        <span class="detail-chip-label"><span class="only-en">Session Time</span><span class="only-es">Duración</span></span>
+        <span class="detail-chip-value">30 min</span>
+      </div>
+      <div class="detail-chip">
+        <span class="detail-chip-label"><span class="only-en">Contractions</span><span class="only-es">Contracciones</span></span>
+        <span class="detail-chip-value">~20,000</span>
+      </div>
+      <div class="detail-chip">
+        <span class="detail-chip-label"><span class="only-en">Results</span><span class="only-es">Resultados</span></span>
+        <span class="detail-chip-value"><span class="only-en">Progressive</span><span class="only-es">Progresivos</span></span>
+      </div>
+      <div class="detail-chip">
+        <span class="detail-chip-label"><span class="only-en">Downtime</span><span class="only-es">Recuperación</span></span>
+        <span class="detail-chip-value"><span class="only-en">None</span><span class="only-es">Ninguna</span></span>
+      </div>
+      <div class="detail-chip">
+        <span class="detail-chip-label"><span class="only-en">Technology</span><span class="only-es">Tecnología</span></span>
+        <span class="detail-chip-value">Bodytone</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT IS BODY TONE -->
+<section class="band" style="background:var(--surface-page);">
+  <div class="wrap">
+    <div class="intro-split">
+      <div class="intro-split-img reveal">
+        <img src="../../assets/body-tone-intro.jpg" alt="Body Tone bio-electric muscle toning treatment at Olam Med Spa">
+      </div>
+      <div class="intro-split-text reveal">
+        <p class="eyebrow"><span class="dot"></span><span class="only-en">What is Body Tone &amp; how does it work?</span><span class="only-es">¿Qué es Body Tone y cómo funciona?</span></p>
+        <h2 class="h" style="margin-bottom:20px;">
+          <span class="only-en">Your muscles,<br><em class="em">pushed further.</em></span>
+          <span class="only-es">Tus músculos,<br><em class="em">llevados más lejos.</em></span>
+        </h2>
+        <p>
+          <span class="only-en">The Body Tone treatment uses bio-electric energy pulses to tone up and strengthen muscles. This treatment prevents muscle atrophy by exercising different muscle groups. The Bodytone machine re-educates the muscles, toning and shaping weak muscles and rebuilding mass.</span>
+          <span class="only-es">El tratamiento Body Tone utiliza pulsos de energía bioeléctrica para tonificar y fortalecer los músculos. Este tratamiento previene la atrofia muscular al ejercitar diferentes grupos musculares. La máquina Bodytone reeducar los músculos, tonificando y dando forma a los músculos débiles y reconstruyendo la masa muscular.</span>
+        </p>
+        <p>
+          <span class="only-en">The bio-electric energy pulses eliminate unwanted fat by simulating a heavy workout — twisting, flexing, and contracting specific muscle groups — dramatically changing the size, shape, and tone of the patient's muscle. Most patients experience up to a 30% increase in muscle development.</span>
+          <span class="only-es">Los pulsos de energía bioeléctrica eliminan la grasa no deseada al simular un entrenamiento intenso — torciendo, flexionando y contrayendo grupos musculares específicos — cambiando dramáticamente el tamaño, la forma y el tono del músculo del paciente. La mayoría de los pacientes experimenta hasta un 30% de aumento en el desarrollo muscular.</span>
+        </p>
+        <a class="btn btn-primary" href="/#book"><span class="only-en">Book a consultation</span><span class="only-es">Agenda una consulta</span> <span class="arr">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCEDURE STEPS -->
+<section class="procedure-section">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">What is the procedure like?</span><span class="only-es">¿Cómo es el procedimiento?</span></p>
+      <h2 class="h">
+        <span class="only-en">Three phases.<br><em class="em">One powerful session.</em></span>
+        <span class="only-es">Tres fases.<br><em class="em">Una sesión poderosa.</em></span>
+      </h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <div class="step-number">Phase 1</div>
+        <h3><span class="only-en">Warm-Up</span><span class="only-es">Calentamiento</span></h3>
+        <p>
+          <span class="only-en">Similar to a pre-workout routine, a low-intensity warm-up gets your muscles ready to respond. The Bodytone device begins sending gentle bio-electric pulses to prepare the targeted muscle groups.</span>
+          <span class="only-es">Similar a una rutina pre-entrenamiento, un calentamiento de baja intensidad prepara tus músculos para responder. El dispositivo Bodytone comienza a enviar pulsos bioeléctricos suaves para preparar los grupos musculares objetivo.</span>
+        </p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-number">Phase 2</div>
+        <h3><span class="only-en">Muscle Toning</span><span class="only-es">Tonificación Muscular</span></h3>
+        <p>
+          <span class="only-en">A medium-intensity phase improves muscle definition and shape. The pulses increase in intensity to prepare the muscles for the final workout phase.</span>
+          <span class="only-es">Una fase de intensidad media mejora la definición y la forma muscular. Los pulsos aumentan en intensidad para preparar los músculos para la fase final de entrenamiento.</span>
+        </p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-number">Phase 3</div>
+        <h3><span class="only-en">Workout</span><span class="only-es">Entrenamiento</span></h3>
+        <p>
+          <span class="only-en">The high-intensity phase concentrates on breaking down unwanted fat while building muscle. Approximately 20,000 contractions are delivered in this single session.</span>
+          <span class="only-es">La fase de alta intensidad se concentra en descomponer la grasa no deseada mientras construye músculo. Aproximadamente 20,000 contracciones se entregan en esta única sesión.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IDEAL CANDIDATE -->
+<section class="candidate-section">
+  <div class="wrap">
+    <div class="candidate-inner">
+      <div class="reveal">
+        <p class="eyebrow"><span class="dot"></span><span class="only-en">Who is an ideal candidate?</span><span class="only-es">¿Quién es la candidata ideal?</span></p>
+        <h2 class="h" style="margin-bottom:24px;">
+          <span class="only-en">Is Body Tone<br><em class="em">right for you?</em></span>
+          <span class="only-es">¿Es Body Tone<br><em class="em">para ti?</em></span>
+        </h2>
+        <div class="checklist">
+          <div class="checklist-item"><span class="material-symbols-outlined">check_circle</span><span class="only-en">You want to build muscle definition without surgery</span><span class="only-es">Quieres construir definición muscular sin cirugía</span></div>
+          <div class="checklist-item"><span class="material-symbols-outlined">check_circle</span><span class="only-en">You want to complement your exercise routine with deeper muscle activation</span><span class="only-es">Quieres complementar tu rutina de ejercicios con una activación muscular más profunda</span></div>
+          <div class="checklist-item"><span class="material-symbols-outlined">check_circle</span><span class="only-en">You are experiencing muscle atrophy or weakness</span><span class="only-es">Estás experimentando atrofia muscular o debilidad</span></div>
+          <div class="checklist-item"><span class="material-symbols-outlined">check_circle</span><span class="only-en">You want to tone specific areas like abdomen, glutes, or thighs</span><span class="only-es">Quieres tonificar áreas específicas como el abdomen, los glúteos o los muslos</span></div>
+          <div class="checklist-item"><span class="material-symbols-outlined">check_circle</span><span class="only-en">You are looking for a non-invasive body sculpting treatment</span><span class="only-es">Estás buscando un tratamiento de esculpido corporal no invasivo</span></div>
+          <div class="checklist-item"><span class="material-symbols-outlined">check_circle</span><span class="only-en">You can commit to a series of sessions for optimal results</span><span class="only-es">Puedes comprometerte a una serie de sesiones para obtener resultados óptimos</span></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div style="background: var(--surface-linen); border-radius: 20px; padding: 36px 32px; height: 100%;">
+          <p class="eyebrow" style="margin-bottom:14px;"><span class="dot"></span><span class="only-en">A note from our team</span><span class="only-es">Una nota de nuestro equipo</span></p>
+          <p style="font-size:1.05rem;color:var(--text-body);line-height:1.75;margin:0;">
+            <span class="only-en">Consultation is an important and essential part of the treatment process. Our medical providers will evaluate your unique body goals and determine whether Body Tone is the right treatment for you — and design a personalized session plan to match.</span>
+            <span class="only-es">La consulta es una parte importante y esencial del proceso de tratamiento. Nuestros proveedores médicos evaluarán tus objetivos corporales únicos y determinarán si Body Tone es el tratamiento adecuado para ti — y diseñarán un plan de sesiones personalizado para adaptarse.</span>
+          </p>
+          <a class="btn btn-primary" href="/#book" style="margin-top:28px;display:inline-flex;"><span class="only-en">Book a consultation</span><span class="only-es">Agenda una consulta</span> <span class="arr">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits-section">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">Benefits of Body Tone</span><span class="only-es">Beneficios de Body Tone</span></p>
+      <h2 class="h">
+        <span class="only-en">What Body Tone<br><em class="em">does for you.</em></span>
+        <span class="only-es">Lo que Body Tone<br><em class="em">hace por ti.</em></span>
+      </h2>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-pill reveal"><span class="material-symbols-outlined">check_circle</span><span class="only-en">Non-invasive — no surgery, no needles</span><span class="only-es">No invasivo — sin cirugía, sin agujas</span></div>
+      <div class="benefit-pill reveal"><span class="material-symbols-outlined">check_circle</span><span class="only-en">20,000 muscle contractions in 30 minutes</span><span class="only-es">20,000 contracciones musculares en 30 minutos</span></div>
+      <div class="benefit-pill reveal"><span class="material-symbols-outlined">check_circle</span><span class="only-en">Up to 30% increase in muscle development</span><span class="only-es">Hasta un 30% de aumento en el desarrollo muscular</span></div>
+      <div class="benefit-pill reveal"><span class="material-symbols-outlined">check_circle</span><span class="only-en">Prevents and reverses muscle atrophy</span><span class="only-es">Previene y revierte la atrofia muscular</span></div>
+      <div class="benefit-pill reveal"><span class="material-symbols-outlined">check_circle</span><span class="only-en">Customizable to target specific muscle groups</span><span class="only-es">Personalizable para atacar grupos musculares específicos</span></div>
+      <div class="benefit-pill reveal"><span class="material-symbols-outlined">check_circle</span><span class="only-en">No downtime — resume activities immediately</span><span class="only-es">Sin tiempo de recuperación — reanuda actividades de inmediato</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS CALLOUT -->
+<section class="callout-section">
+  <div class="wrap">
+    <div class="callout-inner reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">What kind of results can you expect?</span><span class="only-es">¿Qué tipo de resultados puedes esperar?</span></p>
+      <h2>
+        <span class="only-en">Stronger. More Defined.<br><strong>No Gym Required.</strong></span>
+        <span class="only-es">Más Fuerte. Más Definida.<br><strong>Sin Gimnasio.</strong></span>
+      </h2>
+      <p>
+        <span class="only-en">Bodytone generates approximately 20,000 muscle contractions in a 30-minute session — equivalent to an intense workout. Treatment creates stronger, tighter core muscles and well-defined muscles while eliminating unwanted fat. Results progress with each session.</span>
+        <span class="only-es">Bodytone genera aproximadamente 20,000 contracciones musculares en una sesión de 30 minutos — equivalente a un entrenamiento intenso. El tratamiento crea músculos centrales más fuertes y tensos y músculos bien definidos mientras elimina la grasa no deseada. Los resultados progresan con cada sesión.</span>
+      </p>
+      <a class="btn btn-white btn-lg" href="/#book"><span class="only-en">Book a consultation</span><span class="only-es">Agenda una consulta</span> <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="band" style="background:var(--surface-linen);">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">What clients say</span><span class="only-es">Qué dicen nuestras clientas</span></p>
+      <h2 class="h"><span class="only-en">400+ five-star <em class="em">reviews.</em></span><span class="only-es">400+ reseñas de <em class="em">cinco estrellas.</em></span></h2>
+    </div>
+    <div class="reveal" style="margin-top:32px;">
+      <script defer async src='https://cdn.trustindex.io/loader.js?a69d04174bae977ae596485f37a'></script>
+    </div>
+  </div>
+</section>
+
+<!-- WHY OLAM -->
+<section class="why-section">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow"><span class="dot"></span><span class="only-en">Why choose Olam Med Spa</span><span class="only-es">Por qué elegir Olam Med Spa</span></p>
+      <h2 class="h">
+        <span class="only-en">Expert care. <em class="em">Every time.</em></span>
+        <span class="only-es">Atención experta. <em class="em">Siempre.</em></span>
+      </h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon"><span class="material-symbols-outlined">fitness_center</span></div>
+        <h3><span class="only-en">20,000 Contractions Per Session</span><span class="only-es">20,000 Contracciones por Sesión</span></h3>
+        <p><span class="only-en">Bodytone generates 20,000 muscle contractions in 30 minutes — a level of muscle activation impossible to achieve through conventional exercise alone.</span><span class="only-es">Bodytone genera 20,000 contracciones musculares en 30 minutos — un nivel de activación muscular imposible de lograr solo a través del ejercicio convencional.</span></p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><span class="material-symbols-outlined">tune</span></div>
+        <h3><span class="only-en">Fully Customizable Treatment</span><span class="only-es">Tratamiento Completamente Personalizable</span></h3>
+        <p><span class="only-en">Our providers customize the bio-electric pulse intensity and target zones to match your specific goals — whether toning the abdomen, strengthening the glutes, or sculpting the arms.</span><span class="only-es">Nuestros proveedores personalizan la intensidad del pulso bioeléctrico y las zonas objetivo para adaptarse a tus metas específicas — ya sea tonificar el abdomen, fortalecer los glúteos o esculpir los brazos.</span></p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><span class="material-symbols-outlined">volunteer_activism</span></div>
+        <h3><span class="only-en">Zero Downtime, Real Results</span><span class="only-es">Sin Recuperación, Resultados Reales</span></h3>
+        <p><span class="only-en">Walk in, walk out. Body Tone requires no recovery time. Sessions are comfortable and you can resume all normal activities immediately after treatment.</span><span class="only-es">Entra, sal. Body Tone no requiere tiempo de recuperación. Las sesiones son cómodas y puedes reanudar todas las actividades normales inmediatamente después del tratamiento.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="svc-cta">
+  <div class="wrap">
+    <div class="reveal">
+      <h2><span class="only-en">Ready to <strong>build your best body?</strong></span><span class="only-es">¿Lista para <strong>construir tu mejor cuerpo?</strong></span></h2>
+      <p><span class="only-en">Book your Body Tone consultation at Olam Med Spa in Pembroke Pines today.</span><span class="only-es">Agenda tu consulta de Body Tone en Olam Med Spa en Pembroke Pines hoy.</span></p>
+      <div class="svc-cta-btns">
+        <a class="btn btn-white btn-lg" href="/#book"><span class="only-en">Book My Consultation</span><span class="only-es">Agenda tu consulta</span> <span class="arr">→</span></a>
+        <a class="btn btn-ghost btn-lg" href="tel:19542370930">954.237.0930</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<div id="g-footer"></div>
+<script src="/assets/footer.js"></script>
+<script>
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries) { entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  }
+</script>
+</body>
+</html>
