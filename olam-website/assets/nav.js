@@ -91,10 +91,7 @@
                 '<a href="/services/skin-tightening/ipl-photofacial">IPL Photofacial</a>' +
                 '<a href="/services/skin-tightening/advanced-microneedling">Olam Glow</a>' +
                 '<a href="/services/skin-tightening/pixel8-rf-microneedling">PiXel8‑RF</a>' +
-              '</div>' +
-              '<div class="mega-col">' +
-                '<p class="mega-cat"><span class="only-en">Laser Treatments</span><span class="only-es">Tratamientos Láser</span></p>' +
-                '<a href="/services/laser-treatments/erbium-laser-resurfacing"><span class="only-en">Erbium Laser Resurfacing</span><span class="only-es">Láser Erbium</span></a>' +
+                '<a href="/services/laser-treatments/erbium-laser-resurfacing"><span class="only-en">Erbium Laser</span><span class="only-es">Láser Erbium</span></a>' +
               '</div>' +
               '<div class="mega-col">' +
                 '<p class="mega-cat"><span class="only-en">Body Contouring</span><span class="only-es">Contorno Corporal</span></p>' +

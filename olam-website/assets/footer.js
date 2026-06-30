@@ -46,7 +46,6 @@
           '<a href="/services/injectables/botox-dysport"><span class="only-en">Injectables</span><span class="only-es">Inyectables</span></a>' +
           '<a href="/services/aesthetic-services/chemical-peel"><span class="only-en">Aesthetic Services</span><span class="only-es">Servicios Estéticos</span></a>' +
           '<a href="/services/skin-tightening/agnes-rf"><span class="only-en">Skin Tightening</span><span class="only-es">Tensado de Piel</span></a>' +
-          '<a href="/services/laser-treatments/erbium-laser-resurfacing"><span class="only-en">Laser Treatments</span><span class="only-es">Tratamientos Láser</span></a>' +
           '<a href="/services/body-contouring/bodysculp"><span class="only-en">Body Contouring</span><span class="only-es">Contorno Corporal</span></a>' +
           '<a href="/services/wellness-integrative/medical-weight-loss"><span class="only-en">Wellness &amp; Integrative</span><span class="only-es">Medicina Integrativa</span></a>' +
         '</div>' +
