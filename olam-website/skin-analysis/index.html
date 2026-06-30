@@ -95,43 +95,6 @@
   .btn .arr { transition: transform var(--dur-fast) var(--ease-cushion); }
   .btn:hover .arr { transform: translateX(5px); }
 
-  /* ---------- header — floating pill navbar ---------- */
-  header.site {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 50;
-    width: calc(100% - 32px);
-    max-width: 1100px;
-    background: rgba(255,255,255,0.96);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-radius: 9999px;
-    border: 1px solid var(--border-hairline);
-    box-shadow: 0 4px 28px rgba(31,32,32,0.10), 0 1px 4px rgba(31,32,32,0.06);
-  }
-  header.site .wrap { max-width: 100%; margin: 0; }
-  header.site .row { display: flex; align-items: center; justify-content: space-between; height: 62px; gap: 12px; padding: 6px 6px 6px 36px; }
-  .site .logo { height: 28px; width: auto; display: block; }
-  .nav-links { display: none; gap: 26px; font-size: var(--text-sm); color: var(--text-body); font-weight: var(--fw-regular); }
-  .nav-links a:hover { color: var(--text-accent); }
-  @media (min-width: 1040px){ .nav-links { display: flex; } }
-  .site .actions { display: flex; align-items: center; gap: 10px; }
-  .site .actions .btn { display: none; }
-  @media (min-width: 600px){ .site .actions .btn { display: inline-flex; } }
-  .btn-icon { width: 40px; height: 40px; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; background: var(--action); color: #fff; box-shadow: var(--shadow-button); border: none; cursor: pointer; transition: background-color var(--dur-fast) var(--ease-cushion), box-shadow var(--dur-fast) var(--ease-cushion), transform var(--dur-fast) var(--ease-cushion); flex-shrink: 0; }
-  .btn-icon:hover { background: var(--action-hover); transform: translateY(-2px); }
-  .btn-icon .material-symbols-outlined { font-size: 20px; }
-  .btn-icon-mobile { display: inline-flex; }
-  @media (min-width: 600px){ .btn-icon-mobile { display: none; } }
-  .phone { display: none; align-items: center; gap: 6px; font-weight: var(--fw-medium); font-size: var(--text-sm); color: var(--text-strong); }
-  @media (min-width: 800px){ .phone { display: inline-flex; } }
-  .phone .material-symbols-outlined { font-size: 18px; color: var(--action); }
-  .lang { display: inline-flex; border: 1px solid var(--border-soft); border-radius: var(--radius-pill); overflow: hidden; }
-  .lang button { font-family: var(--font-body); font-weight: var(--fw-semibold); font-size: var(--text-caption); letter-spacing: 0.06em; padding: 7px 12px; background: transparent; border: 0; cursor: pointer; color: var(--text-muted); }
-  .lang button[aria-pressed="true"] { background: var(--action); color: #fff; }
-
   /* ---------- brand title stack v2 ---------- */
   .h-top-line { display: block; line-height: 1.1; }
   .h-hair  { font-family: var(--font-body); font-weight: 200; font-size: clamp(2.4rem, 5vw, 3.8rem); color: var(--mist-blue); display: inline; }
@@ -303,13 +266,6 @@
   .form-card h3 { margin: 0 0 4px; }
   .form-card .sub { font-size: var(--text-sm); color: var(--text-muted); margin: 0 0 20px; }
 
-  /* ---------- footer ---------- */
-  footer.site { background: var(--surface-linen); border-top: 1px solid var(--border-hairline); padding: 52px 0 36px; }
-  .foot-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px; align-items: flex-start; }
-  .foot-logo { height: 32px; margin-bottom: 16px; }
-  .foot-col p, .foot-col a { font-size: var(--text-sm); color: var(--text-muted); line-height: 1.9; display: block; }
-  .foot-col a:hover { color: var(--text-accent); }
-  .foot-bottom { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--border-champagne); font-size: var(--text-caption); color: var(--text-subtle); display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: space-between; }
 
   /* ---------- reveal animation ---------- */
   .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
@@ -328,28 +284,8 @@
 <body>
 <a href="#top" class="skip-link">Skip to content</a>
 
-<!-- ===================== HEADER ===================== -->
-<header class="site">
-  <div class="wrap row">
-    <a href="#top" aria-label="Olam Med Spa home"><img class="logo" src="../assets/logo-olam.png" alt="Olam Med Spa"></a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#services"><span class="only-en">Services</span><span class="only-es">Servicios</span></a>
-      <a href="#proof"><span class="only-en">Why Olam</span><span class="only-es">Por qué Olam</span></a>
-      <a href="#results"><span class="only-en">Results</span><span class="only-es">Resultados</span></a>
-      <a href="#process"><span class="only-en">How it works</span><span class="only-es">Cómo funciona</span></a>
-      <a href="#faq">FAQ</a>
-    </nav>
-    <div class="actions">
-      <a class="phone" href="tel:19542370930"><span class="material-symbols-outlined">call</span>954.237.0930</a>
-      <div class="lang" role="group" aria-label="Language">
-        <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
-        <button type="button" data-lang-btn="es" aria-pressed="false">ES</button>
-      </div>
-      <a class="btn-icon btn-icon-mobile" href="#book" aria-label="Book my consultation"><span class="material-symbols-outlined">calendar_month</span></a>
-      <a class="btn btn-primary" href="#book"><span class="only-en">Book My Consultation</span><span class="only-es">Agenda tu consulta</span> <span class="arr">→</span></a>
-    </div>
-  </div>
-</header>
+<div id="g-header"></div>
+<script src="/assets/nav.js"></script>
 
 <main id="top">
 
@@ -1179,34 +1115,8 @@ const osq = (() => {
 
 </main>
 
-<!-- ===================== FOOTER ===================== -->
-<footer class="site">
-  <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-col" style="max-width:320px;">
-        <img class="foot-logo" src="../assets/logo-olam.png" alt="Olam Med Spa">
-        <p><span class="only-en">La nueva belleza natural. Personalized, physician-supervised non-invasive aesthetic medicine in Pembroke Pines, FL.</span><span class="only-es">La nueva belleza natural. Medicina estética no invasiva, personalizada y supervisada por médicos en Pembroke Pines, FL.</span></p>
-      </div>
-      <div class="foot-col">
-        <p style="color:var(--text-strong);font-weight:600;"><span class="only-en">Services</span><span class="only-es">Servicios</span></p>
-        <a href="#services"><span class="only-en">Skin Tightening</span><span class="only-es">Tensado de Piel</span></a>
-        <a href="#services"><span class="only-en">Injectables</span><span class="only-es">Inyectables</span></a>
-        <a href="#services"><span class="only-en">Laser Treatments</span><span class="only-es">Tratamientos Láser</span></a>
-        <a href="#services"><span class="only-en">Body Contouring</span><span class="only-es">Contorno Corporal</span></a>
-      </div>
-      <div class="foot-col">
-        <p style="color:var(--text-strong);font-weight:600;"><span class="only-en">Visit</span><span class="only-es">Visítanos</span></p>
-        <a href="tel:19542370930">954.237.0930</a>
-        <p>17901 NW 5th St, Ste 201<br>Pembroke Pines, FL</p>
-        <a href="#book"><span class="only-en">Book a consultation</span><span class="only-es">Agenda una consulta</span></a>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>© <span id="year"></span> Olam Med Spa. <span class="only-en">All rights reserved.</span><span class="only-es">Todos los derechos reservados.</span></span>
-      <span><span class="only-en">FDA-approved technology · Individual results may vary.</span><span class="only-es">Tecnología aprobada por la FDA · Los resultados varían según la persona.</span></span>
-    </div>
-  </div>
-</footer>
+<div id="g-footer"></div>
+<script src="/assets/footer.js"></script>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();

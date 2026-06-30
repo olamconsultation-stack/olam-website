@@ -66,7 +66,7 @@
         '</div>' +
       '</div>' +
       '<div class="foot-bottom">' +
-        '<span>&copy; <span id="foot-year"></span> Olam Med Spa. <span class="only-en">All rights reserved.</span><span class="only-es">Todos los derechos reservados.</span></span>' +
+        '<span>&copy; <span id="year"></span> Olam Med Spa. <span class="only-en">All rights reserved.</span><span class="only-es">Todos los derechos reservados.</span></span>' +
         '<span><span class="only-en">Individual results may vary.</span><span class="only-es">Los resultados varían según la persona.</span></span>' +
       '</div>' +
     '</div>' +
@@ -75,7 +75,7 @@
   var placeholder = document.getElementById('g-footer');
   if (placeholder) placeholder.outerHTML = footerHTML;
 
-  var yearEl = document.getElementById('foot-year');
+  var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 }());
