@@ -102,6 +102,13 @@
                 '<a href="/services/body-contouring/body-tone">Body Tone</a>' +
                 '<a href="/services/body-contouring/mesotherapy">Mesotherapy</a>' +
               '</div>' +
+              '<div class="mega-col">' +
+                '<p class="mega-cat"><span class="only-en">Wellness & Integrative</span><span class="only-es">Medicina Integrativa</span></p>' +
+                '<a href="/services/wellness-integrative/medical-weight-loss"><span class="only-en">Medical Weight Loss</span><span class="only-es">Pérdida de Peso</span></a>' +
+                '<a href="/services/wellness-integrative/hormone-replacement-therapy"><span class="only-en">Hormone Therapy</span><span class="only-es">Terapia Hormonal</span></a>' +
+                '<a href="/services/wellness-integrative/laser-vein-removal"><span class="only-en">Laser Vein Removal</span><span class="only-es">Remoción de Venas</span></a>' +
+                '<a href="/services/wellness-integrative/sclerotherapy">Sclerotherapy</a>' +
+              '</div>' +
             '</div>' +
           '</div>' +
         '</div>' +
