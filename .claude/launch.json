@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "olam-landing",
+      "name": "olam-serve",
       "runtimeExecutable": "npx",
       "runtimeArgs": ["serve", "olam-website", "-l", "8753"],
       "port": 8753

@@ -158,7 +158,7 @@
           '<button type="button" data-lang-btn="es" aria-pressed="false">ES</button>' +
         '</div>' +
         '<button class="nav-burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>' +
-        '<a class="btn btn-primary" href="/#book"><span class="only-en">Book My Consultation</span><span class="only-es">Agenda tu consulta</span> <span class="arr">→</span></a>' +
+        '<a class="btn btn-primary" href="/contact"><span class="only-en">Book My Consultation</span><span class="only-es">Agenda tu consulta</span> <span class="arr">→</span></a>' +
       '</div>' +
     '</div>' +
   '</header>';
@@ -215,7 +215,7 @@
     '</div>' +
     '<div class="mnav-foot">' +
       '<a class="mnav-phone" href="tel:19542370930">954.237.0930</a>' +
-      '<a class="mnav-book" href="/#book"><span class="only-en">Book Consultation</span><span class="only-es">Agenda tu consulta</span></a>' +
+      '<a class="mnav-book" href="/contact"><span class="only-en">Book Consultation</span><span class="only-es">Agenda tu consulta</span></a>' +
     '</div>' +
   '</div>';
   document.body.insertAdjacentHTML('beforeend', mobileHTML);

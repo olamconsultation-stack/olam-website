@@ -55,7 +55,7 @@
           '<a href="/about"><span class="only-en">About Us</span><span class="only-es">Nosotros</span></a>' +
           '<a href="/financing"><span class="only-en">Financing</span><span class="only-es">Financiamiento</span></a>' +
           '<a href="/contact"><span class="only-en">Contact</span><span class="only-es">Contacto</span></a>' +
-          '<a href="/#book"><span class="only-en">Book a consultation</span><span class="only-es">Agenda una consulta</span></a>' +
+          '<a href="/contact"><span class="only-en">Book a consultation</span><span class="only-es">Agenda una consulta</span></a>' +
         '</div>' +
         '<div class="foot-col">' +
           '<p style="color:var(--text-strong);font-weight:600;margin-bottom:4px;"><span class="only-en">Visit</span><span class="only-es">Visítanos</span></p>' +

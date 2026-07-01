@@ -21,7 +21,14 @@
       "Bash(sort -t/ -k1)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(gh auth *)",
+      "Bash(vercel whoami *)",
+      "Bash(git config *)",
+      "mcp__hostinger-hosting__hosting_listWebsitesV1",
+      "Bash(git ls-remote *)",
+      "Bash(npx vercel *)",
+      "Bash(sudo chown -R 501:20 \"/Users/andresavila/.npm\")"
     ]
   }
 }
