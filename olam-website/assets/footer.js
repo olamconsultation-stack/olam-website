@@ -67,7 +67,11 @@
       '</div>' +
       '<div class="foot-bottom">' +
         '<span>&copy; <span id="year"></span> Olam Med Spa. <span class="only-en">All rights reserved.</span><span class="only-es">Todos los derechos reservados.</span></span>' +
-        '<span><span class="only-en">Individual results may vary.</span><span class="only-es">Los resultados varían según la persona.</span></span>' +
+        '<span style="display:flex;gap:18px;flex-wrap:wrap;">' +
+          '<a href="/privacy-policy" style="color:inherit;text-decoration:none;"><span class="only-en">Policies</span><span class="only-es">Políticas</span></a>' +
+          '<a href="/terms-and-conditions" style="color:inherit;text-decoration:none;"><span class="only-en">Terms &amp; Conditions</span><span class="only-es">Términos y Condiciones</span></a>' +
+          '<span><span class="only-en">Individual results may vary.</span><span class="only-es">Los resultados varían según la persona.</span></span>' +
+        '</span>' +
       '</div>' +
     '</div>' +
   '</footer>';

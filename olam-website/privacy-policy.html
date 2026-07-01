@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Policies — Olam Med Spa</title>
+<meta name="description" content="Olam Med Spa appointment, cancellation, refund, and treatment policies. Read our operational policies before your visit.">
+<link rel="icon" href="./assets/favicon-olam.png" type="image/png">
+<link rel="stylesheet" href="./styles.css">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; overflow-x: clip; }
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    font-weight: var(--fw-light);
+    color: var(--text-body);
+    background: var(--surface-linen);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+  a { color: var(--text-accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  html[data-lang="en"] .only-es { display: none !important; }
+  html[data-lang="es"] .only-en { display: none !important; }
+
+  /* ── Language toggle ── */
+  .lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  .lang-toggle span {
+    font-size: var(--text-caption);
+    font-weight: var(--fw-medium);
+    text-transform: uppercase;
+    letter-spacing: var(--ls-wide);
+    color: var(--text-subtle);
+  }
+  .lang-btn {
+    padding: 4px 14px;
+    border-radius: 9999px;
+    border: 1px solid var(--border-soft);
+    background: transparent;
+    font-family: var(--font-body);
+    font-size: var(--text-caption);
+    font-weight: var(--fw-medium);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s, border-color 0.18s;
+  }
+  .lang-btn:hover { background: var(--action-tint); color: var(--action); border-color: var(--action); }
+  .lang-btn.active { background: var(--action); color: #fff; border-color: var(--action); }
+
+  /* ── Policy layout ── */
+  body { background: var(--surface-linen); }
+
+  .policy-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 140px 24px 80px;
+  }
+
+  .policy-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid var(--border-hairline);
+    padding: 56px 56px 48px;
+    box-shadow: 0 2px 24px rgba(31,32,32,0.05);
+  }
+
+  @media (max-width: 600px) {
+    .policy-page { padding: 100px 16px 60px; }
+    .policy-card { padding: 36px 24px 32px; }
+  }
+
+  .policy-header {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-hairline);
+  }
+
+  .policy-header h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--text-strong);
+    margin: 0 0 8px;
+    line-height: 1.15;
+  }
+
+  .policy-header .meta {
+    font-size: var(--text-sm);
+    color: var(--text-subtle);
+    margin: 0;
+  }
+
+  .policy-section {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border-hairline);
+  }
+
+  .policy-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .policy-section h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--text-strong);
+    margin: 0 0 16px;
+    line-height: 1.3;
+  }
+
+  .policy-section p,
+  .policy-section li {
+    font-size: var(--text-sm);
+    color: var(--text-body);
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+
+  .policy-section p:last-child { margin-bottom: 0; }
+
+  .policy-section ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .policy-section ul li {
+    list-style: disc;
+  }
+
+  .policy-section ul li:last-child { margin-bottom: 0; }
+
+  /* Fee highlight */
+  .fee-callout {
+    display: inline-block;
+    background: var(--action-tint);
+    color: var(--action);
+    font-weight: var(--fw-semibold);
+    font-size: var(--text-sm);
+    padding: 2px 10px;
+    border-radius: 6px;
+    margin-left: 4px;
+  }
+
+  /* Back link */
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--text-sm);
+    font-weight: var(--fw-medium);
+    color: var(--text-muted);
+    margin-bottom: 28px;
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--action); text-decoration: none; }
+  .back-link svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+  /* Reveal animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- Global header -->
+<div id="g-header"></div>
+<script src="/assets/nav.js"></script>
+
+<main>
+  <div class="policy-page">
+
+    <!-- Back link -->
+    <a href="./index.html" class="back-link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      <span class="only-en">Back to Home</span>
+      <span class="only-es">Volver al Inicio</span>
+    </a>
+
+    <!-- Language toggle -->
+    <div class="lang-toggle">
+      <span class="only-en">Language:</span>
+      <span class="only-es">Idioma:</span>
+      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="btn-es" onclick="setLang('es')">ES</button>
+    </div>
+
+    <div class="policy-card reveal">
+
+      <!-- Page header -->
+      <div class="policy-header">
+        <h1>
+          <span class="only-en">Policies</span>
+          <span class="only-es">Políticas</span>
+        </h1>
+        <p class="meta">
+          <span class="only-en">Last updated: January 2025</span>
+          <span class="only-es">Última actualización: enero 2025</span>
+        </p>
+      </div>
+
+      <!-- 1. Appointment Policy -->
+      <div class="policy-section reveal">
+        <h2>
+          <span class="only-en">Appointment Policy</span>
+          <span class="only-es">Política de Citas</span>
+        </h2>
+        <ul>
+          <li>
+            <span class="only-en">A valid credit card is necessary to secure all appointments.</span>
+            <span class="only-es">Se requiere una tarjeta de crédito válida para reservar todas las citas.</span>
+          </li>
+          <li>
+            <span class="only-en">Please arrive on time for your appointment. Arriving more than 10 minutes late may result in your appointment being rescheduled.</span>
+            <span class="only-es">Por favor llegue a tiempo a su cita. Llegar con más de 10 minutos de retraso puede resultar en la reprogramación de su cita.</span>
+          </li>
+          <li>
+            <span class="only-en">Treatment effectiveness depends on clients strictly adhering to the prescribed instructions and recommended treatment schedules.</span>
+            <span class="only-es">La efectividad del tratamiento depende de que los clientes sigan estrictamente las instrucciones indicadas y los calendarios de tratamiento recomendados.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 2. Cancellation / No Show Policy -->
+      <div class="policy-section reveal">
+        <h2>
+          <span class="only-en">Cancellation / No Show Policy</span>
+          <span class="only-es">Política de Cancelación / No Presentación</span>
+        </h2>
+        <ul>
+          <li>
+            <span class="only-en">We maintain a 48-hour Cancellation / No Show Policy.</span>
+            <span class="only-es">Mantenemos una política de cancelación / no presentación de 48 horas.</span>
+          </li>
+          <li>
+            <span class="only-en">A <span class="fee-callout">$50 fee</span> will be automatically charged to the card on file for any late cancellation or no-show within 48 hours of the scheduled appointment.</span>
+            <span class="only-es">Se cobrará automáticamente un <span class="fee-callout">cargo de $50</span> a la tarjeta registrada por cualquier cancelación tardía o no presentación dentro de las 48 horas anteriores a la cita programada.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 3. No Refund Policy -->
+      <div class="policy-section reveal">
+        <h2>
+          <span class="only-en">No Refund Policy</span>
+          <span class="only-es">Política de No Reembolso</span>
+        </h2>
+        <ul>
+          <li>
+            <span class="only-en">All payments are non-refundable due to the personalized nature of our services.</span>
+            <span class="only-es">Todos los pagos son no reembolsables debido a la naturaleza personalizada de nuestros servicios.</span>
+          </li>
+          <li>
+            <span class="only-en">Treatments must be scheduled within 120 days of payment or the invoice will close.</span>
+            <span class="only-es">Los tratamientos deben programarse dentro de los 120 días posteriores al pago o la factura se cerrará.</span>
+          </li>
+          <li>
+            <span class="only-en">Credits remain valid for 4 months from the payment date.</span>
+            <span class="only-es">Los créditos son válidos durante 4 meses a partir de la fecha de pago.</span>
+          </li>
+          <li>
+            <span class="only-en">Retail products: no refunds. Defective items may be exchanged within 7 days for the same product only.</span>
+            <span class="only-es">Productos de venta al público: sin reembolsos. Los artículos defectuosos pueden cambiarse dentro de los 7 días únicamente por el mismo producto.</span>
+          </li>
+          <li>
+            <span class="only-en">Gift certificates are non-refundable.</span>
+            <span class="only-es">Los certificados de regalo no son reembolsables.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 4. Treatment Compliance -->
+      <div class="policy-section reveal">
+        <h2>
+          <span class="only-en">Treatment Compliance</span>
+          <span class="only-es">Cumplimiento del Tratamiento</span>
+        </h2>
+        <p>
+          <span class="only-en">The effectiveness of your treatment depends on strictly adhering to the prescribed instructions and recommended treatment schedules provided by your provider.</span>
+          <span class="only-es">La efectividad de su tratamiento depende de seguir estrictamente las instrucciones indicadas y los calendarios de tratamiento recomendados por su proveedor.</span>
+        </p>
+      </div>
+
+      <!-- 5. Additional Policies -->
+      <div class="policy-section reveal">
+        <h2>
+          <span class="only-en">Additional Policies</span>
+          <span class="only-es">Políticas Adicionales</span>
+        </h2>
+        <ul>
+          <li>
+            <span class="only-en"><strong>Children:</strong> Childcare arrangements must be made prior to your appointment. Children are not permitted in treatment rooms.</span>
+            <span class="only-es"><strong>Niños:</strong> El cuidado de los niños debe coordinarse antes de su cita. Los niños no están permitidos en las salas de tratamiento.</span>
+          </li>
+          <li>
+            <span class="only-en"><strong>Pets:</strong> Only certified service animals are permitted. Pets must remain at home.</span>
+            <span class="only-es"><strong>Mascotas:</strong> Solo se permiten animales de servicio certificados. Las mascotas deben permanecer en casa.</span>
+          </li>
+        </ul>
+      </div>
+
+    </div><!-- /.policy-card -->
+
+    <!-- Contact note -->
+    <p style="text-align:center; margin-top: 36px; font-size: var(--text-sm); color: var(--text-subtle);">
+      <span class="only-en">Questions? Contact us at <a href="mailto:consultation@olammedspa.com">consultation@olammedspa.com</a></span>
+      <span class="only-es">¿Preguntas? Escríbenos a <a href="mailto:consultation@olammedspa.com">consultation@olammedspa.com</a></span>
+    </p>
+
+  </div><!-- /.policy-page -->
+</main>
+
+<!-- Global footer -->
+<div id="g-footer"></div>
+<script src="/assets/footer.js"></script>
+
+<script>
+  /* ── Language toggle ── */
+  function setLang(lang) {
+    document.documentElement.setAttribute('data-lang', lang);
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+    try { localStorage.setItem('olam-lang', lang); } catch(e) {}
+  }
+
+  /* Restore saved preference */
+  (function() {
+    try {
+      var saved = localStorage.getItem('olam-lang');
+      if (saved === 'es') setLang('es');
+    } catch(e) {}
+  })();
+
+  /* ── IntersectionObserver reveal ── */
+  (function() {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function(el) { el.classList.add('visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function(el) { io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
