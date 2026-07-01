@@ -7,14 +7,16 @@
   // ── 1. Inject footer CSS ───────────────────────────────────────────
   var style = document.createElement('style');
   style.textContent = [
+    'footer.site .wrap{max-width:1200px;margin:0 auto;padding:0 24px;}',
+    '@media(min-width:768px){footer.site .wrap{padding:0 48px;}}',
     'footer.site{background:var(--surface-linen);border-top:1px solid var(--border-hairline);padding:52px 0 36px;}',
     '.foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:flex-start;}',
     '.foot-logo{height:32px;margin-bottom:16px;}',
-    '.foot-col p,.foot-col a{font-size:var(--text-sm);color:var(--text-muted);line-height:1.9;display:block;}',
+    '.foot-col p,.foot-col a{font-size:var(--text-sm);color:var(--text-muted);line-height:1.9;display:block!important;text-decoration:none;}',
     '.foot-col a:hover{color:var(--text-accent);}',
     '.foot-bottom{margin-top:40px;padding-top:22px;border-top:1px solid var(--border-champagne);font-size:var(--text-caption);color:var(--text-subtle);display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between;}',
     '.foot-social{display:flex;gap:12px;margin-top:16px;}',
-    '.foot-social a{width:36px;height:36px;border-radius:9999px;background:var(--surface-card);border:1px solid var(--border-hairline);display:grid;place-items:center;color:var(--text-muted);font-size:16px;transition:background var(--dur-fast) var(--ease-cushion),color var(--dur-fast) var(--ease-cushion);}',
+    '.foot-social a{width:36px;height:36px;border-radius:9999px;background:var(--surface-card);border:1px solid var(--border-hairline);display:grid!important;place-items:center;color:var(--text-muted);font-size:16px;transition:background var(--dur-fast) var(--ease-cushion),color var(--dur-fast) var(--ease-cushion);}',
     '.foot-social a:hover{background:var(--action);color:#fff;border-color:var(--action);}'
   ].join('');
   document.head.appendChild(style);
