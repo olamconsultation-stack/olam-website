@@ -49,7 +49,40 @@
     '.mega-cat{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--champagne);font-weight:700;margin-bottom:10px;white-space:nowrap;}',
     '.mega-col a{display:block;font-size:13px;color:var(--text-body);text-decoration:none;padding:4px 0;transition:color .15s,padding-left .15s;line-height:1.4;}',
     '.mega-col a:hover{color:var(--text-accent);padding-left:4px;}',
-    '.mega-col a.active{color:var(--text-accent);font-weight:600;padding-left:0;}'
+    '.mega-col a.active{color:var(--text-accent);font-weight:600;padding-left:0;}',
+    /* mobile hamburger */
+    '.nav-burger{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:9999px;border:1px solid var(--border-soft);background:transparent;cursor:pointer;flex-direction:column;padding:0;flex-shrink:0;}',
+    '.nav-burger span{display:block;width:18px;height:1.5px;background:var(--text-strong);border-radius:2px;transition:transform .3s,opacity .3s,width .3s;}',
+    '.nav-burger span:nth-child(2){margin:4.5px 0;}',
+    '.nav-burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}',
+    '.nav-burger.open span:nth-child(2){opacity:0;width:0;}',
+    '.nav-burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}',
+    '@media(min-width:1040px){.nav-burger{display:none;}}',
+    /* mobile overlay */
+    '.mobile-nav{position:fixed;inset:0;z-index:200;background:var(--olam-blue);display:flex;flex-direction:column;transform:translateX(100%);transition:transform .42s cubic-bezier(.4,0,.2,1);overflow-y:auto;}',
+    '.mobile-nav.open{transform:translateX(0);}',
+    'body.mnav-open{overflow:hidden;}',
+    '.mnav-head{display:flex;align-items:center;justify-content:space-between;padding:22px 24px;flex-shrink:0;}',
+    '.mnav-logo{height:26px;}',
+    '.mnav-close{background:none;border:1px solid rgba(255,255,255,0.28);border-radius:9999px;width:40px;height:40px;color:#fff;font-size:18px;cursor:pointer;display:grid;place-items:center;flex-shrink:0;line-height:1;}',
+    '.mnav-body{flex:1;padding:4px 24px 24px;display:flex;flex-direction:column;}',
+    '.mnav-link{display:block;font-family:"Fraunces",serif;font-size:2.1rem;font-weight:400;color:#fff;text-decoration:none;padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.1);line-height:1.2;transition:color .2s;}',
+    '.mnav-link:hover{color:var(--champagne);}',
+    '.mnav-has-sub{border-bottom:1px solid rgba(255,255,255,0.1);}',
+    '.mnav-strigger{background:none;border:none;width:100%;text-align:left;font-family:"Fraunces",serif;font-size:2.1rem;color:#fff;padding:13px 0;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;line-height:1.2;}',
+    '.mnav-schevron{transition:transform .25s;flex-shrink:0;opacity:0.6;}',
+    '.mnav-has-sub.sub-open .mnav-schevron{transform:rotate(180deg);}',
+    '.mnav-sub{display:none;padding:4px 0 16px 2px;}',
+    '.mnav-has-sub.sub-open .mnav-sub{display:block;}',
+    '.mnav-cat{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--champagne);font-weight:700;margin:18px 0 6px;}',
+    '.mnav-cat:first-child{margin-top:6px;}',
+    '.mnav-sub a{display:block;font-size:14px;color:rgba(255,255,255,0.72);text-decoration:none;padding:5px 0;transition:color .15s;}',
+    '.mnav-sub a:hover,.mnav-sub a.active{color:#fff;}',
+    '.mnav-foot{padding:20px 24px 44px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.12);}',
+    '.mnav-phone{font-size:15px;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;transition:color .2s;}',
+    '.mnav-phone:hover{color:#fff;}',
+    '.mnav-book{background:var(--champagne);color:var(--olam-blue);font-family:var(--font-body);font-weight:700;font-size:13px;padding:11px 22px;border-radius:9999px;text-decoration:none;white-space:nowrap;transition:opacity .2s;}',
+    '.mnav-book:hover{opacity:0.88;}'
   ].join('');
   document.head.appendChild(style);
 
@@ -124,7 +157,7 @@
           '<button type="button" data-lang-btn="en" aria-pressed="true">EN</button>' +
           '<button type="button" data-lang-btn="es" aria-pressed="false">ES</button>' +
         '</div>' +
-        '<a class="btn-icon btn-icon-mobile" href="/#book" aria-label="Book my consultation"><span class="material-symbols-outlined">calendar_month</span></a>' +
+        '<button class="nav-burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>' +
         '<a class="btn btn-primary" href="/#book"><span class="only-en">Book My Consultation</span><span class="only-es">Agenda tu consulta</span> <span class="arr">→</span></a>' +
       '</div>' +
     '</div>' +
@@ -133,7 +166,61 @@
   var placeholder = document.getElementById('g-header');
   if (placeholder) placeholder.outerHTML = headerHTML;
 
-  // ── 3. Mark active page in mega menu ──────────────────────────────
+  // ── 3. Inject mobile overlay ──────────────────────────────────────
+  var mobileHTML = '<div class="mobile-nav" id="mobile-nav" aria-hidden="true">' +
+    '<div class="mnav-head">' +
+      '<img class="mnav-logo" src="/assets/logo-olam.png" alt="Olam Med Spa">' +
+      '<button class="mnav-close" aria-label="Close menu">&#x2715;</button>' +
+    '</div>' +
+    '<div class="mnav-body">' +
+      '<div class="mnav-has-sub">' +
+        '<button class="mnav-strigger" type="button">' +
+          '<span class="only-en">Services</span><span class="only-es">Servicios</span>' +
+          '<svg class="mnav-schevron" width="14" height="10" viewBox="0 0 10 7" fill="none" aria-hidden="true"><path d="M1 1.5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
+        '</button>' +
+        '<div class="mnav-sub">' +
+          '<p class="mnav-cat"><span class="only-en">Injectables</span><span class="only-es">Inyectables</span></p>' +
+          '<a href="/services/injectables/botox-dysport">Botox &amp; Dysport</a>' +
+          '<a href="/services/injectables/dermal-fillers"><span class="only-en">Dermal Fillers</span><span class="only-es">Rellenos Dérmicos</span></a>' +
+          '<a href="/services/injectables/bioestimulator">Bioestimulator</a>' +
+          '<a href="/services/injectables/prf">PRF</a>' +
+          '<p class="mnav-cat"><span class="only-en">Aesthetic Services</span><span class="only-es">Servicios Estéticos</span></p>' +
+          '<a href="/services/aesthetic-services/chemical-peel"><span class="only-en">Chemical Peel</span><span class="only-es">Peeling Químico</span></a>' +
+          '<a href="/services/aesthetic-services/hydrafacial">HydraFacial</a>' +
+          '<a href="/services/aesthetic-services/microneedling">Microneedling</a>' +
+          '<a href="/services/aesthetic-services/led-light-therapy"><span class="only-en">LED Light Therapy</span><span class="only-es">Terapia LED</span></a>' +
+          '<p class="mnav-cat"><span class="only-en">Skin Tightening</span><span class="only-es">Tensado de Piel</span></p>' +
+          '<a href="/services/skin-tightening/agnes-rf">Agnes RF</a>' +
+          '<a href="/services/skin-tightening/ultherapy">Ultherapy</a>' +
+          '<a href="/services/skin-tightening/ipl-photofacial">IPL Photofacial</a>' +
+          '<a href="/services/skin-tightening/advanced-microneedling">Olam Glow</a>' +
+          '<a href="/services/skin-tightening/pixel8-rf-microneedling">PiXel8‑RF</a>' +
+          '<a href="/services/laser-treatments/erbium-laser-resurfacing"><span class="only-en">Erbium Laser</span><span class="only-es">Láser Erbium</span></a>' +
+          '<p class="mnav-cat"><span class="only-en">Body Contouring</span><span class="only-es">Contorno Corporal</span></p>' +
+          '<a href="/services/body-contouring/bodysculp">BodySculp</a>' +
+          '<a href="/services/body-contouring/body-tone">Body Tone</a>' +
+          '<a href="/services/body-contouring/mesotherapy">Mesotherapy</a>' +
+          '<a href="/services/laser-hair-removal/laser-hair-removal"><span class="only-en">Laser Hair Removal</span><span class="only-es">Depilación Láser</span></a>' +
+          '<p class="mnav-cat"><span class="only-en">Wellness &amp; Integrative</span><span class="only-es">Medicina Integrativa</span></p>' +
+          '<a href="/services/wellness-integrative/medical-weight-loss"><span class="only-en">Medical Weight Loss</span><span class="only-es">Pérdida de Peso</span></a>' +
+          '<a href="/services/wellness-integrative/hormone-replacement-therapy"><span class="only-en">Hormone Therapy</span><span class="only-es">Terapia Hormonal</span></a>' +
+          '<a href="/services/wellness-integrative/laser-vein-removal"><span class="only-en">Laser Vein Removal</span><span class="only-es">Remoción de Venas</span></a>' +
+          '<a href="/services/wellness-integrative/sclerotherapy">Sclerotherapy</a>' +
+        '</div>' +
+      '</div>' +
+      '<a class="mnav-link" href="/about"><span class="only-en">About</span><span class="only-es">Nosotros</span></a>' +
+      '<a class="mnav-link" href="/financing"><span class="only-en">Financing</span><span class="only-es">Financiamiento</span></a>' +
+      '<a class="mnav-link" href="/contact"><span class="only-en">Contact</span><span class="only-es">Contacto</span></a>' +
+      '<a class="mnav-link" href="https://olamskincare.com/" target="_blank" rel="noopener"><span class="only-en">Shop</span><span class="only-es">Tienda</span></a>' +
+    '</div>' +
+    '<div class="mnav-foot">' +
+      '<a class="mnav-phone" href="tel:19542370930">954.237.0930</a>' +
+      '<a class="mnav-book" href="/#book"><span class="only-en">Book Consultation</span><span class="only-es">Agenda tu consulta</span></a>' +
+    '</div>' +
+  '</div>';
+  document.body.insertAdjacentHTML('beforeend', mobileHTML);
+
+  // ── 4. Mark active page in mega menu ──────────────────────────────
   var path = window.location.pathname;
   document.querySelectorAll('.mega-col a').forEach(function (a) {
     if (a.getAttribute('href') === path) a.classList.add('active');
@@ -167,5 +254,41 @@
     var saved = localStorage.getItem('olam-lang');
     if (saved === 'es') applyLang('es');
   } catch (e) {}
+
+  // ── 6. Mobile menu ────────────────────────────────────────────────
+  var burger   = document.querySelector('.nav-burger');
+  var mobileNav = document.getElementById('mobile-nav');
+  var mClose   = mobileNav ? mobileNav.querySelector('.mnav-close') : null;
+  var strigger = mobileNav ? mobileNav.querySelector('.mnav-strigger') : null;
+  var hasSub   = mobileNav ? mobileNav.querySelector('.mnav-has-sub') : null;
+
+  function openMNav() {
+    mobileNav.classList.add('open');
+    mobileNav.setAttribute('aria-hidden', 'false');
+    if (burger) { burger.classList.add('open'); burger.setAttribute('aria-expanded', 'true'); }
+    document.body.classList.add('mnav-open');
+  }
+  function closeMNav() {
+    mobileNav.classList.remove('open');
+    mobileNav.setAttribute('aria-hidden', 'true');
+    if (burger) { burger.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); }
+    document.body.classList.remove('mnav-open');
+  }
+
+  if (burger) burger.addEventListener('click', function () {
+    mobileNav.classList.contains('open') ? closeMNav() : openMNav();
+  });
+  if (mClose) mClose.addEventListener('click', closeMNav);
+
+  if (strigger && hasSub) {
+    strigger.addEventListener('click', function () { hasSub.classList.toggle('sub-open'); });
+  }
+
+  if (mobileNav) {
+    mobileNav.querySelectorAll('a').forEach(function (a) {
+      if (a.getAttribute('href') === path) a.classList.add('active');
+      if (!a.getAttribute('target')) a.addEventListener('click', closeMNav);
+    });
+  }
 
 }());
